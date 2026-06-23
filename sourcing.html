@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Sourcing — Lane Logic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__logos">
+        <img class="header__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
+        <span class="header__divider" aria-hidden="true"></span>
+        <img class="header__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+      </div>
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <a class="nav__link" href="index.html">HOME</a>
+        <a class="nav__link nav__link--active" href="sourcing.html">SOURCING</a>
+        <a class="nav__link" href="academy.html">ACADEMY</a>
+        <a class="nav__link" href="success-stories.html">SUCCESS STORIES</a>
+        <a class="nav__link" href="about.html">ABOUT</a>
+        <a class="nav__link" href="contact.html">CONTACT</a>
+      </nav>
+      <button type="button" class="header__menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="header__menu-bar" aria-hidden="true"></span>
+        <span class="header__menu-bar" aria-hidden="true"></span>
+        <span class="header__menu-bar" aria-hidden="true"></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <a class="mobile-nav__link" href="index.html">HOME</a>
+      <a class="mobile-nav__link mobile-nav__link--active" href="sourcing.html">SOURCING</a>
+      <a class="mobile-nav__link" href="academy.html">ACADEMY</a>
+      <a class="mobile-nav__link" href="success-stories.html">SUCCESS STORIES</a>
+      <a class="mobile-nav__link" href="about.html">ABOUT</a>
+      <a class="mobile-nav__link" href="contact.html">CONTACT</a>
+      <a class="mobile-nav__link" href="connect.html">WAYS TO CONNECT</a>
+    </nav>
+
+    <main class="m-page">
+      <section class="m-hero">
+        <p class="m-hero__eyebrow">Inventory Sourcing</p>
+        <h1 class="m-hero__headline">WE FIND IT.<br />WE BUY IT.</h1>
+        <p class="m-brush-line">You profit.</p>
+        <img class="m-hero__image" src="assets/buy/auction-photo.png" alt="Lane Logic buyer at Manheim auction" />
+        <p class="m-hero__text">
+          Our expert buyers scour auctions nationwide, inspect every vehicle in person, and deliver the right inventory straight to your lot&mdash;fast.
+        </p>
+        <div class="m-hero__actions">
+          <a class="btn btn--solid" href="#">GET MORE INVENTORY NOW</a>
+          <a class="btn btn--outline" href="#">HOW IT WORKS</a>
+        </div>
+      </section>
+
+      <section class="m-stats-card">
+        <h2 class="m-stats-card__title">Real Results for Dealers</h2>
+        <div class="m-stats-card__list">
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/car%20icon.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>8,500+</strong><span>Vehicles Acquired for Dealers</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/shake%20hand.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>50+</strong><span>Additional Units Per Dealer / Month</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/dollar.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>$1,200+</strong><span>Average Gross Profit Per Vehicle</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/watch.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>48 HRS</strong><span>Average Turnaround from Contact to Delivery</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/map.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>50</strong><span>States Covered Nationwide</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="m-footer">
+      <div class="m-footer__logos">
+        <img class="m-footer__main-logo" src="assets/Png%20File.png" alt="Lane Logic" />
+        <span class="m-footer__divider" aria-hidden="true"></span>
+        <img class="m-footer__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+      </div>
+      <p class="m-footer__tagline">Helping dealers buy smarter inventory and build stronger teams.</p>
+      <nav class="m-footer__links" aria-label="Footer navigation">
+        <a href="sourcing.html">Sourcing</a>
+        <a href="academy.html">Academy</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="m-footer__copy">&copy; 2024 Lane Logic. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="mobile.js"></script>
+</body>
+</html>

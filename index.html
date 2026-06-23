@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lane Logic — More Inventory. More Profits.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header__logos">
+        <img class="header__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
+        <span class="header__divider" aria-hidden="true"></span>
+        <img class="header__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+      </div>
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <a class="nav__link nav__link--active" href="index.html">HOME</a>
+        <a class="nav__link" href="sourcing.html">SOURCING</a>
+        <a class="nav__link" href="academy.html">ACADEMY</a>
+        <a class="nav__link" href="success-stories.html">SUCCESS STORIES</a>
+        <a class="nav__link" href="about.html">ABOUT</a>
+        <a class="nav__link" href="contact.html">CONTACT</a>
+      </nav>
+      <button type="button" class="header__menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="header__menu-bar" aria-hidden="true"></span>
+        <span class="header__menu-bar" aria-hidden="true"></span>
+        <span class="header__menu-bar" aria-hidden="true"></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <a class="mobile-nav__link mobile-nav__link--active" href="index.html">HOME</a>
+      <a class="mobile-nav__link" href="sourcing.html">SOURCING</a>
+      <a class="mobile-nav__link" href="academy.html">ACADEMY</a>
+      <a class="mobile-nav__link" href="success-stories.html">SUCCESS STORIES</a>
+      <a class="mobile-nav__link" href="about.html">ABOUT</a>
+      <a class="mobile-nav__link" href="contact.html">CONTACT</a>
+      <a class="mobile-nav__link" href="connect.html">WAYS TO CONNECT</a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__left">
+        <h1 class="hero__headline">
+          MORE INVENTORY.<br />
+          MORE PROFITS.
+        </h1>
+        <img class="hero__brush" src="assets/hero text.png" alt="Crush your competition." />
+        <div class="hero__buttons">
+          <a class="btn btn--solid" href="sourcing.html">
+            GET INVENTORY NOW
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--outline" href="academy.html">
+            EXPLORE THE ACADEMY
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <img class="hero__truck" src="assets/hero-truck.png" alt="Lane Logic branded lifted pickup truck" />
+      </div>
+    </section>
+
+    <!-- ============ STATS STRIP ============ -->
+    <section class="stats stats--home">
+      <h2 class="stats__title">REAL RESULTS FOR DEALERS</h2>
+      <div class="stats__grid">
+        <div class="stat">
+          <img class="stat__icon" src="assets/processed/car icon.png" alt="" aria-hidden="true" />
+          <div class="stat__number">8,500+</div>
+          <div class="stat__label">Vehicles Acquired<br />for Dealers</div>
+        </div>
+        <div class="stat">
+          <img class="stat__icon" src="assets/processed/shake hand.png" alt="" aria-hidden="true" />
+          <div class="stat__number">50+</div>
+          <div class="stat__label">Additional Units<br />Per Dealer / Month</div>
+        </div>
+        <div class="stat">
+          <img class="stat__icon" src="assets/processed/dollar.png" alt="" aria-hidden="true" />
+          <div class="stat__number">$1,200+</div>
+          <div class="stat__label">Average Gross Profit<br />Per Vehicle</div>
+        </div>
+        <div class="stat">
+          <img class="stat__icon" src="assets/processed/watch.png" alt="" aria-hidden="true" />
+          <div class="stat__number">48 HRS</div>
+          <div class="stat__label">Average Turnaround<br />from Contact to Delivery</div>
+        </div>
+        <div class="stat">
+          <img class="stat__icon" src="assets/processed/map.png" alt="" aria-hidden="true" />
+          <div class="stat__number">50</div>
+          <div class="stat__label">States Covered<br />Nationwide</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WE BUY / WE TEACH ============ -->
+    <section class="duo">
+      <div class="duo__card">
+        <!-- LEFT: WE BUY FOR YOU -->
+        <div class="duo__col">
+          <h2 class="duo__heading">WE BUY FOR YOU</h2>
+          <img class="duo__icon" src="assets/sec2/processed/we buy icon.png" alt="" aria-hidden="true" />
+          <h3 class="duo__subheading">AUCTION INVENTORY BUYING</h3>
+          <div class="duo__text">
+            <p class="duo__body">
+              Our expert buyers scour auctions<br />
+              across the country to find the right<br />
+              inventory and deliver it straight<br />
+              to your lot.
+            </p>
+            <ul class="duo__list">
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Nationwide Auction Access</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Expert Buyer Representation</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Market Analysis &amp; Buying Strategy</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Quality Selection</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Delivered to Your Lot</span></li>
+            </ul>
+          </div>
+          <a class="duo__btn" href="sourcing.html">GET INVENTORY</a>
+        </div>
+
+        <span class="duo__divider" aria-hidden="true"></span>
+
+        <!-- RIGHT: WE TEACH YOU -->
+        <div class="duo__col">
+          <h2 class="duo__heading">WE TEACH YOU</h2>
+          <img class="duo__icon" src="assets/sec2/processed/we teach icon.png" alt="" aria-hidden="true" />
+          <h3 class="duo__subheading">LANE LOGIC ACADEMY</h3>
+          <div class="duo__text">
+            <p class="duo__body">
+              We teach your team how to buy<br />
+              inventory at auctions&mdash;so you<br />
+              can build skills, save money,<br />
+              and own your pipeline.
+            </p>
+            <ul class="duo__list">
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>On-Demand Courses</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Live Training</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Proven Strategies</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Certifications</span></li>
+              <li><img class="duo__tick" src="assets/sec2/processed/tick icon.png" alt="" aria-hidden="true" /><span>Ongoing Support</span></li>
+            </ul>
+          </div>
+          <a class="duo__btn" href="academy.html">EXPLORE ACADEMY</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE LANE LOGIC IMPACT ============ -->
+    <section class="impact">
+      <div class="impact__card">
+        <h2 class="impact__title">THE LANE LOGIC IMPACT</h2>
+        <div class="impact__grid">
+          <div class="impact__item">
+            <img class="impact__icon" src="assets/impact/normalized/arrow.png" alt="" aria-hidden="true" />
+            <h3 class="impact__heading">BETTER INVENTORY</h3>
+            <p class="impact__text">
+              Access higher quality<br />
+              inventory through expert<br />
+              auction strategies.
+            </p>
+          </div>
+          <div class="impact__item">
+            <img class="impact__icon" src="assets/impact/normalized/dollar.png" alt="" aria-hidden="true" />
+            <h3 class="impact__heading">LOWER COSTS</h3>
+            <p class="impact__text">
+              Buy smarter at auction<br />
+              and reduce cost<br />
+              per unit.
+            </p>
+          </div>
+          <div class="impact__item">
+            <img class="impact__icon" src="assets/impact/normalized/time.png" alt="" aria-hidden="true" />
+            <h3 class="impact__heading">SAVE TIME</h3>
+            <p class="impact__text">
+              We do the legwork<br />
+              or teach your team<br />
+              to do it faster.
+            </p>
+          </div>
+          <div class="impact__item">
+            <img class="impact__icon" src="assets/impact/normalized/people.png" alt="" aria-hidden="true" />
+            <h3 class="impact__heading">BUILD YOUR TEAM</h3>
+            <p class="impact__text">
+              Stronger buyers.<br />
+              Better decisions.<br />
+              More confidence.
+            </p>
+          </div>
+          <div class="impact__item">
+            <img class="impact__icon" src="assets/impact/normalized/chart.png" alt="" aria-hidden="true" />
+            <h3 class="impact__heading">GROW PROFITABILITY</h3>
+            <p class="impact__text">
+              Improve margins,<br />
+              inventory turns, and<br />
+              long-term performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE BUY FOR YOU ============ -->
+    <section class="buy desktop-only">
+      <div class="buy__card">
+        <div class="buy__left">
+          <p class="buy__eyebrow">HOW WE BUY FOR YOU</p>
+          <h2 class="buy__headline">
+            More Inventory.<br />
+            Less Hassle.<br />
+            Better Results.
+          </h2>
+          <span class="buy__rule" aria-hidden="true"></span>
+
+          <div class="buy__rows">
+            <div class="buy__row">
+              <span class="buy__row-icon-slot">
+                <img class="buy__row-icon" src="assets/buy/processed/chat.png" alt="" aria-hidden="true" />
+              </span>
+              <span class="buy__row-divider" aria-hidden="true"></span>
+              <div class="buy__row-text">
+                <h3 class="buy__row-title">You Tell Us What You Need</h3>
+                <p class="buy__row-body">You share your needs, goals, and must-haves.</p>
+              </div>
+            </div>
+            <div class="buy__row">
+              <span class="buy__row-icon-slot">
+                <img class="buy__row-icon" src="assets/buy/processed/search.png" alt="" aria-hidden="true" />
+              </span>
+              <span class="buy__row-divider" aria-hidden="true"></span>
+              <div class="buy__row-text">
+                <h3 class="buy__row-title">We Go Get It</h3>
+                <p class="buy__row-body">
+                  We leverage our relationships with sellers and<br />
+                  auctioneers to get you better cars for better prices.<br />
+                  We inspect every vehicle in person.
+                </p>
+              </div>
+            </div>
+            <div class="buy__row">
+              <span class="buy__row-icon-slot">
+                <img class="buy__row-icon" src="assets/buy/processed/checklist.png" alt="" aria-hidden="true" />
+              </span>
+              <span class="buy__row-divider" aria-hidden="true"></span>
+              <div class="buy__row-text">
+                <h3 class="buy__row-title">We Handle Everything</h3>
+                <p class="buy__row-body">
+                  We handle everything from list creation, vehicle valuation,<br />
+                  inspection, buying, arbitration and shipping the<br />
+                  vehicles to your store.
+                </p>
+              </div>
+            </div>
+            <div class="buy__row">
+              <span class="buy__row-icon-slot">
+                <img class="buy__row-icon" src="assets/buy/processed/van.png" alt="" aria-hidden="true" />
+              </span>
+              <span class="buy__row-divider" aria-hidden="true"></span>
+              <div class="buy__row-text">
+                <h3 class="buy__row-title">We Deliver</h3>
+                <p class="buy__row-body">Quality inventory, delivered to your lot&mdash;ready to sell.</p>
+              </div>
+            </div>
+            <div class="buy__row">
+              <span class="buy__row-icon-slot">
+                <img class="buy__row-icon" src="assets/buy/processed/your-profit.png" alt="" aria-hidden="true" />
+              </span>
+              <span class="buy__row-divider" aria-hidden="true"></span>
+              <div class="buy__row-text">
+                <h3 class="buy__row-title">You Profit</h3>
+                <p class="buy__row-body">Better cars. Better margins. Better business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buy__right">
+          <div class="buy__photo-wrap">
+            <img
+              class="buy__photo"
+              src="assets/buy/auction-photo.png"
+              alt="Lane Logic buyer inspecting inventory at a Manheim auction lot"
+            />
+          </div>
+          <div class="buy__strip">
+            <p class="buy__strip-text">50+ Extra Quality Units Per Month.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE BUY FOR YOU (mobile) ============ -->
+    <section class="buy-mobile mobile-only" aria-label="How we buy for you">
+      <div class="buy-mobile__hero">
+        <p class="buy__eyebrow">HOW WE BUY FOR YOU</p>
+        <h2 class="buy__headline">
+          More Inventory.<br />
+          Less Hassle.<br />
+          Better Results.
+        </h2>
+        <div class="buy-mobile__image-wrap">
+          <img
+            class="buy-mobile__photo"
+            src="assets/buy/auction-photo.png"
+            alt="Lane Logic buyer inspecting inventory at a Manheim auction lot"
+          />
+        </div>
+        <div class="buy-mobile__actions">
+          <a class="btn btn--solid" href="contact.html">GET MORE INVENTORY NOW</a>
+          <a class="btn btn--outline" href="sourcing.html">HOW IT WORKS</a>
+        </div>
+      </div>
+
+      <section class="m-stats-card">
+        <h2 class="m-stats-card__title">REAL RESULTS FOR DEALERS</h2>
+        <div class="m-stats-card__list">
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/car%20icon.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>8,500+</strong><span>Vehicles Acquired for Dealers</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/shake%20hand.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>50+</strong><span>Additional Units Per Dealer / Month</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/dollar.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>$1,200+</strong><span>Average Gross Profit Per Vehicle</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/watch.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>48 HRS</strong><span>Average Turnaround from Contact to Delivery</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/processed/map.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>50</strong><span>States Covered Nationwide</span></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============ LANE LOGIC ACADEMY ============ -->
+    <section class="academy desktop-only">
+      <div class="academy__card">
+        <img
+          class="academy__bg"
+          src="assets/Lane%20logic%20academy.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="academy__content">
+          <div class="academy__top">
+            <h2 class="academy__title">LANE LOGIC ACADEMY</h2>
+            <p class="academy__sub">Turn your team into top-performing buyers.</p>
+          </div>
+          <a class="academy__btn" href="academy.html">VIEW ACADEMY COURSES</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LANE LOGIC ACADEMY (mobile) ============ -->
+    <section class="academy-mobile mobile-only" aria-label="Lane Logic Academy">
+      <div class="academy-mobile__hero">
+        <h2 class="m-hero__headline">TRAIN BETTER BUYERS.<br />BUY BETTER CARS.</h2>
+        <div class="academy-mobile__image-wrap">
+          <img
+            class="academy-mobile__image"
+            src="assets/academy/banner.png"
+            alt="Lane Logic Academy training session"
+          />
+        </div>
+        <p class="m-hero__text">
+          Lane Logic Academy turns your team into confident, top-performing buyers who make smarter decisions and drive more gross.
+        </p>
+        <div class="academy-mobile__actions">
+          <a class="btn btn--solid" href="contact.html">TRAIN MY TEAM</a>
+          <a class="btn btn--outline" href="academy.html">ACADEMY OVERVIEW</a>
+        </div>
+      </div>
+
+      <section class="m-stats-card">
+        <h2 class="m-stats-card__title">REAL RESULTS FROM BETTER BUYERS</h2>
+        <div class="m-stats-card__list">
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/impact/normalized/chart.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>Higher Gross</strong><span>Better cars. Better margins.</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/impact/normalized/dollar.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>Fewer Mistakes</strong><span>Avoid costly buys and surprises.</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/impact/normalized/arrow.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>Stronger Profits</strong><span>Buy right. Sell right. Every time.</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/impact/normalized/time.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>More Confidence</strong><span>Your team will know what to chase.</span></div>
+          </div>
+          <div class="m-stats-card__item">
+            <img class="m-stats-card__icon" src="assets/impact/normalized/people.png" alt="" aria-hidden="true" />
+            <div class="m-stats-card__copy"><strong>Build A Team</strong><span>Create buyers who perform at every lane.</span></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============ SUCCESS STORIES ============ -->
+    <section class="stories">
+      <div class="stories__list">
+        <article class="story-card">
+          <div class="story-card__media">
+            <img
+              class="story-card__photo"
+              src="assets/testimonial/front.png"
+              alt="Mike D., General Manager"
+            />
+          </div>
+          <div class="story-card__body">
+            <div class="story-card__content">
+              <p class="story-card__label">SUCCESS STORY &ndash; AUCTION BUYING SERVICE</p>
+              <h2 class="story-card__title">
+                <span class="story-card__title-block">
+                  <span class="story-card__title-line">MORE INVENTORY.</span>
+                  <img class="story-card__brush" src="assets/testimonial/pattern-line.png" alt="" aria-hidden="true" />
+                </span>
+                <span class="story-card__title-line">MORE CONTROL.</span>
+                <span class="story-card__title-line">MORE PROFIT.</span>
+              </h2>
+              <blockquote class="story-card__quote">
+                <span class="story-card__quote-mark story-card__quote-mark--open" aria-hidden="true">&ldquo;</span>
+                Lane Logic takes the guesswork out of the auction. Their buyers know the market, find the right units, and get them to our lot fast. We&rsquo;re adding 50 extra quality units every month and our margins have never been better.
+                <span class="story-card__quote-mark story-card__quote-mark--close" aria-hidden="true">&rdquo;</span>
+              </blockquote>
+            </div>
+            <div class="story-card__footer">
+              <p class="story-card__author">
+                <span class="story-card__author-bar" aria-hidden="true"></span>
+                Mike D., General Manager
+              </p>
+              <a class="story-card__btn" href="sourcing.html">
+                VIEW OUR AUCTION BUYING SERVICE
+                <svg class="story-card__btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card__media">
+            <img
+              class="story-card__photo"
+              src="assets/testimonial/second.png"
+              alt="Tom S., Dealer Principal"
+            />
+          </div>
+          <div class="story-card__body">
+            <div class="story-card__content">
+              <p class="story-card__label">SUCCESS STORY &ndash; LANE LOGIC ACADEMY</p>
+              <h2 class="story-card__title">
+                <span class="story-card__title-block">
+                  <span class="story-card__title-line">BETTER BUYERS.</span>
+                  <img class="story-card__brush" src="assets/testimonial/pattern-line.png" alt="" aria-hidden="true" />
+                </span>
+                <span class="story-card__title-line">BETTER DECISIONS.</span>
+                <span class="story-card__title-line">BIGGER RESULTS.</span>
+              </h2>
+              <blockquote class="story-card__quote">
+                <span class="story-card__quote-mark story-card__quote-mark--open" aria-hidden="true">&ldquo;</span>
+                The Lane Logic Academy transformed the way we buy. Our team now shops auctions with confidence, sticks to the right process, and makes smarter buying decisions. The results speak for themselves&mdash;lower costs, better inventory, and stronger profits.
+                <span class="story-card__quote-mark story-card__quote-mark--close" aria-hidden="true">&rdquo;</span>
+              </blockquote>
+            </div>
+            <div class="story-card__footer">
+              <p class="story-card__author">
+                <span class="story-card__author-bar" aria-hidden="true"></span>
+                Tom S., Dealer Principal
+              </p>
+              <a class="story-card__btn" href="academy.html">
+                EXPLORE THE ACADEMY
+                <svg class="story-card__btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA STRIP ============ -->
+    <section class="cta-strip desktop-only">
+      <div class="cta-strip__inner">
+        <p class="cta-strip__text">
+          You Need Cars, We&rsquo;ve Got You Covered.
+        </p>
+        <a class="cta-strip__btn" href="contact.html">
+          LET&rsquo;S TALK
+          <svg class="cta-strip__btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CTA (mobile) ============ -->
+    <section class="contact-mobile mobile-only" aria-label="Contact Lane Logic">
+      <div class="contact-mobile__hero">
+        <h2 class="m-hero__headline">LET&rsquo;S TALK.</h2>
+        <p class="contact-mobile__text">
+          Whether you need inventory now or want to build a stronger buying team, we&rsquo;re here to help.
+        </p>
+        <p class="contact-mobile__text">
+          Reach out today and let&rsquo;s put a winning strategy in motion for your dealership.
+        </p>
+
+        <div class="contact-mobile__visual">
+          <div class="contact-mobile__benefits">
+            <div class="contact-mobile__benefit">
+              <img class="contact-mobile__benefit-icon" src="assets/buy/processed/search.png" alt="" aria-hidden="true" />
+              <p class="contact-mobile__benefit-text">More Inventory.<br />Better Quality.</p>
+            </div>
+            <div class="contact-mobile__benefit">
+              <img class="contact-mobile__benefit-icon" src="assets/impact/normalized/dollar.png" alt="" aria-hidden="true" />
+              <p class="contact-mobile__benefit-text">Better Buying.<br />Higher Profits.</p>
+            </div>
+            <div class="contact-mobile__benefit">
+              <img class="contact-mobile__benefit-icon" src="assets/impact/normalized/people.png" alt="" aria-hidden="true" />
+              <p class="contact-mobile__benefit-text">Real Partners.<br />Real Results.</p>
+            </div>
+          </div>
+
+          <img
+            class="contact-mobile__image"
+            src="assets/contact/team-call.png"
+            alt="Lane Logic team member on a call"
+          />
+        </div>
+      </div>
+
+      <section class="m-form">
+        <h2 class="m-form__title">Send Us a Message</h2>
+        <img class="m-form__brush" src="assets/testimonial/pattern-line.png" alt="" aria-hidden="true" />
+        <form action="#" method="post">
+          <div class="m-form__grid">
+            <div class="m-form__field">
+              <label class="m-form__label" for="home-first-name">First Name</label>
+              <input class="m-form__input" id="home-first-name" name="first_name" type="text" autocomplete="given-name" />
+            </div>
+            <div class="m-form__field">
+              <label class="m-form__label" for="home-last-name">Last Name</label>
+              <input class="m-form__input" id="home-last-name" name="last_name" type="text" autocomplete="family-name" />
+            </div>
+            <div class="m-form__field m-form__field--full">
+              <label class="m-form__label" for="home-dealership">Dealership Name</label>
+              <input class="m-form__input" id="home-dealership" name="dealership" type="text" />
+            </div>
+            <div class="m-form__field">
+              <label class="m-form__label" for="home-email">Email Address</label>
+              <input class="m-form__input" id="home-email" name="email" type="email" autocomplete="email" />
+            </div>
+            <div class="m-form__field">
+              <label class="m-form__label" for="home-phone">Phone Number</label>
+              <input class="m-form__input" id="home-phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="m-form__field m-form__field--full">
+              <label class="m-form__label" for="home-help">How can we help you?</label>
+              <select class="m-form__select" id="home-help" name="help">
+                <option value="">Select an option</option>
+                <option value="inventory">I need more inventory</option>
+                <option value="academy">I want Academy training</option>
+                <option value="both">Both sourcing and training</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="m-form__field m-form__field--full">
+              <label class="m-form__label" for="home-message">Message</label>
+              <textarea class="m-form__textarea" id="home-message" name="message"></textarea>
+            </div>
+          </div>
+          <button class="btn btn--solid m-form__submit" type="submit">SEND MESSAGE</button>
+          <p class="m-form__note">We&rsquo;ll get back to you within 1 business day.</p>
+        </form>
+      </section>
+    </section>
+
+    <!-- ============ WAYS TO CONNECT (mobile) ============ -->
+    <section class="connect-mobile mobile-only" aria-label="Ways to connect">
+      <div class="m-connect">
+        <h2 class="m-connect__title">WAYS TO CONNECT</h2>
+        <img class="m-connect__brush" src="assets/testimonial/pattern-line.png" alt="" aria-hidden="true" />
+        <p class="m-connect__intro">
+          We make it easy to reach the right people who can help your dealership succeed.
+        </p>
+
+        <div class="m-connect-block">
+          <div class="m-connect-block__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h3 class="m-connect-block__title">Call Us</h3>
+            <p class="m-connect-block__main"><a href="tel:+18885263544">(888) 526-3544</a></p>
+            <p class="m-connect-block__sub">Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM EST</p>
+          </div>
+        </div>
+
+        <div class="m-connect-block">
+          <div class="m-connect-block__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <h3 class="m-connect-block__title">Email Us</h3>
+            <p class="m-connect-block__main"><a href="mailto:info@lanelogic.com">info@lanelogic.com</a></p>
+            <p class="m-connect-block__sub">We respond within 1 business day</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="m-team-card">
+        <h2 class="m-team-card__title">Who You&rsquo;ll Hear From</h2>
+        <span class="m-team-card__dash" aria-hidden="true"></span>
+        <p class="m-team-card__text">
+          Our team is made up of automotive veterans who have been in your shoes. When you reach out, you&rsquo;ll talk to people who understand your challenges and know exactly how to help.
+        </p>
+        <div class="m-team-card__image-wrap">
+          <img class="m-team-card__image" src="assets/connect/team.png" alt="Lane Logic team" />
+        </div>
+      </section>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <div class="site-footer__brand">
+          <div class="site-footer__logos">
+            <img
+              class="site-footer__main-logo"
+              src="assets/Png%20File.png"
+              alt="Lane Logic — Buy More / Drive Profit"
+            />
+            <span class="site-footer__divider" aria-hidden="true"></span>
+            <img
+              class="site-footer__academy-logo"
+              src="assets/Png%20File%202.png"
+              alt="Lane Logic Academy"
+            />
+          </div>
+          <p class="site-footer__tagline">
+            Helping dealers buy smarter inventory and build stronger teams.
+          </p>
+        </div>
+
+        <nav class="site-footer__nav-col" aria-label="Footer navigation">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="site-footer__links">
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__newsletter">
+          <h3 class="site-footer__heading">Stay Ahead of the Market</h3>
+          <p class="site-footer__newsletter-text">
+            Get inventory tips, training updates, and dealer growth strategies delivered to your inbox.
+          </p>
+          <form class="site-footer__form" action="#" method="post">
+            <input
+              class="site-footer__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              aria-label="Enter your email"
+            />
+            <button class="site-footer__subscribe" type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="site-footer__social" aria-label="Social media">
+            <a class="site-footer__social-link" href="#" aria-label="Facebook">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <text x="9" y="25" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">f</text>
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="LinkedIn">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 32" aria-hidden="true">
+                <text x="2" y="24" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">in</text>
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="YouTube">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 28" aria-hidden="true">
+                <rect x="1" y="1" width="38" height="26" rx="7" fill="currentColor" />
+                <path d="M17 8.5L28 14L17 19.5V8.5Z" fill="#FFFFFF" />
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="Instagram">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2.6" />
+                <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="2.6" />
+                <circle cx="23.2" cy="8.8" r="1.8" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__legal">
+        <p class="site-footer__copyright">&copy; 2024 Lane Logic. All rights reserved.</p>
+        <p class="site-footer__policies">
+          <a href="#">Privacy Policy</a>
+          <span aria-hidden="true">|</span>
+          <a href="#">Terms of Use</a>
+        </p>
+      </div>
+
+    </footer>
+  </div>
+  <script src="mobile.js"></script>
+</body>
+</html>

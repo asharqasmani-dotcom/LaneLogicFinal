@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Lane Logic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__logos">
+        <img class="header__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
+        <span class="header__divider" aria-hidden="true"></span>
+        <img class="header__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+      </div>
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <a class="nav__link" href="index.html">HOME</a>
+        <a class="nav__link" href="sourcing.html">SOURCING</a>
+        <a class="nav__link" href="academy.html">ACADEMY</a>
+        <a class="nav__link" href="success-stories.html">SUCCESS STORIES</a>
+        <a class="nav__link" href="about.html">ABOUT</a>
+        <a class="nav__link nav__link--active" href="contact.html">CONTACT</a>
+      </nav>
+      <button type="button" class="header__menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="header__menu-bar" aria-hidden="true"></span>
+        <span class="header__menu-bar" aria-hidden="true"></span>
+        <span class="header__menu-bar" aria-hidden="true"></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <a class="mobile-nav__link" href="index.html">HOME</a>
+      <a class="mobile-nav__link" href="sourcing.html">SOURCING</a>
+      <a class="mobile-nav__link" href="academy.html">ACADEMY</a>
+      <a class="mobile-nav__link" href="success-stories.html">SUCCESS STORIES</a>
+      <a class="mobile-nav__link" href="about.html">ABOUT</a>
+      <a class="mobile-nav__link mobile-nav__link--active" href="contact.html">CONTACT</a>
+      <a class="mobile-nav__link" href="connect.html">WAYS TO CONNECT</a>
+    </nav>
+
+    <main class="m-page">
+      <section class="contact-mobile__hero">
+        <h1 class="m-hero__headline">LET&rsquo;S TALK.</h1>
+        <p class="contact-mobile__text">
+          Whether you need inventory now or want to build a stronger buying team, we&rsquo;re here to help.
+        </p>
+        <p class="contact-mobile__text">
+          Reach out today and let&rsquo;s put a winning strategy in motion for your dealership.
+        </p>
+
+        <div class="contact-mobile__visual">
+          <div class="contact-mobile__benefits">
+            <div class="contact-mobile__benefit">
+              <img class="contact-mobile__benefit-icon" src="assets/buy/processed/search.png" alt="" aria-hidden="true" />
+              <p class="contact-mobile__benefit-text">More Inventory.<br />Better Quality.</p>
+            </div>
+            <div class="contact-mobile__benefit">
+              <img class="contact-mobile__benefit-icon" src="assets/impact/normalized/dollar.png" alt="" aria-hidden="true" />
+              <p class="contact-mobile__benefit-text">Better Buying.<br />Higher Profits.</p>
+            </div>
+            <div class="contact-mobile__benefit">
+              <img class="contact-mobile__benefit-icon" src="assets/impact/normalized/people.png" alt="" aria-hidden="true" />
+              <p class="contact-mobile__benefit-text">Real Partners.<br />Real Results.</p>
+            </div>
+          </div>
+
+          <img
+            class="contact-mobile__image"
+            src="assets/contact/team-call.png"
+            alt="Lane Logic team member on a call"
+          />
+        </div>
+      </section>
+
+      <section class="m-form">
+        <h2 class="m-form__title">Send Us a Message</h2>
+        <img class="m-form__brush" src="assets/testimonial/pattern-line.png" alt="" aria-hidden="true" />
+        <form action="#" method="post">
+          <div class="m-form__grid">
+            <div class="m-form__field">
+              <label class="m-form__label" for="first-name">First Name</label>
+              <input class="m-form__input" id="first-name" name="first_name" type="text" autocomplete="given-name" />
+            </div>
+            <div class="m-form__field">
+              <label class="m-form__label" for="last-name">Last Name</label>
+              <input class="m-form__input" id="last-name" name="last_name" type="text" autocomplete="family-name" />
+            </div>
+            <div class="m-form__field m-form__field--full">
+              <label class="m-form__label" for="dealership">Dealership Name</label>
+              <input class="m-form__input" id="dealership" name="dealership" type="text" />
+            </div>
+            <div class="m-form__field">
+              <label class="m-form__label" for="email">Email Address</label>
+              <input class="m-form__input" id="email" name="email" type="email" autocomplete="email" />
+            </div>
+            <div class="m-form__field">
+              <label class="m-form__label" for="phone">Phone Number</label>
+              <input class="m-form__input" id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="m-form__field m-form__field--full">
+              <label class="m-form__label" for="help">How can we help you?</label>
+              <select class="m-form__select" id="help" name="help">
+                <option value="">Select an option</option>
+                <option value="inventory">I need more inventory</option>
+                <option value="academy">I want Academy training</option>
+                <option value="both">Both sourcing and training</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="m-form__field m-form__field--full">
+              <label class="m-form__label" for="message">Message</label>
+              <textarea class="m-form__textarea" id="message" name="message"></textarea>
+            </div>
+          </div>
+          <button class="btn btn--solid m-form__submit" type="submit">SEND MESSAGE</button>
+          <p class="m-form__note">We&rsquo;ll get back to you within 1 business day.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="m-footer">
+      <div class="m-footer__logos">
+        <img class="m-footer__main-logo" src="assets/Png%20File.png" alt="Lane Logic" />
+        <span class="m-footer__divider" aria-hidden="true"></span>
+        <img class="m-footer__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+      </div>
+      <p class="m-footer__tagline">Helping dealers buy smarter inventory and build stronger teams.</p>
+      <nav class="m-footer__links" aria-label="Footer navigation">
+        <a href="sourcing.html">Sourcing</a>
+        <a href="academy.html">Academy</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="m-footer__copy">&copy; 2024 Lane Logic. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="mobile.js"></script>
+</body>
+</html>
