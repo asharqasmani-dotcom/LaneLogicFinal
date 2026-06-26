@@ -957,8 +957,8 @@ img {
 .cta-strip__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  justify-content: center;
+  position: relative;
   min-height: 132px;
   padding: 34px 44px;
   background: var(--brand-blue);
@@ -967,7 +967,8 @@ img {
 }
 
 .cta-strip__text {
-  flex: 1;
+  max-width: calc(100% - 260px);
+  text-align: center;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
   font-size: 38px;
@@ -978,6 +979,11 @@ img {
 }
 
 .cta-strip__btn {
+  position: absolute;
+  top: 50%;
+  right: 44px;
+  transform: translateY(-50%);
+  z-index: 1;
   flex: none;
   display: inline-flex;
   align-items: center;
@@ -1000,7 +1006,7 @@ img {
 }
 
 .cta-strip__btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(calc(-50% - 1px));
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -1466,11 +1472,14 @@ img {
   }
   .cta-strip__inner {
     padding: 24px 28px;
-    gap: 20px;
     min-height: 100px;
   }
   .cta-strip__text {
+    max-width: calc(100% - 220px);
     font-size: 28px;
+  }
+  .cta-strip__btn {
+    right: 28px;
   }
   .site-footer__main {
     grid-template-columns: 1fr 1fr;
@@ -1609,17 +1618,26 @@ img {
   }
   .cta-strip__inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 18px;
     padding: 24px 24px 22px;
     min-height: 0;
   }
   .cta-strip__text {
+    max-width: none;
+    text-align: left;
     font-size: 24px;
   }
   .cta-strip__btn {
+    position: static;
+    top: auto;
+    right: auto;
+    transform: none;
     width: 100%;
     justify-content: center;
+  }
+  .cta-strip__btn:hover {
+    transform: translateY(-1px);
   }
   .site-footer__main {
     grid-template-columns: 1fr;
