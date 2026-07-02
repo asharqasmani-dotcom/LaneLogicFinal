@@ -309,128 +309,1040 @@ img {
   color: var(--white);
 }
 
-/* ============ WE BUY / WE TEACH ============ */
-.duo {
+/* ============ TWO WAYS TO INCREASE PROFIT ============ */
+.tw {
   margin-top: 48px;
   margin-bottom: 56px;
 }
 
-.duo__card {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
-  padding: 58px 72px 62px;
-}
-
-.duo__divider {
-  width: 1px;
-  background: #cfcfcf;
-  align-self: stretch;
-}
-
-.duo__col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.tw__head {
   text-align: center;
-  padding: 0 90px;
+  max-width: 980px;
+  margin: 0 auto 40px;
 }
 
-.duo__heading {
+.tw__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 18px;
+  line-height: 1;
+}
+
+.tw__title-black {
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 56px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--black);
 }
 
-.duo__icon {
-  width: 142px;
-  height: 142px;
-  object-fit: contain;
-  margin-top: 26px;
-  margin-bottom: 24px;
+.tw__title-brush {
+  font-family: "Caveat", "Comic Sans MS", cursive;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 0.9;
+  color: var(--brand-blue);
 }
 
-.duo__subheading {
+.tw__sub {
+  margin-top: 16px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+.tw__cards {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* ----- OR divider ----- */
+.tw__or {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 34px;
+}
+
+.tw__or-line {
+  width: 2px;
+  flex: 1 1 auto;
+  background: var(--brand-blue);
+  opacity: 0.5;
+}
+
+.tw__or-badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--brand-blue);
+  box-shadow: 0 6px 16px rgba(var(--brand-blue-rgb), 0.16);
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  color: var(--brand-blue);
+}
+
+/* ----- Card ----- */
+.tw-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid #D9D9D9;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
+  padding: 40px 40px 36px;
+}
+
+.tw-card__top {
+  display: grid;
+  grid-template-columns: 1fr 0.82fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.tw-card__content {
+  min-width: 0;
+}
+
+.tw-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 10px;
+  background: var(--brand-blue);
+  color: var(--white);
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.tw-card__badge-icon {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+
+.tw-card__heading {
+  margin-top: 22px;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.02;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--black);
 }
 
-.duo__text {
-  display: inline-block;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.duo__body {
+.tw-card__body {
+  margin-top: 18px;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #1b1b1b;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #3a3a3a;
 }
 
-.duo__list {
+.tw-card__list {
   list-style: none;
-  margin: 30px 0 0;
+  margin: 24px 0 0;
   padding: 0;
-  text-align: left;
 }
 
-.duo__list li {
+.tw-card__list li {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin-bottom: 18px;
+  gap: 14px;
+  margin-bottom: 14px;
 }
 
-.duo__tick {
-  width: 48px;
-  height: 48px;
+.tw-card__check {
+  width: 26px;
+  height: 26px;
   flex: none;
-  object-fit: contain;
+  color: var(--brand-blue);
 }
 
-.duo__list span {
+.tw-card__list span {
   font-family: "Inter", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
   color: #1b1b1b;
 }
 
-.duo__btn {
+.tw-card__media {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 300px;
+  background: #f2f2f2;
+}
+
+.tw-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ----- Card ROI strip ----- */
+.tw-card__roi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 24px;
+  margin-top: 30px;
+  padding: 20px 24px;
+  border: 1px solid #E3E7F5;
+  border-radius: 16px;
+  background: #F7F9FF;
+}
+
+.tw-card__roi-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  flex: 1 1 240px;
+}
+
+.tw-card__roi-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
-  margin-top: 38px;
-  padding: 0 46px;
-  height: 70px;
-  background: var(--blue);
+  width: 54px;
+  height: 54px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--brand-blue);
   color: var(--white);
-  border-radius: 9px;
-  font-family: "Oswald", "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 23px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.15s ease, transform 0.12s ease;
 }
 
-.duo__btn:hover {
-  background: var(--blue-dark);
-  transform: translateY(-1px);
+.tw-card__roi-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.tw-card__roi-label {
+  display: block;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+}
+
+.tw-card__roi-copy {
+  margin-top: 2px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #3a3a3a;
+}
+
+.tw-card__roi-copy strong {
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* Reuse .btn .btn--solid; tune for the ROI strip context.
+   Sits beside the ROI info when the card is wide; wraps to a full-width
+   row beneath it when space is tight. */
+.tw-card__btn {
+  flex: 1 1 260px;
+  height: 58px;
+  min-width: 0;
+  padding: 0 24px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  gap: 12px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* ============ HOW IT WORKS ============ */
+.tw-how {
+  margin-top: 56px;
+}
+
+.tw-how__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tw-how__title .tw__title-brush {
+  font-size: 60px;
+}
+
+.tw-flows {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 46px;
+}
+
+.tw-flows__divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(var(--brand-blue-rgb), 0.28);
+}
+
+.tw-flow {
+  min-width: 0;
+}
+
+.tw-flow__label {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  background: var(--brand-blue);
+  color: var(--white);
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tw-flow__steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: start;
+}
+
+.tw-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 0 4px;
+}
+
+.tw-step__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--brand-blue);
+  color: var(--brand-blue);
+}
+
+.tw-step__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.tw-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  background: var(--brand-blue);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6l6 6-6 6' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6l6 6-6 6' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.tw-step__label {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+/* ----- Two-ways responsive (self-contained) ----- */
+@media (max-width: 1280px) {
+  .tw__title-black {
+    font-size: 48px;
+  }
+  .tw__title-brush {
+    font-size: 58px;
+  }
+  .tw-how__title .tw__title-brush {
+    font-size: 52px;
+  }
+  .tw-card__top {
+    grid-template-columns: 1fr 0.78fr;
+    gap: 26px;
+  }
+  .tw-card__heading {
+    font-size: 34px;
+  }
+  .tw__sub {
+    font-size: 19px;
+  }
+}
+
+/* Cards stack (<=980, shared block above). Steps reflow so 6 icons never crowd. */
+@media (max-width: 980px) {
+  .tw-flow__steps {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .tw-flow__steps {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 28px;
+  }
+  .tw-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .tw__head {
+    margin-bottom: 30px;
+  }
+  .tw__title-black {
+    font-size: 38px;
+  }
+  .tw__title-brush {
+    font-size: 46px;
+  }
+  .tw__sub {
+    font-size: 17px;
+  }
+  /* Card: image on top, single column */
+  .tw-card {
+    padding: 26px 22px 24px;
+  }
+  .tw-card__top {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .tw-card__content {
+    order: 2;
+  }
+  .tw-card__media {
+    order: 1;
+    min-height: 220px;
+    max-height: 260px;
+  }
+  .tw-card__heading {
+    font-size: 32px;
+  }
+  /* ROI strip stacks; button full width */
+  .tw-card__roi {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 20px;
+  }
+  .tw-card__btn {
+    width: 100%;
+    height: 54px;
+  }
+  .tw-how {
+    margin-top: 44px;
+  }
+  .tw-how__title {
+    margin-bottom: 30px;
+  }
+  .tw-how__title .tw__title-brush {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  .tw-flow__steps {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+  }
+  .tw-card__media {
+    min-height: 190px;
+  }
+}
+
+/* ============ TODAY'S WINS ============ */
+.wins {
+  margin-bottom: 56px;
+}
+
+.wins__head {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.wins__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 16px;
+  line-height: 1;
+}
+
+.wins__title-black,
+.wins__title-blue {
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.wins__title-black {
+  color: var(--black);
+}
+
+.wins__title-blue {
+  color: var(--brand-blue);
+  font-style: italic;
+}
+
+.wins__sub {
+  margin-top: 14px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #3a3a3a;
+}
+
+.wins__brush {
+  display: block;
+  width: 300px;
+  max-width: 68%;
+  height: auto;
+  margin: 8px auto 0;
+}
+
+.wins__grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 44px;
+  align-items: start;
+}
+
+.wins__col {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.wins__divider {
+  position: relative;
+  width: 1px;
+  align-self: stretch;
+  background: rgba(var(--brand-blue-rgb), 0.28);
+}
+
+.wins__divider-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--brand-blue);
+  color: var(--brand-blue);
+  box-shadow: 0 6px 16px rgba(var(--brand-blue-rgb), 0.16);
+}
+
+.wins__divider-badge svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* Win card */
+.win-card {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  background: var(--white);
+  border: 1px solid #E4E4E4;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.win-card__media {
+  min-height: 100%;
+  background: #f2f2f2;
+}
+
+.win-card__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.win-card__body {
+  padding: 16px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.win-card__name {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.3px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #050505;
+}
+
+.win-card__stats {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  align-items: start;
+  column-gap: 12px;
+  margin-top: 14px;
+}
+
+.win-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.win-stat--bought,
+.win-stat--gross {
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  border-left: 1px solid #ededed;
+}
+
+.win-stat__label,
+.win-stat__head {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.win-stat__price {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #111;
+}
+
+.win-stat__value {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.win-stat__value--blue {
+  color: var(--brand-blue);
+}
+
+.win-stat__value--green {
+  color: #17994a;
+}
+
+.win-stat__sub {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.wins__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.wins__btn {
+  min-width: 280px;
+  height: 60px;
+  font-size: 19px;
+}
+
+/* ============ WHERE PROFIT IS MADE ============ */
+.wpm {
+  margin-bottom: 56px;
+}
+
+.wpm__head {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.wpm__title {
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 62px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wpm__k {
+  color: var(--black);
+}
+
+.wpm__blue {
+  color: var(--brand-blue);
+}
+
+.wpm__sub {
+  margin-top: 16px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #111;
+}
+
+.wpm__accent {
+  color: var(--brand-blue);
+  font-weight: 600;
+}
+
+.wpm__flow {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.wpm-steps {
+  position: relative;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* horizontal timeline line + arrowhead pointing to the outcome */
+.wpm-steps::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: -26px;
+  top: 90px;
+  height: 3px;
+  background: var(--brand-blue);
+}
+
+.wpm-steps::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  top: 82px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid var(--brand-blue);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+
+.wpm-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.wpm-step__icon {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.wpm-step__icon img {
+  display: block;
+  height: 92px;
+  width: auto;
+}
+
+.wpm-step__arrow {
+  width: 16px;
+  height: 22px;
+  background: var(--brand-blue);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3v14M6 12l6 6 6-6' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3v14M6 12l6 6 6-6' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.wpm-step__node {
+  position: relative;
+  z-index: 3;
+  margin-top: -9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--brand-blue);
+}
+
+.wpm-step__label {
+  margin-top: 18px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #050505;
+}
+
+.wpm-step__desc {
+  margin-top: 8px;
+  max-width: 180px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #333;
+}
+
+.wpm-outcome {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0;
+}
+
+.wpm-outcome__circle {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.wpm-outcome__circle img {
+  display: block;
+  width: 122px;
+  height: auto;
+  filter: drop-shadow(0 12px 24px rgba(var(--brand-blue-rgb), 0.26));
+}
+
+.wpm-outcome__text {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wpm-outcome__text strong {
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #050505;
+}
+
+.wpm-outcome__text em {
+  font-style: normal;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+}
+
+/* ----- Wins + Where-profit responsive (self-contained) ----- */
+@media (max-width: 1280px) {
+  .wins__title-black,
+  .wins__title-blue {
+    font-size: 48px;
+  }
+  .wpm__title {
+    font-size: 52px;
+  }
+  .wpm-step__desc {
+    font-size: 14px;
+  }
+  .win-card {
+    grid-template-columns: 168px 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wins__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .wins__divider {
+    display: none;
+  }
+  /* Where-profit: stack into a vertical timeline */
+  .wpm__flow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .wpm-steps {
+    grid-template-columns: 1fr;
+    row-gap: 26px;
+  }
+  .wpm-steps::before,
+  .wpm-steps::after {
+    display: none;
+  }
+  .wpm-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 18px;
+    align-items: start;
+    text-align: left;
+    padding: 0;
+  }
+  .wpm-step__icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+  .wpm-step__icon img {
+    height: auto;
+    width: 66px;
+  }
+  .wpm-step__label {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 6px;
+  }
+  .wpm-step__desc {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: none;
+  }
+  .wpm-step__arrow,
+  .wpm-step__node {
+    display: none;
+  }
+  .wpm-step::before {
+    content: "";
+    position: absolute;
+    left: 32px;
+    top: 84px;
+    bottom: -26px;
+    width: 2px;
+    background: rgba(var(--brand-blue-rgb), 0.3);
+  }
+  .wpm-outcome {
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+    padding: 18px 22px;
+    border: 1px solid #E3E7F5;
+    border-radius: 16px;
+    background: #F7F9FF;
+    text-align: left;
+  }
+  .wpm-outcome__circle img {
+    width: 84px;
+  }
+  .wpm-outcome__text {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .win-card {
+    grid-template-columns: 150px 1fr;
+  }
+  .win-card__body {
+    padding: 14px 14px 16px;
+  }
+  .wins__title-black,
+  .wins__title-blue {
+    font-size: 40px;
+  }
+  .wins__sub {
+    font-size: 17px;
+  }
+  .wpm__title {
+    font-size: 40px;
+  }
+  .wpm__sub {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .win-card {
+    grid-template-columns: 1fr;
+  }
+  .win-card__media img {
+    min-height: 0;
+    height: 180px;
+  }
+  .win-card__stats {
+    column-gap: 8px;
+  }
+  .win-stat--bought,
+  .win-stat--gross {
+    padding-left: 8px;
+  }
+  .win-stat__value {
+    font-size: 20px;
+  }
+  .wins__btn {
+    width: 100%;
+  }
 }
 
 /* ============ THE LANE LOGIC IMPACT ============ */
@@ -1388,18 +2300,26 @@ img {
   .stat + .stat::before {
     display: none;
   }
-  /* duo: stack columns, divider becomes horizontal */
-  .duo__card {
+  /* two-ways: stack cards, OR + flow dividers become horizontal */
+  .tw__cards {
     grid-template-columns: 1fr;
-    padding: 40px 36px 44px;
   }
-  .duo__divider {
+  .tw__or {
+    flex-direction: row;
+    padding: 30px 0;
+  }
+  .tw__or-line {
+    width: auto;
+    height: 2px;
+    flex: 1 1 auto;
+  }
+  .tw-flows {
+    grid-template-columns: 1fr;
+    gap: 40px 0;
+  }
+  .tw-flows__divider {
     width: auto;
     height: 1px;
-    margin: 40px 0;
-  }
-  .duo__col {
-    padding: 0 12px;
   }
   .impact__card {
     padding: 40px 36px 44px;
@@ -1522,9 +2442,6 @@ img {
   }
   .stats__grid {
     grid-template-columns: 1fr;
-  }
-  .duo__col {
-    padding: 0;
   }
   .impact__grid {
     grid-template-columns: 1fr;
