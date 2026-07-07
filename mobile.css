@@ -1029,12 +1029,17 @@
   }
 
   .story-card {
+    grid-template-columns: 1fr;
     min-height: 0;
     border-radius: 16px;
   }
 
   .story-card__media {
     position: relative;
+  }
+
+  .story-card__media::after {
+    display: none;
   }
 
   .story-card__photo {
