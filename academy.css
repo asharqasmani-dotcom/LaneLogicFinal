@@ -531,8 +531,8 @@
 }
 
 .ac-program-card__icon {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   flex: none;
 }
@@ -541,7 +541,8 @@
   margin: 0 0 4px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
+  line-height: 1.05;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--blue);
@@ -606,14 +607,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   margin-top: auto;
-  min-height: 58px;
-  padding: 14px 18px;
+  min-height: 68px;
+  padding: 16px 20px;
   background: var(--blue);
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 19px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--white);
@@ -622,18 +623,18 @@
 .ac-program-card__meta {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .ac-program-card__meta-icon {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   flex: none;
 }
 
 .ac-program-card__bar-div {
   width: 1px;
-  height: 22px;
+  height: 26px;
   background: rgba(255, 255, 255, 0.45);
 }
 
@@ -1293,12 +1294,13 @@
   }
 
   .ac-program-card__name {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .ac-program-card__bar {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+    font-size: 17px;
   }
 
   .ac-program-card__bar-div {
