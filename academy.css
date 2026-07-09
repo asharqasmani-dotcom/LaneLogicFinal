@@ -150,6 +150,8 @@
    ========================================================= */
 .ac-certs {
   margin-bottom: 112px;
+  --ac-cert-cap: 108px;
+  --ac-cert-cap-gap: 20px;
 }
 
 .ac-certs__panel {
@@ -164,26 +166,30 @@
 }
 
 .ac-certs__copy {
-  min-width: 0;
-}
-
-.ac-certs__heading-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--ac-cert-cap) minmax(0, 1fr);
+  column-gap: var(--ac-cert-cap-gap);
+  row-gap: 14px;
   align-items: center;
-  gap: 22px;
+  min-width: 0;
 }
 
 .ac-certs__cap {
-  flex: none;
-  width: 80px;
-  height: 80px;
+  grid-column: 1;
+  grid-row: 1;
+  width: var(--ac-cert-cap);
+  height: var(--ac-cert-cap);
   object-fit: contain;
+  align-self: center;
 }
 
 .ac-certs__title-wrap {
+  grid-column: 2;
+  grid-row: 1;
   min-width: 0;
   width: fit-content;
   max-width: 100%;
+  align-self: center;
 }
 
 .ac-certs__title {
@@ -224,8 +230,10 @@
 }
 
 .ac-certs__sub {
-  margin: 16px 0 0;
-  padding-left: 102px;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  padding-left: 0;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 600;
   font-size: 17px;
@@ -1019,7 +1027,7 @@
   }
 
   .ac-certs__sub {
-    padding-left: 102px;
+    padding-left: 0;
   }
 
   .ac-strip__headline {
@@ -1091,7 +1099,7 @@
   }
 
   .ac-certs__sub {
-    padding-left: 102px;
+    padding-left: 0;
   }
 
   .ac-certs__badges {
@@ -1228,19 +1236,18 @@
     border-radius: 22px;
   }
 
-  .ac-certs__heading-row {
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
+  .ac-certs__copy {
+    --ac-cert-cap: 72px;
+    --ac-cert-cap-gap: 16px;
+    row-gap: 10px;
   }
 
   .ac-certs__cap {
-    width: 60px;
-    height: 60px;
+    width: var(--ac-cert-cap);
+    height: var(--ac-cert-cap);
   }
 
   .ac-certs__sub {
-    padding-left: 76px;
     font-size: 15px;
   }
 
