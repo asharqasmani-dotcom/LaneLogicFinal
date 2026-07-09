@@ -238,7 +238,7 @@
 .src-process__step:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 79px;
+  top: 87px;
   left: calc(50% + 71px);
   width: calc(100% - 76px);
   height: 0;
@@ -249,7 +249,7 @@
 .src-process__step:not(:last-child)::before {
   content: "";
   position: absolute;
-  top: 75px;
+  top: 83px;
   right: -2px;
   width: 0;
   height: 0;
@@ -264,7 +264,7 @@
   position: relative;
   width: 142px;
   height: 142px;
-  margin: 8px auto 18px;
+  margin: 16px auto 18px;
 }
 
 .src-process__ring {
@@ -281,7 +281,7 @@
 
 .src-process__num {
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 50%;
   z-index: 2;
   display: inline-flex;
@@ -297,15 +297,20 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   box-shadow: 0 2px 8px rgba(var(--brand-blue-rgb), 0.25);
 }
 
 .src-process__icon {
   width: 86px;
   height: 86px;
+  min-width: 86px;
+  min-height: 86px;
+  max-width: 86px;
+  max-height: 86px;
   margin: 0;
   object-fit: contain;
+  object-position: center;
   display: block;
 }
 
@@ -1134,19 +1139,23 @@
   .src-process__icon-wrap {
     width: 124px;
     height: 124px;
-    margin-top: 6px;
+    margin-top: 14px;
     margin-bottom: 16px;
   }
 
   .src-process__icon {
     width: 76px;
     height: 76px;
+    min-width: 76px;
+    min-height: 76px;
+    max-width: 76px;
+    max-height: 76px;
   }
 
   .src-process__num {
-    top: -8px;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
     font-size: 18px;
@@ -1191,13 +1200,13 @@
   }
 
   .src-process__step:not(:last-child)::after {
-    top: 69px;
+    top: 76px;
     left: calc(50% + 62px);
     width: calc(100% - 68px);
   }
 
   .src-process__step:not(:last-child)::before {
-    top: 65px;
+    top: 72px;
   }
 
   .src-how {
@@ -1617,9 +1626,9 @@
   }
 
   .src-process__num {
-    top: -6px;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 32px;
     height: 32px;
     font-size: 15px;
@@ -1628,6 +1637,10 @@
   .src-process__icon {
     width: 48px;
     height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 48px;
+    max-height: 48px;
   }
 
   .src-process__step-title {
