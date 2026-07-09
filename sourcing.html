@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inventory Sourcing — Lane Logic</title>
+  <title>Sourcing — Lane Logic</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="mobile.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="mobile.css?v=8" />
+  <link rel="stylesheet" href="sourcing.css?v=32" />
 </head>
 <body>
   <div class="page">
+    <!-- ============ HEADER ============ -->
     <header class="header">
       <div class="header__logos">
         <img class="header__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
@@ -42,63 +47,538 @@
       <a class="mobile-nav__link" href="connect.html">WAYS TO CONNECT</a>
     </nav>
 
-    <main class="m-page">
-      <section class="m-hero">
-        <p class="m-hero__eyebrow">Inventory Sourcing</p>
-        <h1 class="m-hero__headline">WE FIND IT.<br />WE BUY IT.</h1>
-        <p class="m-brush-line">You profit.</p>
-        <img class="m-hero__image" src="assets/buy/auction-photo.png" alt="Lane Logic buyer at Manheim auction" />
-        <p class="m-hero__text">
-          Our expert buyers scour auctions nationwide, inspect every vehicle in person, and deliver the right inventory straight to your lot&mdash;fast.
+    <!-- ============ 1. HERO ============ -->
+    <section class="src-hero" aria-label="Sourcing inventory">
+      <div class="src-hero__content">
+        <p class="src-hero__eyebrow">SOURCING INVENTORY. DELIVERING RESULTS.</p>
+        <h1 class="src-hero__headline">
+          YOUR DEALERSHIP&rsquo;S<br />
+          BUYING DEPARTMENT.
+        </h1>
+        <div class="src-hero__script-wrap">
+          <p class="src-hero__script">
+            <span class="src-hero__script-mark">WE FIND IT.</span> YOU SELL IT.
+          </p>
+          <svg class="src-hero__brush" viewBox="0 0 220 22" fill="none" aria-hidden="true" preserveAspectRatio="none">
+            <path
+              d="M4 14 C 28 7, 70 6, 110 9 C 150 12, 180 16, 205 12 C 212 10, 216 8, 216 9"
+              stroke="#0233E3"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 15 C 40 10, 90 9, 140 12 C 175 15, 200 13, 212 11"
+              stroke="#0233E3"
+              stroke-width="3.5"
+              stroke-linecap="round"
+              opacity="0.85"
+            />
+          </svg>
+        </div>
+        <p class="src-hero__text">
+          Lane Logic provides dealers with a complete acquisition solution&mdash;sourcing, inspecting, negotiating and delivering high-quality inventory that produces higher gross.
         </p>
-        <div class="m-hero__actions">
-          <a class="btn btn--solid" href="#">GET MORE INVENTORY NOW</a>
-          <a class="btn btn--outline" href="#">HOW IT WORKS</a>
+        <div class="src-hero__buttons">
+          <a class="btn btn--solid" href="contact.html">
+            GET INVENTORY NOW
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
-      </section>
-
-      <section class="m-stats-card">
-        <h2 class="m-stats-card__title">Real Results for Dealers</h2>
-        <div class="m-stats-card__list">
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/processed/car%20icon.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>8,500+</strong><span>Vehicles Acquired for Dealers</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/processed/shake%20hand.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>50+</strong><span>Additional Units Per Dealer / Month</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/processed/dollar.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>$1,200+</strong><span>Average Gross Profit Per Vehicle</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/processed/watch.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>48 HRS</strong><span>Average Turnaround from Contact to Delivery</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/processed/map.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>50</strong><span>States Covered Nationwide</span></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="m-footer">
-      <div class="m-footer__logos">
-        <img class="m-footer__main-logo" src="assets/Png%20File.png" alt="Lane Logic" />
-        <span class="m-footer__divider" aria-hidden="true"></span>
-        <img class="m-footer__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
       </div>
-      <p class="m-footer__tagline">Helping dealers buy smarter inventory and build stronger teams.</p>
-      <nav class="m-footer__links" aria-label="Footer navigation">
-        <a href="sourcing.html">Sourcing</a>
-        <a href="academy.html">Academy</a>
-        <a href="success-stories.html">Success Stories</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p class="m-footer__copy">&copy; 2024 Lane Logic. All rights reserved.</p>
+      <div class="src-hero__media">
+        <img
+          class="src-hero__image"
+          src="assets/sourcing/hero/sourcing-inventory.png?v=2"
+          alt="Lane Logic buyer reviewing inventory at Manheim Auto Auction"
+        />
+      </div>
+    </section>
+
+    <!-- ============ 2. HOW OUR PROCESS WORKS ============ -->
+    <section class="src-process" aria-labelledby="src-process-title">
+      <h2 class="src-process__title" id="src-process-title">
+        <span class="src-process__title-line" aria-hidden="true"></span>
+        <span class="src-process__title-text">
+          <span class="src-process__title-black">HOW OUR</span>
+          <span class="src-process__brush">PROCESS</span>
+          <span class="src-process__title-black">WORKS</span>
+        </span>
+        <span class="src-process__title-line" aria-hidden="true"></span>
+      </h2>
+
+      <ol class="src-process__grid">
+        <li class="src-process__step">
+          <span class="src-process__num" aria-hidden="true">1</span>
+          <img class="src-process__icon" src="assets/sourcing/process/step-1.png" alt="" />
+          <h3 class="src-process__step-title">TELL US WHAT YOU NEED</h3>
+        </li>
+        <li class="src-process__step">
+          <span class="src-process__num" aria-hidden="true">2</span>
+          <img class="src-process__icon" src="assets/sourcing/process/step-2.png" alt="" />
+          <h3 class="src-process__step-title">WE SOURCE NATIONWIDE</h3>
+        </li>
+        <li class="src-process__step">
+          <span class="src-process__num" aria-hidden="true">3</span>
+          <img class="src-process__icon" src="assets/sourcing/process/step-3.png" alt="" />
+          <h3 class="src-process__step-title">WE INSPECT EVERYTHING</h3>
+        </li>
+        <li class="src-process__step">
+          <span class="src-process__num" aria-hidden="true">4</span>
+          <img class="src-process__icon" src="assets/sourcing/process/step-4.png" alt="" />
+          <h3 class="src-process__step-title">WE NEGOTIATE &amp; BUY</h3>
+        </li>
+        <li class="src-process__step">
+          <span class="src-process__num" aria-hidden="true">5</span>
+          <img class="src-process__icon" src="assets/sourcing/process/step-5.png" alt="" />
+          <h3 class="src-process__step-title">WE DELIVER IT TO YOU</h3>
+        </li>
+        <li class="src-process__step">
+          <span class="src-process__num" aria-hidden="true">6</span>
+          <img class="src-process__icon" src="assets/sourcing/process/step-6.png" alt="" />
+          <h3 class="src-process__step-title">YOU SELL MORE CARS</h3>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CTA STRIP ============ -->
+    <section class="src-strip" aria-label="Get started with sourcing">
+      <div class="src-strip__inner">
+        <img
+          class="src-strip__icon"
+          src="assets/sourcing/strip/phone-icon.png?v=2"
+          alt=""
+          width="72"
+          height="72"
+        />
+        <div class="src-strip__copy">
+          <p class="src-strip__headline">MORE QUALITY UNITS. LESS SEARCHING. BETTER RESULTS.</p>
+          <p class="src-strip__text">Let our expert buyers do the work so you can focus on running your store.</p>
+        </div>
+        <a class="src-strip__btn" href="contact.html">
+          GET STARTED TODAY
+          <svg class="src-strip__btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 3. HOW WE SOURCE FOR YOU ============ -->
+    <section class="src-how" aria-labelledby="src-how-title">
+      <div class="src-how__content">
+        <p class="src-how__eyebrow">HOW WE SOURCE FOR YOU</p>
+        <h2 class="src-how__headline" id="src-how-title">
+          More Inventory.<br />
+          Less Hassle.<br />
+          Better Results.
+        </h2>
+        <span class="src-how__underline" aria-hidden="true"></span>
+
+        <ul class="src-how__features">
+          <li class="src-how__feature">
+            <img class="src-how__feature-icon" src="assets/sourcing/features/nationwide.png" alt="" />
+            <div>
+              <h3 class="src-how__feature-title">Nationwide Network</h3>
+              <p class="src-how__feature-text">Access to major auctions, dealer trades, and private seller networks in all 50 states.</p>
+            </div>
+          </li>
+          <li class="src-how__feature">
+            <img class="src-how__feature-icon" src="assets/sourcing/features/inspections.png" alt="" />
+            <div>
+              <h3 class="src-how__feature-title">Professional Inspections</h3>
+              <p class="src-how__feature-text">Every vehicle inspected in person by our experienced buyers.</p>
+            </div>
+          </li>
+          <li class="src-how__feature">
+            <img class="src-how__feature-icon" src="assets/sourcing/features/prices.png" alt="" />
+            <div>
+              <h3 class="src-how__feature-title">Better Vehicles. Better Prices.</h3>
+              <p class="src-how__feature-text">We negotiate hard so you get the right cars at the right numbers.</p>
+            </div>
+          </li>
+          <li class="src-how__feature">
+            <img class="src-how__feature-icon" src="assets/sourcing/features/delivered.png" alt="" />
+            <div>
+              <h3 class="src-how__feature-title">Delivered to Your Lot</h3>
+              <p class="src-how__feature-text">We handle transportation, titles, and delivery&mdash;ready for your sales floor.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="src-how__visual">
+        <div class="src-how__image-wrap">
+          <img
+            class="src-how__image"
+            src="assets/sourcing/features/dealership.png"
+            alt="Lane Logic buyer inspecting inventory at a Chevrolet dealership"
+          />
+        </div>
+        <aside class="src-how__card" aria-label="We buy from">
+          <h3 class="src-how__card-title">We Buy From:</h3>
+          <ul class="src-how__card-list">
+            <li>Manheim, ADESA &amp; Independent Auctions</li>
+            <li>Dealer Trades Nationwide</li>
+            <li>Off-Market Opportunities</li>
+            <li>Fleet &amp; Lease Returns</li>
+            <li>Private Sellers</li>
+            <li>Commercial &amp; Fleet Liquidations</li>
+            <li>And More...</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 4. REAL RESULTS / REAL DEALERS ============ -->
+    <section class="src-results" aria-labelledby="src-results-title">
+      <h2 class="src-results__title" id="src-results-title">
+        <span class="src-results__title-black">REAL RESULTS.</span>
+        <span class="src-results__title-blue">REAL DEALERS.</span>
+      </h2>
+
+      <div class="src-results__grid">
+        <article class="src-result-card">
+          <img
+            class="src-result-card__image"
+            src="assets/sourcing/results/jason-kent.png?v=1"
+            alt="Jason Kent, General Manager at Kent Family Autoplex"
+          />
+          <div class="src-result-card__body">
+            <span class="src-result-card__quote-mark" aria-hidden="true">&ldquo;</span>
+            <p class="src-result-card__quote">
+              Lane Logic takes the guesswork out of the auction. They find the right units, get them to our lot fast, and our margins have never been better. We&rsquo;re adding 50+ extra quality units every month.
+            </p>
+            <div class="src-result-card__author">
+              <span class="src-result-card__rule" aria-hidden="true"></span>
+              <span class="src-result-card__name">Jason Kent,</span>
+              <span class="src-result-card__role">General Manager</span>
+              <span class="src-result-card__company">Kent Family Autoplex</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="src-result-card">
+          <img
+            class="src-result-card__image"
+            src="assets/sourcing/results/mckenzie-kaspian.png?v=1"
+            alt="McKenzie Kaspian, Dealer Principal at Midtown Toyota"
+          />
+          <div class="src-result-card__body">
+            <span class="src-result-card__quote-mark" aria-hidden="true">&ldquo;</span>
+            <p class="src-result-card__quote">
+              Our inventory quality has improved, our aging is down, and our front-end gross is up 18%. Lane Logic operates like a true partner and extension of our team.
+            </p>
+            <div class="src-result-card__author">
+              <span class="src-result-card__rule" aria-hidden="true"></span>
+              <span class="src-result-card__name">McKenzie Kaspian,</span>
+              <span class="src-result-card__role">Dealer Principal</span>
+              <span class="src-result-card__company">Midtown Toyota</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA STRIP (after results) ============ -->
+    <section class="src-strip src-strip--results" aria-label="Schedule a strategy call">
+      <div class="src-strip__inner">
+        <img
+          class="src-strip__icon"
+          src="assets/sourcing/strip/phone-icon.png?v=2"
+          alt=""
+          width="72"
+          height="72"
+        />
+        <div class="src-strip__copy">
+          <p class="src-strip__headline">LET&rsquo;S BUILD YOUR INVENTORY. WE FIND IT. WE BUY IT. YOU SELL IT.</p>
+        </div>
+        <a class="src-strip__btn" href="contact.html">
+          SCHEDULE A STRATEGY CALL
+          <svg class="src-strip__btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ TODAY'S WINS ============ -->
+    <section class="src-wins" aria-labelledby="src-wins-title">
+      <div class="src-wins__head">
+        <h2 class="src-wins__title" id="src-wins-title">
+          <span class="src-wins__title-black">TODAY&rsquo;S</span>
+          <span class="src-wins__title-blue">WINS</span>
+        </h2>
+        <p class="src-wins__sub">Real deals. Real savings. Real profit for our dealer partners.</p>
+        <svg class="src-wins__brush" viewBox="0 0 320 20" fill="none" aria-hidden="true" preserveAspectRatio="none">
+          <path d="M8 12 C 48 6, 110 7, 160 10 C 210 13, 260 14, 312 9" stroke="#0233E3" stroke-width="7" stroke-linecap="round" />
+          <path d="M14 13 C 70 9, 140 10, 210 12 C 260 14, 295 12, 308 10" stroke="#0233E3" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+        </svg>
+      </div>
+
+      <div class="src-wins__grid">
+        <article class="src-win-card">
+          <div class="src-win-card__media">
+            <img src="assets/sourcing/wins/yukon-denali.png" alt="2024 GMC Yukon Denali" />
+          </div>
+          <div class="src-win-card__body">
+            <h3 class="src-win-card__name">2024 GMC YUKON DENALI</h3>
+            <div class="src-win-card__stats">
+              <div class="src-win-stat">
+                <span class="src-win-stat__label">Purchase Price</span>
+                <span class="src-win-stat__value">$56,400</span>
+              </div>
+              <div class="src-win-stat src-win-stat--bought">
+                <span class="src-win-stat__label">Bought</span>
+                <span class="src-win-stat__value src-win-stat__value--blue">$4,850</span>
+                <span class="src-win-stat__sub">Under Market</span>
+              </div>
+              <div class="src-win-stat src-win-stat--gross">
+                <span class="src-win-stat__label">Projected Gross</span>
+                <span class="src-win-stat__value src-win-stat__value--green">$10,250</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="src-win-card">
+          <div class="src-win-card__media">
+            <img src="assets/sourcing/wins/ridgeline.png" alt="2017 Honda Ridgeline" />
+          </div>
+          <div class="src-win-card__body">
+            <h3 class="src-win-card__name">2017 HONDA RIDGELINE</h3>
+            <div class="src-win-card__stats">
+              <div class="src-win-stat">
+                <span class="src-win-stat__label">Purchase Price</span>
+                <span class="src-win-stat__value">$18,900</span>
+              </div>
+              <div class="src-win-stat src-win-stat--bought">
+                <span class="src-win-stat__label">Bought</span>
+                <span class="src-win-stat__value src-win-stat__value--blue">$1,450</span>
+                <span class="src-win-stat__sub">Under Market</span>
+              </div>
+              <div class="src-win-stat src-win-stat--gross">
+                <span class="src-win-stat__label">Projected Gross</span>
+                <span class="src-win-stat__value src-win-stat__value--green">$4,200</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="src-win-card">
+          <div class="src-win-card__media">
+            <img src="assets/sourcing/wins/tesla-model-s.png" alt="2022 Tesla Model S" />
+          </div>
+          <div class="src-win-card__body">
+            <h3 class="src-win-card__name">2022 TESLA MODEL S</h3>
+            <div class="src-win-card__stats">
+              <div class="src-win-stat">
+                <span class="src-win-stat__label">Purchase Price</span>
+                <span class="src-win-stat__value">$52,500</span>
+              </div>
+              <div class="src-win-stat src-win-stat--bought">
+                <span class="src-win-stat__label">Bought</span>
+                <span class="src-win-stat__value src-win-stat__value--blue">$4,200</span>
+                <span class="src-win-stat__sub">Under Market</span>
+              </div>
+              <div class="src-win-stat src-win-stat--gross">
+                <span class="src-win-stat__label">Projected Gross</span>
+                <span class="src-win-stat__value src-win-stat__value--green">$9,300</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="src-win-card">
+          <div class="src-win-card__media">
+            <img src="assets/sourcing/wins/enclave.png" alt="2023 Buick Enclave Avenir" />
+          </div>
+          <div class="src-win-card__body">
+            <h3 class="src-win-card__name">2023 BUICK ENCLAVE AVENIR</h3>
+            <div class="src-win-card__stats">
+              <div class="src-win-stat">
+                <span class="src-win-stat__label">Purchase Price</span>
+                <span class="src-win-stat__value">$37,250</span>
+              </div>
+              <div class="src-win-stat src-win-stat--bought">
+                <span class="src-win-stat__label">Bought</span>
+                <span class="src-win-stat__value src-win-stat__value--blue">$2,750</span>
+                <span class="src-win-stat__sub">Under Market</span>
+              </div>
+              <div class="src-win-stat src-win-stat--gross">
+                <span class="src-win-stat__label">Projected Gross</span>
+                <span class="src-win-stat__value src-win-stat__value--green">$6,150</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="src-win-card">
+          <div class="src-win-card__media">
+            <img src="assets/sourcing/wins/silverado.png" alt="2021 Chevrolet Silverado 1500 High Country" />
+          </div>
+          <div class="src-win-card__body">
+            <h3 class="src-win-card__name">2021 CHEVROLET SILVERADO 1500 HIGH COUNTRY</h3>
+            <div class="src-win-card__stats">
+              <div class="src-win-stat">
+                <span class="src-win-stat__label">Purchase Price</span>
+                <span class="src-win-stat__value">$28,900</span>
+              </div>
+              <div class="src-win-stat src-win-stat--bought">
+                <span class="src-win-stat__label">Bought</span>
+                <span class="src-win-stat__value src-win-stat__value--blue">$2,650</span>
+                <span class="src-win-stat__sub">Under Market</span>
+              </div>
+              <div class="src-win-stat src-win-stat--gross">
+                <span class="src-win-stat__label">Projected Gross</span>
+                <span class="src-win-stat__value src-win-stat__value--green">$7,150</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="src-win-card">
+          <div class="src-win-card__media">
+            <img src="assets/sourcing/wins/atlas.png" alt="2025 Volkswagen Atlas R Line" />
+          </div>
+          <div class="src-win-card__body">
+            <h3 class="src-win-card__name">2025 VOLKSWAGEN ATLAS R LINE</h3>
+            <div class="src-win-card__stats">
+              <div class="src-win-stat">
+                <span class="src-win-stat__label">Purchase Price</span>
+                <span class="src-win-stat__value">$41,200</span>
+              </div>
+              <div class="src-win-stat src-win-stat--bought">
+                <span class="src-win-stat__label">Bought</span>
+                <span class="src-win-stat__value src-win-stat__value--blue">$3,150</span>
+                <span class="src-win-stat__sub">Under Market</span>
+              </div>
+              <div class="src-win-stat src-win-stat--gross">
+                <span class="src-win-stat__label">Projected Gross</span>
+                <span class="src-win-stat__value src-win-stat__value--green">$7,850</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 5. FINAL CTA ============ -->
+    <section class="src-cta" aria-labelledby="src-cta-title">
+      <div class="src-cta__inner">
+        <img
+          class="src-cta__image"
+          src="assets/sourcing/cta/car-carrier.png?v=8"
+          alt="Car carrier truck delivering inventory on the highway"
+        />
+        <div class="src-cta__content">
+          <h2 class="src-cta__headline" id="src-cta-title">
+            POWERING YOUR<br />
+            INVENTORY PIPELINE
+          </h2>
+          <span class="src-cta__underline" aria-hidden="true"></span>
+          <p class="src-cta__text">We find. We buy. We deliver. You sell.</p>
+          <div class="src-cta__buttons">
+            <a class="btn btn--solid" href="contact.html">GET INVENTORY NOW</a>
+            <a class="btn btn--outline src-cta__btn-call" href="tel:+18885263544">
+              <svg class="src-cta__phone" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+                <path
+                  d="M7.2 4.8c.7-.3 1.5.1 1.8.7l1.4 2.9c.3.6-.1 1.4-.7 1.7l-1.6.8c1 2.2 2.8 4 5 5l.8-1.6c.3-.6 1.1-1 1.7-.7l2.9 1.4c.6.3 1 1.1.7 1.8l-.9 2.4c-.3.7-1 1.2-1.8 1.1-5.9-.5-10.7-5.3-11.2-11.2-.1-.8.4-1.5 1.1-1.8l1.8-.9z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              CALL US TODAY
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <div class="site-footer__brand">
+          <div class="site-footer__logos">
+            <img
+              class="site-footer__main-logo"
+              src="assets/Png%20File.png"
+              alt="Lane Logic — Buy More / Drive Profit"
+            />
+            <span class="site-footer__divider" aria-hidden="true"></span>
+            <img
+              class="site-footer__academy-logo"
+              src="assets/Png%20File%202.png"
+              alt="Lane Logic Academy"
+            />
+          </div>
+          <p class="site-footer__tagline">
+            Helping dealers buy smarter inventory and build stronger teams.
+          </p>
+        </div>
+
+        <nav class="site-footer__nav-col" aria-label="Footer navigation">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="site-footer__links">
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__newsletter">
+          <h3 class="site-footer__heading">Stay Ahead of the Market</h3>
+          <p class="site-footer__newsletter-text">
+            Get inventory tips, training updates, and dealer growth strategies delivered to your inbox.
+          </p>
+          <form class="site-footer__form" action="#" method="post">
+            <input
+              class="site-footer__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              aria-label="Enter your email"
+            />
+            <button class="site-footer__subscribe" type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="site-footer__social" aria-label="Social media">
+            <a class="site-footer__social-link" href="#" aria-label="Facebook">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <text x="9" y="25" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">f</text>
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="LinkedIn">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 32" aria-hidden="true">
+                <text x="2" y="24" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">in</text>
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="YouTube">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 28" aria-hidden="true">
+                <rect x="1" y="1" width="38" height="26" rx="7" fill="currentColor" />
+                <path d="M17 8.5L28 14L17 19.5V8.5Z" fill="#FFFFFF" />
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="Instagram">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2.6" />
+                <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="2.6" />
+                <circle cx="23.2" cy="8.8" r="1.8" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__legal">
+        <p class="site-footer__copyright">&copy; 2024 Lane Logic. All rights reserved.</p>
+        <p class="site-footer__credit">
+          Designed by Ashar |
+          <a href="https://www.owlisticstudio.com" target="_blank" rel="noopener noreferrer">www.owlisticstudio.com</a>
+        </p>
+        <p class="site-footer__policies">
+          <a href="#">Privacy Policy</a>
+          <span aria-hidden="true">|</span>
+          <a href="#">Terms of Use</a>
+        </p>
+      </div>
     </footer>
   </div>
   <script src="mobile.js"></script>

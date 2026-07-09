@@ -1240,10 +1240,18 @@
   }
 
   .site-footer__legal {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    justify-items: start;
     gap: 10px;
     padding-top: 20px;
+  }
+
+  .site-footer__copyright,
+  .site-footer__credit,
+  .site-footer__policies {
+    justify-self: start;
+    text-align: left;
+    white-space: normal;
   }
 
   /* ----- Shared mobile page footer ----- */

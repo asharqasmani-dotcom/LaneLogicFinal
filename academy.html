@@ -1,17 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lane Logic Academy — Train Better Buyers</title>
+  <title>Academy — Lane Logic</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="mobile.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="mobile.css?v=8" />
+  <link rel="stylesheet" href="academy.css?v=12" />
 </head>
 <body>
   <div class="page">
+    <!-- ============ HEADER ============ -->
     <header class="header">
       <div class="header__logos">
         <img class="header__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
@@ -42,61 +48,437 @@
       <a class="mobile-nav__link" href="connect.html">WAYS TO CONNECT</a>
     </nav>
 
-    <main class="m-page">
-      <section class="m-hero">
-        <h1 class="m-hero__headline">TRAIN BETTER BUYERS.<br />BUY BETTER CARS.</h1>
-        <img class="m-hero__image" src="assets/academy/banner.png" alt="Lane Logic Academy training session" />
-        <p class="m-hero__text">
-          Lane Logic Academy turns your team into confident, top-performing buyers who make smarter decisions and drive more gross.
+    <!-- ============ 1. HERO ============ -->
+    <section class="ac-hero" aria-label="Lane Logic Academy training">
+      <div class="ac-hero__content">
+        <p class="ac-hero__eyebrow">THE #1 TRAINING FOR AUCTION &amp; PRIVATE-PARTY BUYERS</p>
+        <h1 class="ac-hero__headline">
+          LEARN IT.<br />
+          BUY IT.<br />
+          PROFIT.
+        </h1>
+        <div class="ac-hero__script-wrap">
+          <p class="ac-hero__script">MASTER THE GAME.</p>
+          <svg class="ac-hero__brush" viewBox="0 0 280 22" fill="none" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M4 14 C 40 7, 100 6, 160 10 C 210 13, 250 14, 276 10" stroke="#0233E3" stroke-width="7" stroke-linecap="round" />
+            <path d="M10 15 C 60 10, 130 11, 200 13 C 240 14, 265 12, 274 11" stroke="#0233E3" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+          </svg>
+        </div>
+        <p class="ac-hero__text">
+          Lane Logic Academy gives you the real-world skills, strategies, and confidence to buy better vehicles and maximize profits at auctions and in the private market.
         </p>
-        <div class="m-hero__actions">
-          <a class="btn btn--solid" href="contact.html">TRAIN MY TEAM</a>
-          <a class="btn btn--outline" href="academy.html">ACADEMY OVERVIEW</a>
+        <div class="ac-hero__buttons">
+          <a class="btn btn--solid" href="#ac-programs">
+            VIEW COURSES
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--outline" href="contact.html">
+            ENROLL NOW
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
-      </section>
-
-      <section class="m-stats-card">
-        <h2 class="m-stats-card__title">REAL RESULTS FROM BETTER BUYERS</h2>
-        <div class="m-stats-card__list">
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/impact/normalized/chart.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>Higher Gross</strong><span>Better cars. Better margins.</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/impact/normalized/dollar.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>Fewer Mistakes</strong><span>Avoid costly buys and surprises.</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/impact/normalized/arrow.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>Stronger Profits</strong><span>Buy right. Sell right. Every time.</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/impact/normalized/time.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>More Confidence</strong><span>Your team will know what to chase.</span></div>
-          </div>
-          <div class="m-stats-card__item">
-            <img class="m-stats-card__icon" src="assets/impact/normalized/people.png" alt="" aria-hidden="true" />
-            <div class="m-stats-card__copy"><strong>Build A Team</strong><span>Create buyers who perform at every lane.</span></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="m-footer">
-      <div class="m-footer__logos">
-        <img class="m-footer__main-logo" src="assets/Png%20File.png" alt="Lane Logic" />
-        <span class="m-footer__divider" aria-hidden="true"></span>
-        <img class="m-footer__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
       </div>
-      <p class="m-footer__tagline">Helping dealers buy smarter inventory and build stronger teams.</p>
-      <nav class="m-footer__links" aria-label="Footer navigation">
-        <a href="sourcing.html">Sourcing</a>
-        <a href="academy.html">Academy</a>
-        <a href="success-stories.html">Success Stories</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p class="m-footer__copy">&copy; 2024 Lane Logic. All rights reserved.</p>
+      <div class="ac-hero__media">
+        <img
+          class="ac-hero__image"
+          src="assets/academy/hero/hero-training.png?v=3"
+          alt="Lane Logic Academy instructor teaching a classroom of buyers"
+        />
+      </div>
+    </section>
+
+    <!-- ============ 2. CERTIFICATIONS ============ -->
+    <section class="ac-certs" aria-labelledby="ac-certs-title">
+      <div class="ac-certs__panel">
+        <div class="ac-certs__copy">
+          <div class="ac-certs__heading-row">
+            <img class="ac-certs__cap" src="assets/academy/certs/cert-extra.png?v=3" alt="" aria-hidden="true" />
+            <h2 class="ac-certs__title" id="ac-certs-title">
+              <span class="ac-certs__title-black">EARN 3 INDUSTRY-RECOGNIZED</span>
+              <span class="ac-certs__title-blue">CERTIFICATIONS</span>
+            </h2>
+          </div>
+          <p class="ac-certs__sub">Stand out. Build credibility. Increase your profits.</p>
+        </div>
+        <div class="ac-certs__badges">
+          <article class="ac-cert-badge">
+            <img class="ac-cert-badge__img" src="assets/academy/certs/badge-cabs.png?v=3" alt="CABS Certified Auction Buying Specialist badge" />
+            <p class="ac-cert-badge__code">CABS&trade;</p>
+            <p class="ac-cert-badge__name">CERTIFIED AUCTION BUYING SPECIALIST</p>
+          </article>
+          <article class="ac-cert-badge">
+            <img class="ac-cert-badge__img" src="assets/academy/certs/badge-cpbs.png?v=3" alt="CPBS Certified Private-Party Buying Specialist badge" />
+            <p class="ac-cert-badge__code">CPBS&trade;</p>
+            <p class="ac-cert-badge__name">CERTIFIED PRIVATE-PARTY BUYING SPECIALIST</p>
+          </article>
+          <article class="ac-cert-badge">
+            <img class="ac-cert-badge__img" src="assets/academy/certs/badge-cmbs.png?v=3" alt="CMBS Certified Master Buying Specialist badge" />
+            <p class="ac-cert-badge__code">CMBS&trade;</p>
+            <p class="ac-cert-badge__name">CERTIFIED MASTER BUYING SPECIALIST</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. TRAINED BUYERS STRIP ============ -->
+    <section class="ac-strip ac-strip--earn" aria-label="Trained buyers earn more">
+      <div class="ac-strip__inner">
+        <img class="ac-strip__icon" src="assets/academy/strips/strip-icon-white.png" alt="" width="72" height="72" />
+        <span class="ac-strip__vdiv" aria-hidden="true"></span>
+        <p class="ac-strip__headline">
+          <span class="ac-strip__line">TRAINED BUYERS EARN AN AVERAGE OF</span>
+          <span class="ac-strip__em">$50,000+ MORE ANNUALLY.</span>
+        </p>
+        <a class="ac-strip__btn" href="contact.html">
+          <svg class="ac-strip__phone" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M7.2 4.8c.7-.3 1.5.1 1.8.7l1.4 2.9c.3.6-.1 1.4-.7 1.7l-1.6.8c1 2.2 2.8 4 5 5l.8-1.6c.3-.6 1.1-1 1.7-.7l2.9 1.4c.6.3 1 1.1.7 1.8l-.9 2.4c-.3.7-1 1.2-1.8 1.1-5.9-.5-10.7-5.3-11.2-11.2-.1-.8.4-1.5 1.1-1.8l1.8-.9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+          EARN MORE NOW
+          <svg class="ac-strip__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 4. OUR PROGRAMS ============ -->
+    <section class="ac-programs" id="ac-programs" aria-labelledby="ac-programs-title">
+      <h2 class="ac-programs__title" id="ac-programs-title">
+        <span class="ac-programs__title-black">OUR</span>
+        <span class="ac-programs__title-script">
+          <span class="ac-programs__title-blue">PROGRAMS</span>
+          <svg class="ac-programs__brush" viewBox="0 0 220 18" fill="none" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M4 11 C 40 6, 90 7, 140 10 C 175 12, 200 12, 216 9" stroke="#0233E3" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </span>
+      </h2>
+
+      <div class="ac-programs__grid">
+        <article class="ac-program-card">
+          <div class="ac-program-card__top">
+            <img class="ac-program-card__icon" src="assets/academy/programs/auction-icon.png" alt="" />
+            <div>
+              <h3 class="ac-program-card__name">AUCTION BUYER ACADEMY</h3>
+              <p class="ac-program-card__sub">Learn to dominate the auction.</p>
+            </div>
+          </div>
+          <div class="ac-program-card__mid">
+            <ul class="ac-program-card__list">
+              <li>Live auction strategies</li>
+              <li>Online auction mastery</li>
+              <li>Vehicle evaluation &amp; inspection</li>
+              <li>Negotiation techniques</li>
+              <li>Profit-driven buying formula</li>
+            </ul>
+            <div class="ac-program-card__photo-wrap">
+              <img class="ac-program-card__photo" src="assets/academy/programs/auction-photo.png" alt="Auction buyer training in progress" />
+            </div>
+          </div>
+          <div class="ac-program-card__bar">
+            <span class="ac-program-card__meta">
+              <svg class="ac-program-card__meta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              4 DAY COURSE
+            </span>
+            <span class="ac-program-card__bar-div" aria-hidden="true"></span>
+            <span class="ac-program-card__meta">
+              <svg class="ac-program-card__meta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              30 HOURS OF TRAINING
+            </span>
+          </div>
+        </article>
+
+        <article class="ac-program-card">
+          <div class="ac-program-card__top">
+            <img class="ac-program-card__icon" src="assets/academy/programs/street-icon.png" alt="" />
+            <div>
+              <h3 class="ac-program-card__name">STREET BUYER ACADEMY</h3>
+              <p class="ac-program-card__sub">Find. Inspect. Negotiate. Close.</p>
+            </div>
+          </div>
+          <div class="ac-program-card__mid">
+            <ul class="ac-program-card__list">
+              <li>Private-party sourcing</li>
+              <li>Vehicle inspections like a pro</li>
+              <li>Negotiating with confidence</li>
+              <li>Structuring the deal</li>
+              <li>Minimizing risk, maximizing profit</li>
+            </ul>
+            <div class="ac-program-card__photo-wrap">
+              <img class="ac-program-card__photo" src="assets/academy/programs/street-photo.png" alt="Street buyer inspecting a vehicle" />
+            </div>
+          </div>
+          <div class="ac-program-card__bar">
+            <span class="ac-program-card__meta">
+              <svg class="ac-program-card__meta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              1 DAY ADD-ON
+            </span>
+            <span class="ac-program-card__bar-div" aria-hidden="true"></span>
+            <span class="ac-program-card__meta">
+              <svg class="ac-program-card__meta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              8 HOURS OF TRAINING
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 5. WHY CHOOSE ============ -->
+    <section class="ac-why" aria-labelledby="ac-why-title">
+      <h2 class="ac-why__title" id="ac-why-title">
+        <span class="ac-why__title-black">WHY CHOOSE</span>
+        <span class="ac-why__title-script">
+          <span class="ac-why__title-blue">LANE LOGIC ACADEMY?</span>
+          <svg class="ac-why__brush" viewBox="0 0 360 18" fill="none" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M4 11 C 60 6, 140 7, 220 10 C 280 12, 330 12, 356 9" stroke="#0233E3" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </span>
+      </h2>
+
+      <div class="ac-why__grid">
+        <article class="ac-why__item">
+          <img class="ac-why__icon" src="assets/academy/why/why-1.png" alt="" />
+          <h3 class="ac-why__heading">REAL-WORLD TRAINING</h3>
+          <span class="ac-why__rule" aria-hidden="true"></span>
+          <p class="ac-why__text">Learn from active buyers who do it every day.</p>
+        </article>
+        <article class="ac-why__item">
+          <img class="ac-why__icon" src="assets/academy/why/why-2.png" alt="" />
+          <h3 class="ac-why__heading">SMALL CLASS SIZES</h3>
+          <span class="ac-why__rule" aria-hidden="true"></span>
+          <p class="ac-why__text">Get personal attention and build real relationships.</p>
+        </article>
+        <article class="ac-why__item">
+          <img class="ac-why__icon" src="assets/academy/why/why-3.png" alt="" />
+          <h3 class="ac-why__heading">PROVEN STRATEGIES</h3>
+          <span class="ac-why__rule" aria-hidden="true"></span>
+          <p class="ac-why__text">Systems and processes that produce real results.</p>
+        </article>
+        <article class="ac-why__item">
+          <img class="ac-why__icon" src="assets/academy/why/why-4.png" alt="" />
+          <h3 class="ac-why__heading">LIFETIME SUPPORT</h3>
+          <span class="ac-why__rule" aria-hidden="true"></span>
+          <p class="ac-why__text">Access to our network, resources, and ongoing education.</p>
+        </article>
+        <article class="ac-why__item">
+          <img class="ac-why__icon" src="assets/academy/why/why-5.png" alt="" />
+          <h3 class="ac-why__heading">CONTINUING EDUCATION</h3>
+          <span class="ac-why__rule" aria-hidden="true"></span>
+          <p class="ac-why__text">Stay sharp. Stay ahead. Continue to grow.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 6. READY CTA ============ -->
+    <section class="ac-strip ac-strip--ready" aria-label="Book a call">
+      <div class="ac-strip__inner ac-strip__inner--ready">
+        <p class="ac-strip__headline ac-strip__headline--ready">
+          READY TO TAKE YOUR BUYING TO THE NEXT LEVEL?
+        </p>
+        <a class="ac-strip__btn" href="tel:+18885263544">
+          <svg class="ac-strip__phone" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M7.2 4.8c.7-.3 1.5.1 1.8.7l1.4 2.9c.3.6-.1 1.4-.7 1.7l-1.6.8c1 2.2 2.8 4 5 5l.8-1.6c.3-.6 1.1-1 1.7-.7l2.9 1.4c.6.3 1 1.1.7 1.8l-.9 2.4c-.3.7-1 1.2-1.8 1.1-5.9-.5-10.7-5.3-11.2-11.2-.1-.8.4-1.5 1.1-1.8l1.8-.9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+          BOOK A CALL
+          <svg class="ac-strip__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 7. SUCCESS STORIES ============ -->
+    <section class="ac-stories" aria-labelledby="ac-stories-title">
+      <h2 class="ac-stories__title" id="ac-stories-title">
+        <span class="ac-stories__title-black">SUCCESS STORIES.</span>
+        <span class="ac-stories__title-script">
+          <span class="ac-stories__title-blue">REAL RESULTS.</span>
+          <svg class="ac-stories__brush" viewBox="0 0 260 18" fill="none" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M4 11 C 50 6, 110 7, 170 10 C 210 12, 240 12, 256 9" stroke="#0233E3" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </span>
+      </h2>
+
+      <div class="ac-stories__grid">
+        <article class="ac-story-card">
+          <img
+            class="ac-story-card__image"
+            src="assets/academy/stories/marcus-johnson.png"
+            alt="Marcus Johnson, Used Car Director"
+          />
+          <div class="ac-story-card__body">
+            <span class="ac-story-card__quote-mark" aria-hidden="true">&ldquo;</span>
+            <p class="ac-story-card__quote">
+              Lane Logic Academy completely transformed my buying game. The systems and confidence I gained helped me increase my gross profits by over <span class="ac-story-card__em">45%</span> in just 4 months.
+            </p>
+            <div class="ac-story-card__author">
+              <span class="ac-story-card__rule" aria-hidden="true"></span>
+              <span class="ac-story-card__name">Marcus Johnson,</span>
+              <span class="ac-story-card__role">Used Car Director</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="ac-story-card">
+          <img
+            class="ac-story-card__image"
+            src="assets/academy/stories/sarah-mitchell.png"
+            alt="Sarah Mitchell, General Sales Manager"
+          />
+          <div class="ac-story-card__body">
+            <span class="ac-story-card__quote-mark" aria-hidden="true">&ldquo;</span>
+            <p class="ac-story-card__quote">
+              The training is second to none. I use what I learned every single day, and our inventory quality and profits have <span class="ac-story-card__em">never been better.</span>
+            </p>
+            <div class="ac-story-card__author">
+              <span class="ac-story-card__rule" aria-hidden="true"></span>
+              <span class="ac-story-card__name">Sarah Mitchell,</span>
+              <span class="ac-story-card__role">General Sales Manager</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 8. STATS ============ -->
+    <section class="ac-stats" aria-label="Academy results">
+      <div class="ac-stats__grid">
+        <article class="ac-stat-card">
+          <img class="ac-stat-card__icon" src="assets/academy/stats/icon-1.png" alt="" />
+          <p class="ac-stat-card__num">60+</p>
+          <h3 class="ac-stat-card__label">EXPERT INSTRUCTORS</h3>
+          <span class="ac-stat-card__rule" aria-hidden="true"></span>
+          <p class="ac-stat-card__text">Learn from the best buyers and real-world pros.</p>
+        </article>
+        <article class="ac-stat-card">
+          <img class="ac-stat-card__icon" src="assets/academy/stats/icon-2.png" alt="" />
+          <p class="ac-stat-card__num">5000+</p>
+          <h3 class="ac-stat-card__label">STUDENTS TRAINED</h3>
+          <span class="ac-stat-card__rule" aria-hidden="true"></span>
+          <p class="ac-stat-card__text">Join thousands of buyers who now buy better and profit bigger.</p>
+        </article>
+        <article class="ac-stat-card">
+          <img class="ac-stat-card__icon" src="assets/academy/stats/icon-3.png" alt="" />
+          <p class="ac-stat-card__num">15+</p>
+          <h3 class="ac-stat-card__label">YEARS OF EXPERIENCE</h3>
+          <span class="ac-stat-card__rule" aria-hidden="true"></span>
+          <p class="ac-stat-card__text">Real-world buying experience that we teach in every course.</p>
+        </article>
+        <article class="ac-stat-card">
+          <img class="ac-stat-card__icon" src="assets/academy/stats/icon-4.png" alt="" />
+          <p class="ac-stat-card__num">3</p>
+          <h3 class="ac-stat-card__label">CERTIFICATION LEVELS</h3>
+          <span class="ac-stat-card__rule" aria-hidden="true"></span>
+          <p class="ac-stat-card__text">CABS, CPBS, and CMBS — built to level up every buyer.</p>
+        </article>
+        <article class="ac-stat-card">
+          <img class="ac-stat-card__icon" src="assets/academy/stats/icon-5.png" alt="" />
+          <p class="ac-stat-card__num">50</p>
+          <h3 class="ac-stat-card__label">STATES REPRESENTED</h3>
+          <span class="ac-stat-card__rule" aria-hidden="true"></span>
+          <p class="ac-stat-card__text">Students from across the U.S. trust Lane Logic Academy.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 9. BUILT BY BUYERS CTA ============ -->
+    <section class="ac-strip ac-strip--built" aria-label="Built by buyers">
+      <div class="ac-strip__inner ac-strip__inner--built">
+        <img class="ac-strip__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+        <div class="ac-strip__copy">
+          <p class="ac-strip__headline ac-strip__headline--built">BUILT BY BUYERS. BACKED BY RESULTS.</p>
+          <p class="ac-strip__sub">Join the Lane Logic Academy community and start profiting with confidence.</p>
+        </div>
+        <a class="ac-strip__btn" href="contact.html">
+          LEARN MORE
+          <svg class="ac-strip__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <div class="site-footer__brand">
+          <div class="site-footer__logos">
+            <img
+              class="site-footer__main-logo"
+              src="assets/Png%20File.png"
+              alt="Lane Logic — Buy More / Drive Profit"
+            />
+            <span class="site-footer__divider" aria-hidden="true"></span>
+            <img
+              class="site-footer__academy-logo"
+              src="assets/Png%20File%202.png"
+              alt="Lane Logic Academy"
+            />
+          </div>
+          <p class="site-footer__tagline">
+            Helping dealers buy smarter inventory and build stronger teams.
+          </p>
+        </div>
+
+        <nav class="site-footer__nav-col" aria-label="Footer navigation">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="site-footer__links">
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__newsletter">
+          <h3 class="site-footer__heading">Stay Ahead of the Market</h3>
+          <p class="site-footer__newsletter-text">
+            Get inventory tips, training updates, and dealer growth strategies delivered to your inbox.
+          </p>
+          <form class="site-footer__form" action="#" method="post">
+            <input
+              class="site-footer__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              aria-label="Enter your email"
+            />
+            <button class="site-footer__subscribe" type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="site-footer__social" aria-label="Social media">
+            <a class="site-footer__social-link" href="#" aria-label="Facebook">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <text x="9" y="25" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">f</text>
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="LinkedIn">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 32" aria-hidden="true">
+                <text x="2" y="24" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">in</text>
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="YouTube">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 28" aria-hidden="true">
+                <rect x="1" y="1" width="38" height="26" rx="7" fill="currentColor" />
+                <path d="M17 8.5L28 14L17 19.5V8.5Z" fill="#FFFFFF" />
+              </svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="Instagram">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2.6" />
+                <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="2.6" />
+                <circle cx="23.2" cy="8.8" r="1.8" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__legal">
+        <p class="site-footer__copyright">&copy; 2024 Lane Logic. All rights reserved.</p>
+        <p class="site-footer__credit">
+          Designed by Ashar |
+          <a href="https://www.owlisticstudio.com" target="_blank" rel="noopener noreferrer">www.owlisticstudio.com</a>
+        </p>
+        <p class="site-footer__policies">
+          <a href="#">Privacy Policy</a>
+          <span aria-hidden="true">|</span>
+          <a href="#">Terms of Use</a>
+        </p>
+      </div>
     </footer>
   </div>
   <script src="mobile.js"></script>
