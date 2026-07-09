@@ -39,10 +39,8 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: right center;
-  transform: scale(1.06);
-  transform-origin: right center;
+  object-fit: cover;
+  object-position: right 42%;
   pointer-events: none;
   user-select: none;
 }
@@ -924,10 +922,6 @@
 @media (max-width: 1440px) {
   .ac-hero__stage {
     min-height: 640px;
-  }
-
-  .ac-hero__image {
-    transform: scale(1.05);
   }
 
   .ac-hero__content {
