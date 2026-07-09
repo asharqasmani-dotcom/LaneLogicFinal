@@ -832,10 +832,10 @@
 
 .ac-story-card__quote-mark {
   display: block;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 70px;
   line-height: 0.55;
   color: var(--blue);
 }
@@ -843,7 +843,7 @@
 .ac-story-card__quote {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.55;
   color: #1f1f1f;
 }
