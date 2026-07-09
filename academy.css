@@ -481,11 +481,11 @@
 
 .ac-strip__cluster--built {
   flex: none;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-  text-align: center;
+  gap: 28px 32px;
+  text-align: left;
 }
 
 .ac-strip__cluster--built .ac-strip__copy {
@@ -504,7 +504,9 @@
 }
 
 .ac-strip--built .ac-strip__academy-logo {
+  flex: none;
   height: 118px;
+  align-self: center;
 }
 
 /* =========================================================
@@ -1515,7 +1517,7 @@
   }
 
   .ac-story-card__quote {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .ac-stats {
