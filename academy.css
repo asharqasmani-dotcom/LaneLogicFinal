@@ -154,12 +154,12 @@
 
 .ac-certs__panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 16px 40px;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: 12px 36px;
   align-items: center;
-  padding: 48px 52px;
+  padding: 44px 48px;
   background: var(--white);
-  border: 5px solid var(--blue);
+  border: 6px solid var(--blue);
   border-radius: 28px;
 }
 
@@ -207,8 +207,8 @@
   margin-top: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 0.92;
+  font-size: 64px;
+  line-height: 0.9;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--blue);
@@ -250,14 +250,14 @@
 }
 
 .ac-cert-badge:not(:last-child) {
-  border-right: 2px solid #b5b5b5;
+  border-right: 2px solid #8a8a8a;
 }
 
 .ac-cert-badge__img {
   display: block;
-  width: min(214px, 100%);
+  width: min(228px, 100%);
   height: auto;
-  margin: 0 auto 12px;
+  margin: 0 auto 10px;
   object-fit: contain;
 }
 
