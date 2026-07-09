@@ -659,7 +659,7 @@
 .ac-why__title-black {
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 52px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--black);
@@ -668,7 +668,7 @@
 .ac-why__title-blue {
   font-family: "Caveat", "Comic Sans MS", cursive;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 58px;
   letter-spacing: 0.3px;
   color: var(--blue);
 }
@@ -684,9 +684,9 @@
 .ac-why__brush {
   display: block;
   width: 100%;
-  max-width: 280px;
-  height: 14px;
-  margin: 2px 0 42px;
+  max-width: 320px;
+  height: 16px;
+  margin: 4px 0 48px;
 }
 
 .ac-why__grid {
@@ -696,7 +696,7 @@
 }
 
 .ac-why__item {
-  padding: 0 18px;
+  padding: 0 22px;
   text-align: center;
 }
 
@@ -705,17 +705,18 @@
 }
 
 .ac-why__icon {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto 16px;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 18px;
   object-fit: contain;
 }
 
 .ac-why__heading {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 1.15;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--black);
@@ -723,9 +724,9 @@
 
 .ac-why__rule {
   display: block;
-  width: 36px;
-  height: 3px;
-  margin: 0 auto 12px;
+  width: 44px;
+  height: 4px;
+  margin: 0 auto 14px;
   background: var(--blue);
   border-radius: 2px;
 }
@@ -733,9 +734,10 @@
 .ac-why__text {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 17px;
   line-height: 1.45;
-  color: #2a2a2a;
+  color: #1f1f1f;
 }
 
 /* =========================================================
@@ -999,11 +1001,11 @@
   }
 
   .ac-why__title-black {
-    font-size: 36px;
+    font-size: 44px;
   }
 
   .ac-why__title-blue {
-    font-size: 42px;
+    font-size: 50px;
   }
 
   .ac-stories__title-black {
@@ -1319,15 +1321,15 @@
   }
 
   .ac-why__title-black {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .ac-why__title-blue {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .ac-why__brush {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
   }
 
   .ac-programs__title-script {
@@ -1366,7 +1368,7 @@
   .ac-why__heading {
     grid-area: heading;
     margin: 0;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .ac-why__rule {
@@ -1376,7 +1378,7 @@
 
   .ac-why__text {
     grid-area: text;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .ac-stories__title {
