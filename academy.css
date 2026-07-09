@@ -154,12 +154,12 @@
 
 .ac-certs__panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
-  gap: 20px 44px;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 16px 40px;
   align-items: center;
-  padding: 44px 48px;
+  padding: 48px 52px;
   background: var(--white);
-  border: 4px solid var(--blue);
+  border: 5px solid var(--blue);
   border-radius: 28px;
 }
 
@@ -170,18 +170,20 @@
 .ac-certs__heading-row {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
 }
 
 .ac-certs__cap {
   flex: none;
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
 .ac-certs__title-wrap {
   min-width: 0;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .ac-certs__title {
@@ -193,20 +195,20 @@
   display: block;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.05;
-  letter-spacing: 0.4px;
+  font-size: 30px;
+  line-height: 1.06;
+  letter-spacing: 0.45px;
   text-transform: uppercase;
   color: var(--black);
 }
 
 .ac-certs__title-blue {
   display: block;
-  margin-top: 2px;
+  margin-top: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 52px;
-  line-height: 0.95;
+  font-size: 60px;
+  line-height: 0.92;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--blue);
@@ -215,19 +217,19 @@
 .ac-certs__title-line {
   display: block;
   width: 100%;
-  max-width: 300px;
   height: 4px;
-  margin-top: 10px;
+  margin-top: 8px;
   background: var(--blue);
   border-radius: 2px;
 }
 
 .ac-certs__sub {
-  margin: 18px 0 0;
-  padding-left: 92px;
+  margin: 16px 0 0;
+  padding-left: 102px;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.45;
   color: #1f1f1f;
 }
 
@@ -244,39 +246,39 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  padding: 0 18px;
+  padding: 0 16px;
 }
 
 .ac-cert-badge:not(:last-child) {
-  border-right: 1px solid #d9d9d9;
+  border-right: 2px solid #b5b5b5;
 }
 
 .ac-cert-badge__img {
   display: block;
-  width: min(196px, 100%);
+  width: min(214px, 100%);
   height: auto;
-  margin: 0 auto 14px;
+  margin: 0 auto 12px;
   object-fit: contain;
 }
 
 .ac-cert-badge__code {
-  margin: 0 0 6px;
+  margin: 0 0 5px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.1;
-  letter-spacing: 0.4px;
+  font-size: 26px;
+  line-height: 1.05;
+  letter-spacing: 0.35px;
   color: var(--black);
 }
 
 .ac-cert-badge__name {
   margin: 0;
-  max-width: 190px;
+  max-width: 200px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.35;
-  letter-spacing: 0.35px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--black);
 }
@@ -942,15 +944,15 @@
   }
 
   .ac-certs__title-black {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .ac-certs__title-blue {
-    font-size: 46px;
+    font-size: 54px;
   }
 
-  .ac-certs__title-line {
-    max-width: 260px;
+  .ac-certs__sub {
+    padding-left: 102px;
   }
 
   .ac-strip__headline {
@@ -991,10 +993,6 @@
     min-height: 580px;
   }
 
-  .ac-hero__image {
-    transform: scale(1.04);
-  }
-
   .ac-hero__content {
     width: min(460px, calc(50% - 20px));
     padding-left: clamp(28px, 3.5vw, 40px);
@@ -1022,10 +1020,11 @@
     grid-template-columns: 1fr;
     gap: 32px;
     padding: 36px 32px;
+    border-width: 5px;
   }
 
   .ac-certs__sub {
-    padding-left: 92px;
+    padding-left: 102px;
   }
 
   .ac-certs__badges {
@@ -1033,7 +1032,7 @@
   }
 
   .ac-cert-badge__img {
-    width: min(170px, 100%);
+    width: min(190px, 100%);
   }
 
   .ac-strip__inner {
@@ -1158,7 +1157,7 @@
 
   .ac-certs__panel {
     padding: 24px 20px;
-    border-width: 3px;
+    border-width: 4px;
     border-radius: 22px;
   }
 
@@ -1169,27 +1168,26 @@
   }
 
   .ac-certs__cap {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
   }
 
   .ac-certs__sub {
-    padding-left: 72px;
-    font-size: 16px;
+    padding-left: 76px;
+    font-size: 15px;
   }
 
   .ac-certs__title-black {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .ac-certs__title-blue {
-    font-size: 34px;
+    font-size: 38px;
   }
 
   .ac-certs__title-line {
-    max-width: 200px;
     height: 3px;
-    margin-top: 8px;
+    margin-top: 6px;
   }
 
   .ac-certs__badges {
@@ -1199,17 +1197,17 @@
 
   .ac-cert-badge:not(:last-child) {
     border-right: none;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 2px solid #b5b5b5;
     padding-bottom: 24px;
     margin-bottom: 24px;
   }
 
   .ac-cert-badge__img {
-    width: min(150px, 72vw);
+    width: min(160px, 72vw);
   }
 
   .ac-cert-badge__code {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .ac-strip__inner {
