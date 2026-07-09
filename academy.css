@@ -436,7 +436,7 @@
 }
 
 .ac-strip__inner--earn {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .ac-strip__cluster {
@@ -446,6 +446,19 @@
   justify-content: center;
   gap: 22px;
   min-width: 0;
+}
+
+.ac-strip__cluster--earn {
+  flex: none;
+  gap: 20px;
+}
+
+.ac-strip__cluster--earn .ac-strip__icon {
+  flex: none;
+}
+
+.ac-strip__cluster--earn .ac-strip__vdiv {
+  flex: none;
 }
 
 .ac-strip__headline--earn {
@@ -1305,6 +1318,16 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+    width: 100%;
+  }
+
+  .ac-strip__cluster--earn {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ac-strip__cluster--earn .ac-strip__btn {
     width: 100%;
   }
 
