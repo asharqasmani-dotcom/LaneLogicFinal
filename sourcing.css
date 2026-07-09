@@ -29,7 +29,7 @@
   position: relative;
   display: flex;
   align-items: stretch;
-  min-height: 720px;
+  min-height: 880px;
   overflow: hidden;
   border-radius: 0 28px 28px 0;
 }
@@ -59,7 +59,7 @@
   min-height: 100%;
   width: min(520px, calc(50% - 28px));
   margin-left: 0;
-  padding: 0 12px 0 0;
+  padding: 0 12px 0 clamp(36px, 4.5vw, 56px);
 }
 
 .src-hero__eyebrow {
@@ -1094,7 +1094,7 @@
 
 @media (max-width: 1280px) {
   .src-hero__stage {
-    min-height: 640px;
+    min-height: 820px;
   }
 
   .src-hero__image {
@@ -1104,6 +1104,7 @@
 
   .src-hero__content {
     width: min(480px, calc(50% - 24px));
+    padding-left: clamp(32px, 4vw, 48px);
   }
 
   .src-hero__eyebrow {
@@ -1276,7 +1277,7 @@
 
 @media (max-width: 1100px) {
   .src-hero__stage {
-    min-height: 580px;
+    min-height: 740px;
   }
 
   .src-hero__image {
@@ -1286,6 +1287,7 @@
 
   .src-hero__content {
     width: min(460px, calc(50% - 20px));
+    padding-left: clamp(28px, 3.5vw, 40px);
   }
 
   .src-hero__eyebrow {
