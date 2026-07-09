@@ -21,25 +21,42 @@
    1. HERO
    ========================================================= */
 .src-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
-  align-items: center;
-  column-gap: 24px;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 112px;
-  min-height: 580px;
+}
+
+.src-hero__stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+  overflow: hidden;
+  border-radius: 0 28px 28px 0;
+}
+
+.src-hero__image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
 }
 
 .src-hero__content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  max-width: 620px;
-  width: 100%;
-  padding-right: 16px;
+  width: min(480px, 40vw);
+  margin-left: 50%;
+  transform: translateX(calc(-100% - 20px));
+  padding: 48px 0;
 }
 
 .src-hero__eyebrow {
@@ -138,34 +155,6 @@
 .src-hero__buttons .btn__arrow {
   width: 18px;
   height: 18px;
-}
-
-.src-hero__media {
-  position: relative;
-  z-index: 1;
-  min-width: 0;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: -80px;
-}
-
-.src-hero__image {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: none;
-  height: auto;
-  min-height: 0;
-  max-height: 560px;
-  margin-left: 0;
-  object-fit: contain;
-  object-position: right center;
-  border-radius: 0 24px 24px 0;
-  /* Asset already includes a soft left fade */
-  -webkit-mask-image: none;
-  mask-image: none;
 }
 
 /* =========================================================
@@ -1084,8 +1073,8 @@
 }
 
 @media (max-width: 1280px) {
-  .src-hero {
-    min-height: 460px;
+  .src-hero__stage {
+    min-height: 580px;
   }
 
   .src-hero__eyebrow {
@@ -1114,14 +1103,6 @@
     height: 66px;
     font-size: 18px;
     padding: 0 24px;
-  }
-
-  .src-hero__media {
-    margin-left: -48px;
-  }
-
-  .src-hero__image {
-    max-height: 500px;
   }
 
   .src-hero__buttons {
@@ -1261,8 +1242,15 @@
 }
 
 @media (max-width: 1100px) {
-  .src-hero {
-    grid-template-columns: 1fr 1fr;
+  .src-hero__stage {
+    min-height: 520px;
+  }
+
+  .src-hero__content {
+    width: min(420px, 44vw);
+    transform: translateX(calc(-100% - 16px));
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .src-hero__eyebrow {
@@ -1279,14 +1267,6 @@
 
   .src-hero__text {
     font-size: 17px;
-  }
-
-  .src-hero__media {
-    margin-left: -24px;
-  }
-
-  .src-hero__image {
-    max-height: 460px;
   }
 
   .src-hero__buttons .btn,
@@ -1394,28 +1374,33 @@
 
 @media (max-width: 900px) {
   .src-hero {
-    grid-template-columns: 1fr;
     margin-bottom: 72px;
+  }
+
+  .src-hero__stage {
+    flex-direction: column;
+    align-items: stretch;
     min-height: 0;
-  }
-
-  .src-hero__content {
-    max-width: none;
-    padding-right: 0;
-    order: 2;
-  }
-
-  .src-hero__media {
-    order: 1;
-    margin-left: 0;
+    border-radius: 22px;
   }
 
   .src-hero__image {
-    min-height: 280px;
-    max-height: 360px;
-    border-radius: 24px;
-    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 78%, transparent 100%);
-    mask-image: linear-gradient(180deg, #000 0%, #000 78%, transparent 100%);
+    position: relative;
+    inset: auto;
+    height: min(42vw, 300px);
+    min-height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 78% center;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .src-hero__content {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    transform: none;
+    padding: 28px 24px 32px;
   }
 
   .src-process__title-text {
@@ -1508,30 +1493,21 @@
   }
 
   .src-hero {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     margin-top: 8px;
   }
 
-  .src-hero__media {
-    order: 1;
-    width: 100%;
-  }
-
-  .src-hero__content {
-    order: 2;
-    margin-top: -28px;
-    padding: 0 2px;
+  .src-hero__stage {
+    border-radius: 18px;
   }
 
   .src-hero__image {
-    width: 100%;
-    min-height: 240px;
-    max-height: 300px;
+    height: min(48vw, 260px);
+    min-height: 200px;
     border-radius: 18px 18px 0 0;
-    -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
-    mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+  }
+
+  .src-hero__content {
+    padding: 0 2px 0;
   }
 
   .src-hero__eyebrow {
