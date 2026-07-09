@@ -24,9 +24,9 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: stretch;
-  margin-top: 16px;
+  margin-top: 12px;
   margin-bottom: 96px;
-  min-height: 580px;
+  min-height: 640px;
   overflow: hidden;
 }
 
@@ -36,17 +36,21 @@
   z-index: 2;
   align-self: center;
   justify-self: start;
-  max-width: min(500px, 44%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: min(540px, 46%);
   width: 100%;
-  padding: 12px 36px 12px 40px;
+  padding: 48px 24px 48px 0;
 }
 
 .ac-hero__eyebrow {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1.2px;
+  font-size: 21px;
+  letter-spacing: 1.3px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: var(--blue);
 }
@@ -55,8 +59,8 @@
   margin: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 68px;
-  line-height: 0.9;
+  font-size: 82px;
+  line-height: 0.92;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--black);
@@ -66,7 +70,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 8px 0 16px;
+  margin: 12px 0 22px;
   width: max-content;
   max-width: 100%;
 }
@@ -75,7 +79,7 @@
   margin: 0;
   font-family: "Caveat", "Comic Sans MS", cursive;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 56px;
   line-height: 0.95;
   letter-spacing: 0.35px;
   color: var(--blue);
@@ -84,27 +88,27 @@
 
 .ac-hero__brush {
   display: block;
-  width: 55%;
-  max-width: 230px;
-  height: 18px;
-  margin-top: -2px;
+  width: 58%;
+  max-width: 260px;
+  height: 20px;
+  margin-top: 0;
   overflow: visible;
 }
 
 .ac-hero__text {
-  margin: 0 0 26px;
+  margin: 0 0 32px;
   max-width: 100%;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 1.55;
+  font-size: 20px;
+  line-height: 1.6;
   color: #1f1f1f;
 }
 
 .ac-hero__buttons {
   display: flex;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
   width: fit-content;
   max-width: 100%;
@@ -114,9 +118,9 @@
   flex: 0 0 auto;
   min-width: 0 !important;
   width: auto;
-  height: 64px;
-  padding: 0 26px;
-  font-size: 17px;
+  height: 70px;
+  padding: 0 28px;
+  font-size: 19px;
   gap: 12px;
   white-space: nowrap;
 }
@@ -131,7 +135,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  min-height: 580px;
+  min-height: 640px;
   height: 100%;
   margin-left: 0;
 }
@@ -140,10 +144,10 @@
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 580px;
+  min-height: 640px;
   margin-left: 0;
   object-fit: cover;
-  object-position: left center;
+  object-position: right center;
   border-radius: 0;
 }
 
@@ -901,25 +905,29 @@
    ========================================================= */
 @media (max-width: 1440px) {
   .ac-hero {
-    min-height: 540px;
+    min-height: 600px;
   }
 
   .ac-hero__media,
   .ac-hero__image {
-    min-height: 540px;
+    min-height: 600px;
   }
 
   .ac-hero__content {
-    max-width: min(480px, 46%);
-    padding-left: 36px;
+    max-width: min(520px, 47%);
+    padding: 40px 20px 40px 0;
   }
 
   .ac-hero__headline {
-    font-size: 64px;
+    font-size: 76px;
   }
 
   .ac-hero__script {
-    font-size: 42px;
+    font-size: 52px;
+  }
+
+  .ac-hero__text {
+    font-size: 19px;
   }
 
   .ac-certs__title-black {
@@ -965,18 +973,26 @@
 
 @media (max-width: 1100px) {
   .ac-hero__content {
-    max-width: min(440px, 48%);
-    padding-left: 32px;
+    max-width: min(480px, 48%);
+    padding: 36px 16px 36px 0;
   }
 
   .ac-hero__headline {
-    font-size: 48px;
+    font-size: 58px;
+  }
+
+  .ac-hero__script {
+    font-size: 44px;
+  }
+
+  .ac-hero__text {
+    font-size: 18px;
   }
 
   .ac-hero__buttons .btn {
-    height: 58px;
-    padding: 0 18px;
-    font-size: 15px;
+    height: 62px;
+    padding: 0 22px;
+    font-size: 17px;
   }
 
   .ac-certs__panel {
