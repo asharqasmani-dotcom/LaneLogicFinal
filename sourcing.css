@@ -22,28 +22,33 @@
    ========================================================= */
 .src-hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
   align-items: center;
-  column-gap: 0;
+  column-gap: 24px;
   margin-top: 20px;
   margin-bottom: 112px;
-  min-height: 560px;
+  min-height: 580px;
 }
 
 .src-hero__content {
   position: relative;
   z-index: 3;
-  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 620px;
   width: 100%;
-  padding-right: 0;
+  padding-right: 16px;
 }
 
 .src-hero__eyebrow {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1.2px;
+  font-size: 22px;
+  letter-spacing: 1.4px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: var(--blue);
 }
@@ -52,19 +57,19 @@
   margin: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 0.9;
+  font-size: 84px;
+  line-height: 0.92;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--black);
 }
 
 .src-hero__script-wrap {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10px 0 20px;
-  width: max-content;
+  margin: 14px 0 24px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -72,7 +77,7 @@
   margin: 0;
   font-family: "Caveat", "Comic Sans MS", cursive;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 58px;
   line-height: 0.95;
   letter-spacing: 0.35px;
   color: var(--blue);
@@ -81,29 +86,29 @@
 
 .src-hero__brush {
   display: block;
-  width: 48%;
-  max-width: 210px;
-  height: 18px;
-  margin-top: -2px;
+  width: 62%;
+  max-width: 280px;
+  height: 20px;
+  margin-top: 0;
   overflow: visible;
 }
 
 .src-hero__text {
   max-width: 100%;
-  margin: 0 0 32px;
+  margin: 0 0 36px;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
+  font-size: 20px;
+  line-height: 1.6;
   color: #1f1f1f;
 }
 
 .src-hero__buttons {
   display: flex;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -115,14 +120,17 @@
 .src-hero__buttons .btn {
   min-width: 0 !important;
   width: auto;
-  height: 70px;
-  padding: 0 28px;
-  font-size: 18px;
+  height: 72px;
+  padding: 0 30px;
+  font-size: 20px;
   gap: 12px;
   white-space: nowrap;
 }
 
-.src-hero__buttons .btn--solid,
+.src-hero__buttons .btn--solid {
+  min-width: 0 !important;
+}
+
 .src-hero__buttons .btn--outline {
   min-width: 0 !important;
 }
@@ -139,20 +147,22 @@
   align-self: stretch;
   display: flex;
   align-items: center;
-  margin-left: -112px;
+  justify-content: flex-end;
+  margin-left: -80px;
 }
 
 .src-hero__image {
   position: relative;
-  width: 136%;
+  display: block;
+  width: 100%;
   max-width: none;
-  height: 100%;
-  min-height: 520px;
-  max-height: 620px;
-  margin-left: -18%;
-  object-fit: cover;
-  object-position: 54% center;
-  border-radius: 0;
+  height: auto;
+  min-height: 0;
+  max-height: 560px;
+  margin-left: 0;
+  object-fit: contain;
+  object-position: right center;
+  border-radius: 0 24px 24px 0;
   /* Asset already includes a soft left fade */
   -webkit-mask-image: none;
   mask-image: none;
@@ -994,16 +1004,24 @@
    LARGE DESKTOP / LAPTOP TUNING
    ========================================================= */
 @media (max-width: 1440px) {
+  .src-hero__eyebrow {
+    font-size: 20px;
+  }
+
   .src-hero__headline {
-    font-size: 64px;
+    font-size: 76px;
   }
 
   .src-hero__script {
-    font-size: 44px;
+    font-size: 52px;
+  }
+
+  .src-hero__text {
+    font-size: 19px;
   }
 
   .src-hero__brush {
-    height: 16px;
+    height: 18px;
   }
 
   .src-how__headline {
@@ -1028,28 +1046,40 @@
     min-height: 460px;
   }
 
+  .src-hero__eyebrow {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
   .src-hero__headline {
-    font-size: 62px;
+    font-size: 68px;
   }
 
   .src-hero__script {
-    font-size: 40px;
+    font-size: 48px;
+  }
+
+  .src-hero__text {
+    font-size: 18px;
+    margin-bottom: 30px;
   }
 
   .src-hero__brush {
-    height: 14px;
+    height: 16px;
+  }
+
+  .src-hero__buttons .btn {
+    height: 66px;
+    font-size: 18px;
+    padding: 0 24px;
   }
 
   .src-hero__media {
-    margin-left: -72px;
+    margin-left: -48px;
   }
 
   .src-hero__image {
-    width: 128%;
-    margin-left: -14%;
-    min-height: 440px;
-    max-height: 540px;
-    object-position: 56% center;
+    max-height: 500px;
   }
 
   .src-hero__buttons {
@@ -1166,18 +1196,28 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .src-hero__eyebrow {
+    font-size: 17px;
+  }
+
   .src-hero__headline {
-    font-size: 48px;
+    font-size: 54px;
+  }
+
+  .src-hero__script {
+    font-size: 42px;
+  }
+
+  .src-hero__text {
+    font-size: 17px;
   }
 
   .src-hero__media {
-    margin-left: -32px;
+    margin-left: -24px;
   }
 
   .src-hero__image {
-    width: 118%;
-    margin-left: -8%;
-    object-position: 62% center;
+    max-height: 460px;
   }
 
   .src-hero__buttons .btn,
