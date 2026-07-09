@@ -156,107 +156,129 @@
 
 .ac-certs__panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
-  gap: 32px 40px;
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
+  gap: 20px 44px;
   align-items: center;
-  padding: 40px 44px;
+  padding: 44px 48px;
   background: var(--white);
-  border: 3px solid var(--blue);
+  border: 4px solid var(--blue);
   border-radius: 28px;
+}
+
+.ac-certs__copy {
+  min-width: 0;
 }
 
 .ac-certs__heading-row {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
 }
 
 .ac-certs__cap {
   flex: none;
-  width: 64px;
-  height: 64px;
-  margin-top: 4px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
-  background: #fff;
+}
+
+.ac-certs__title-wrap {
+  min-width: 0;
 }
 
 .ac-certs__title {
   margin: 0;
-  line-height: 1.05;
+  line-height: 1;
 }
 
 .ac-certs__title-black {
   display: block;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 1.05;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--black);
 }
 
 .ac-certs__title-blue {
-  display: inline-block;
-  margin-top: 4px;
+  display: block;
+  margin-top: 2px;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 0.4px;
+  font-size: 52px;
+  line-height: 0.95;
+  letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--blue);
-  border-bottom: 4px solid var(--blue);
-  padding-bottom: 2px;
+}
+
+.ac-certs__title-line {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 4px;
+  margin-top: 10px;
+  background: var(--blue);
+  border-radius: 2px;
 }
 
 .ac-certs__sub {
-  margin: 14px 0 0 80px;
+  margin: 18px 0 0;
+  padding-left: 92px;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.45;
-  color: #2a2a2a;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1f1f1f;
 }
 
 .ac-certs__badges {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  align-items: start;
+  gap: 0;
+  align-items: stretch;
 }
 
 .ac-cert-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-  padding: 0 8px;
+  padding: 0 18px;
 }
 
 .ac-cert-badge:not(:last-child) {
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #d9d9d9;
 }
 
 .ac-cert-badge__img {
   display: block;
-  width: min(160px, 100%);
+  width: min(196px, 100%);
   height: auto;
-  margin: 0 auto 12px;
+  margin: 0 auto 14px;
   object-fit: contain;
-  background: #fff;
 }
 
 .ac-cert-badge__code {
-  margin: 0 0 4px;
+  margin: 0 0 6px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 1.1;
   letter-spacing: 0.4px;
   color: var(--black);
 }
 
 .ac-cert-badge__name {
   margin: 0;
+  max-width: 190px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 600;
-  font-size: 13px;
-  line-height: 1.25;
-  letter-spacing: 0.3px;
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--black);
 }
@@ -926,11 +948,15 @@
   }
 
   .ac-certs__title-black {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .ac-certs__title-blue {
-    font-size: 36px;
+    font-size: 46px;
+  }
+
+  .ac-certs__title-line {
+    max-width: 260px;
   }
 
   .ac-strip__headline {
@@ -1000,15 +1026,20 @@
 
   .ac-certs__panel {
     grid-template-columns: 1fr;
-    padding: 32px 28px;
+    gap: 32px;
+    padding: 36px 32px;
+  }
+
+  .ac-certs__sub {
+    padding-left: 92px;
   }
 
   .ac-certs__badges {
-    gap: 12px;
+    gap: 0;
   }
 
   .ac-cert-badge__img {
-    width: min(140px, 100%);
+    width: min(170px, 100%);
   }
 
   .ac-strip__inner {
@@ -1132,47 +1163,59 @@
   }
 
   .ac-certs__panel {
-    padding: 24px 18px;
-    border-width: 2px;
+    padding: 24px 20px;
+    border-width: 3px;
     border-radius: 22px;
   }
 
   .ac-certs__heading-row {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
   }
 
   .ac-certs__cap {
-    width: 48px;
-    height: 48px;
-    margin-top: 0;
+    width: 56px;
+    height: 56px;
   }
 
   .ac-certs__sub {
-    margin-left: 0;
+    padding-left: 72px;
+    font-size: 16px;
   }
 
   .ac-certs__title-black {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .ac-certs__title-blue {
-    font-size: 30px;
+    font-size: 34px;
+  }
+
+  .ac-certs__title-line {
+    max-width: 200px;
+    height: 3px;
+    margin-top: 8px;
   }
 
   .ac-certs__badges {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 0;
   }
 
   .ac-cert-badge:not(:last-child) {
     border-right: none;
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   .ac-cert-badge__img {
-    width: min(180px, 70%);
+    width: min(150px, 72vw);
+  }
+
+  .ac-cert-badge__code {
+    font-size: 22px;
   }
 
   .ac-strip__inner {
