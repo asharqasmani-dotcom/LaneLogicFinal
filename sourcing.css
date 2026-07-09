@@ -175,12 +175,20 @@
   margin-bottom: 112px;
 }
 
+.src-process__panel {
+  background: var(--white);
+  border: var(--src-card-border);
+  border-radius: 28px;
+  padding: 48px 36px 44px;
+  box-shadow: var(--src-shadow);
+}
+
 .src-process__title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 28px;
-  margin: 0 0 52px;
+  margin: 0 0 48px;
   text-align: center;
 }
 
@@ -224,7 +232,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 12px 8px;
+  gap: 16px 6px;
   margin: 0;
   padding: 0;
 }
@@ -235,15 +243,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 .src-process__step:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 98px;
-  left: calc(50% + 46px);
-  width: calc(100% - 60px);
+  top: 68px;
+  left: calc(50% + 68px);
+  width: calc(100% - 72px);
   height: 0;
   border-top: 2px dotted #8b9198;
   pointer-events: none;
@@ -252,8 +260,8 @@
 .src-process__step:not(:last-child)::before {
   content: "";
   position: absolute;
-  top: 94px;
-  right: -4px;
+  top: 64px;
+  right: -2px;
   width: 0;
   height: 0;
   border-top: 5px solid transparent;
@@ -263,38 +271,71 @@
   z-index: 1;
 }
 
+.src-process__icon-wrap {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  margin: 0 auto 18px;
+}
+
+.src-process__ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--blue);
+  border-radius: 50%;
+  background: var(--white);
+}
+
 .src-process__num {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 16px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
   border-radius: 50%;
   background: var(--blue);
   color: var(--white);
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
+  box-shadow: 0 2px 8px rgba(var(--brand-blue-rgb), 0.25);
 }
 
 .src-process__icon {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 16px;
+  width: 62px;
+  height: 62px;
+  margin: 0;
   object-fit: contain;
 }
 
 .src-process__step-title {
-  margin: 0 0 10px;
+  margin: 0;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.3px;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--black);
+}
+
+.src-process__step-title::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: var(--blue);
+  border-radius: 2px;
 }
 
 .src-process__desc,
@@ -1104,13 +1145,36 @@
     font-size: 48px;
   }
 
+  .src-process__panel {
+    padding: 40px 24px 36px;
+  }
+
+  .src-process__icon-wrap {
+    width: 118px;
+    height: 118px;
+    margin-bottom: 16px;
+  }
+
   .src-process__icon {
-    width: 64px;
-    height: 64px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .src-process__num {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    left: 8px;
   }
 
   .src-process__step-title {
-    font-size: 14px;
+    font-size: 17px;
+  }
+
+  .src-process__step-title::after {
+    width: 38px;
+    height: 3px;
+    margin-top: 8px;
   }
 
   .src-strip__inner {
@@ -1142,12 +1206,13 @@
   }
 
   .src-process__step:not(:last-child)::after {
-    top: 90px;
-    left: calc(50% + 40px);
+    top: 59px;
+    left: calc(50% + 59px);
+    width: calc(100% - 64px);
   }
 
   .src-process__step:not(:last-child)::before {
-    top: 86px;
+    top: 55px;
   }
 
   .src-how {
@@ -1514,7 +1579,12 @@
     text-align: center;
   }
 
-  /* Process — stacked timeline cards */
+  /* Process — stacked cards with icon rings */
+  .src-process__panel {
+    padding: 28px 18px 24px;
+    border-radius: 22px;
+  }
+
   .src-process__title {
     gap: 12px;
     margin-bottom: 28px;
@@ -1542,19 +1612,16 @@
 
   .src-process__step {
     display: grid;
-    grid-template-columns: 42px 56px 1fr;
-    grid-template-areas:
-      "num icon title"
-      "num icon body";
-    column-gap: 12px;
-    row-gap: 4px;
-    align-items: start;
+    grid-template-columns: 84px 1fr;
+    grid-template-areas: "icon title";
+    column-gap: 14px;
+    align-items: center;
     text-align: left;
-    padding: 16px 14px 16px 12px;
-    background: var(--white);
+    padding: 16px 14px;
+    background: #fafafa;
     border: var(--src-card-border);
     border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
   }
 
   .src-process__step:not(:last-child)::after,
@@ -1562,28 +1629,40 @@
     display: none;
   }
 
+  .src-process__icon-wrap {
+    grid-area: icon;
+    width: 72px;
+    height: 72px;
+    margin: 0;
+  }
+
+  .src-process__ring {
+    border-width: 2.5px;
+  }
+
   .src-process__num {
-    grid-area: num;
-    width: 34px;
-    height: 34px;
-    margin: 4px 0 0;
-    font-size: 16px;
-    position: relative;
-    z-index: 1;
+    top: -4px;
+    left: -2px;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
   }
 
   .src-process__icon {
-    grid-area: icon;
-    width: 48px;
-    height: 48px;
-    margin: 0;
+    width: 38px;
+    height: 38px;
   }
 
   .src-process__step-title {
     grid-area: title;
     margin: 0;
-    font-size: 15px;
-    line-height: 1.2;
+    font-size: 17px;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .src-process__step-title::after {
+    margin: 8px 0 0;
   }
 
   .src-process__desc,
@@ -1603,19 +1682,6 @@
 
   .src-process__list li {
     width: auto;
-  }
-
-  /* Vertical timeline connector through numbers */
-  .src-process__grid::before {
-    content: "";
-    position: absolute;
-    left: 28px;
-    top: 34px;
-    bottom: 34px;
-    width: 0;
-    border-left: 2px dotted #c5c5c5;
-    pointer-events: none;
-    z-index: 0;
   }
 
   /* How we source */
@@ -1887,18 +1953,23 @@
   }
 
   .src-process__step {
-    grid-template-columns: 34px 44px 1fr;
-    column-gap: 8px;
+    grid-template-columns: 72px 1fr;
+    column-gap: 10px;
     padding: 14px 12px;
   }
 
-  .src-process__icon {
-    width: 42px;
-    height: 42px;
+  .src-process__icon-wrap {
+    width: 64px;
+    height: 64px;
   }
 
-  .src-process__grid::before {
-    left: 24px;
+  .src-process__icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .src-process__step-title {
+    font-size: 15px;
   }
 
   .src-result-card__quote {
