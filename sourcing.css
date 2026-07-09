@@ -28,7 +28,7 @@
 .src-hero__stage {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   min-height: 720px;
   overflow: hidden;
   border-radius: 0 28px 28px 0;
