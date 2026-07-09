@@ -150,8 +150,8 @@
    ========================================================= */
 .ac-certs {
   margin-bottom: 112px;
-  --ac-cert-cap: 108px;
-  --ac-cert-cap-gap: 20px;
+  --ac-cert-cap: 120px;
+  --ac-cert-cap-gap: 22px;
 }
 
 .ac-certs__panel {
@@ -1252,7 +1252,7 @@
   }
 
   .ac-certs__copy {
-    --ac-cert-cap: 72px;
+    --ac-cert-cap: 80px;
     --ac-cert-cap-gap: 16px;
     row-gap: 10px;
   }
