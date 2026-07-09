@@ -454,7 +454,32 @@
 }
 
 .ac-strip__inner--built {
+  justify-content: center;
   gap: 28px 32px;
+}
+
+.ac-strip__cluster--built {
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.ac-strip__cluster--built .ac-strip__copy {
+  flex: none;
+  text-align: center;
+}
+
+.ac-strip__headline--built {
+  font-size: 30px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.ac-strip__cluster--built .ac-strip__sub {
+  text-align: center;
 }
 
 .ac-strip--built .ac-strip__academy-logo {
@@ -888,7 +913,7 @@
    8. STATS
    ========================================================= */
 .ac-stats {
-  margin-bottom: 40px;
+  margin-bottom: 96px;
 }
 
 .ac-stats__grid {
@@ -924,6 +949,13 @@
   line-height: 1;
   letter-spacing: 0.4px;
   color: var(--blue);
+}
+
+.ac-stat-card:nth-child(-n + 3) .ac-stat-card__num {
+  font-size: 58px;
+  font-weight: 700;
+  font-family: "Oswald", "Barlow Condensed", "Anton", sans-serif;
+  letter-spacing: 0.2px;
 }
 
 .ac-stat-card__label {
@@ -1290,6 +1322,18 @@
     width: 100%;
   }
 
+  .ac-strip__inner--built {
+    align-items: center;
+  }
+
+  .ac-strip__cluster--built {
+    width: 100%;
+  }
+
+  .ac-strip__cluster--built .ac-strip__btn {
+    width: 100%;
+  }
+
   .ac-strip__vdiv {
     display: none;
   }
@@ -1439,8 +1483,12 @@
     padding: 20px 18px 22px;
   }
 
+  .ac-story-card__quote {
+    font-size: 17px;
+  }
+
   .ac-stats {
-    margin-bottom: 24px;
+    margin-bottom: 56px;
   }
 
   .ac-stats__grid {
@@ -1474,6 +1522,10 @@
     grid-area: num;
     margin: 0;
     font-size: 36px;
+  }
+
+  .ac-stat-card:nth-child(-n + 3) .ac-stat-card__num {
+    font-size: 44px;
   }
 
   .ac-stat-card__label {
