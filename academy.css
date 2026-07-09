@@ -1359,7 +1359,14 @@
   }
 
   .ac-strip__cluster--built {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
     width: 100%;
+  }
+
+  .ac-strip__cluster--built .ac-strip__academy-logo {
+    height: 96px;
   }
 
   .ac-strip__cluster--built .ac-strip__btn {
