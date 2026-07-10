@@ -113,18 +113,36 @@ img {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(680px, 0.98fr) 1.02fr;
+  grid-template-columns: minmax(560px, 1fr) 1fr;
   align-items: center;
   column-gap: 0;
   margin-top: 24px;
   margin-bottom: 96px;
-  min-height: 470px;
+  min-height: 0;
+}
+
+.hero__visual {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  z-index: 0;
+  pointer-events: none;
+  line-height: 0;
+}
+
+.hero__banner {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero__left {
+  grid-column: 1;
+  grid-row: 1;
   position: relative;
   z-index: 3;
-  padding-top: 4px;
+  align-self: center;
+  max-width: 720px;
+  padding: 48px 0 56px;
 }
 
 .hero__headline {
@@ -195,41 +213,6 @@ img {
   border: 2px solid var(--border-blue);
 }
 
-/* ----- Hero right (truck + patterns) ----- */
-.hero__right {
-  position: relative;
-  z-index: 1;
-  min-height: 470px;
-}
-
-.hero__pattern {
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero__pattern--target {
-  width: 330px;
-  left: 4%;
-  top: 0;
-  opacity: 0.85;
-}
-
-.hero__pattern--streak {
-  width: 150%;
-  right: -2%;
-  top: -10%;
-  opacity: 1;
-}
-
-.hero__truck {
-  position: relative;
-  z-index: 2;
-  width: 132%;
-  max-width: none;
-  margin-left: -18%;
-  margin-top: 4px;
-}
 
 /* ============ STATS STRIP ============ */
 .stats {
@@ -2341,26 +2324,16 @@ img {
   }
   .hero {
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    row-gap: 0;
     min-height: 0;
     text-align: left;
   }
-  .hero__right {
-    min-height: 0;
-    order: 2;
+  .hero__left {
+    padding: 36px 0 28px;
+    max-width: none;
   }
   .hero__buttons {
     flex-wrap: wrap;
-  }
-  .hero__truck {
-    width: 100%;
-    margin-left: 0;
-  }
-  .hero__pattern--target {
-    width: 220px;
-  }
-  .hero__pattern--streak {
-    width: 360px;
   }
   .stats__grid {
     grid-template-columns: repeat(2, 1fr);
