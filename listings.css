@@ -1,0 +1,1508 @@
+/* =========================================================
+   Listings page — scoped under .listings-page
+   Does not modify homepage, sourcing, or academy styles.
+   ========================================================= */
+
+.listings-page {
+  scroll-behavior: smooth;
+}
+
+.listings-page .lst-hero,
+.listings-page .lst-hiw,
+.listings-page .lst-guarantee,
+.listings-page .lst-why,
+.listings-page .lst-gstrip,
+.listings-page .lst-featured,
+.listings-page .lst-stories,
+.listings-page .lst-actions {
+  --lst-radius: 24px;
+  --lst-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  --lst-border: 1px solid #e8e8e8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listings-page {
+    scroll-behavior: auto;
+  }
+}
+
+/* =========================================================
+   1. HERO
+   ========================================================= */
+.listings-page .lst-hero {
+  margin-top: 12px;
+  margin-bottom: 112px;
+}
+
+.listings-page .lst-hero__stage {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 880px;
+  overflow: hidden;
+  border-radius: 0 28px 28px 0;
+}
+
+.listings-page .lst-hero__stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 38%,
+    rgba(255, 255, 255, 0.92) 44%,
+    rgba(255, 255, 255, 0.55) 52%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  pointer-events: none;
+}
+
+.listings-page .lst-hero__image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.listings-page .lst-hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  min-height: 100%;
+  width: min(560px, calc(52% - 20px));
+  padding: 0 12px 0 clamp(36px, 4.5vw, 56px);
+}
+
+.listings-page .lst-hero__eyebrow {
+  margin: 0 0 18px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.listings-page .lst-hero__headline {
+  margin: 0;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 0.92;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-hero__headline-blue {
+  color: var(--blue);
+}
+
+.listings-page .lst-hero__text {
+  margin: 20px 0 24px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #1f1f1f;
+}
+
+.listings-page .lst-hero__bullets {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.listings-page .lst-hero__bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #1f1f1f;
+}
+
+.listings-page .lst-check {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  color: var(--blue);
+}
+
+.listings-page .lst-hero__buttons .btn {
+  min-width: 0 !important;
+  height: 72px;
+  padding: 0 32px;
+  font-size: 20px;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   2. HOW IT WORKS
+   ========================================================= */
+.listings-page .lst-hiw {
+  margin-bottom: 112px;
+}
+
+.listings-page .lst-hiw__panel {
+  background: var(--blue);
+  border-radius: 28px;
+  padding: 48px 40px 44px;
+  box-shadow: 0 10px 28px rgba(2, 51, 227, 0.22);
+}
+
+.listings-page .lst-hiw__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin: 0 0 44px;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.listings-page .lst-hiw__title-line {
+  flex: 1;
+  max-width: 280px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.listings-page .lst-hiw__steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.listings-page .lst-hiw__step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.listings-page .lst-hiw__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 72px;
+  right: 0;
+  width: 1px;
+  height: calc(100% - 40px);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.listings-page .lst-hiw__icon-wrap {
+  position: relative;
+  width: 142px;
+  height: 142px;
+  margin: 0 auto 18px;
+}
+
+.listings-page .lst-hiw__ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.listings-page .lst-hiw__num {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--blue);
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.listings-page .lst-hiw__icon {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+}
+
+.listings-page .lst-hiw__step-title {
+  margin: 0 0 10px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.listings-page .lst-hiw__step-text {
+  margin: 0;
+  max-width: 220px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.listings-page .lst-hiw__ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+}
+
+.listings-page .lst-hiw__or {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--white);
+}
+
+.listings-page .lst-hiw__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 70px;
+  padding: 0 32px;
+  border-radius: 9px;
+  background: var(--white);
+  color: var(--blue);
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.listings-page .lst-hiw__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.listings-page .lst-hiw__btn-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.listings-page .lst-hiw__btn-arrow {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* =========================================================
+   3. BUY WITH CONFIDENCE
+   ========================================================= */
+.listings-page .lst-guarantee {
+  margin-bottom: 112px;
+}
+
+.listings-page .lst-guarantee__panel {
+  border: 3px solid var(--blue);
+  border-radius: 28px;
+  padding: 44px 40px 0;
+  background: var(--white);
+  box-shadow: var(--lst-shadow);
+  overflow: hidden;
+}
+
+.listings-page .lst-guarantee__main {
+  display: grid;
+  grid-template-columns: minmax(140px, 180px) minmax(0, 1fr) minmax(240px, 320px);
+  gap: 32px 36px;
+  align-items: start;
+  padding-bottom: 36px;
+}
+
+.listings-page .lst-guarantee__badge {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.listings-page .lst-guarantee__eyebrow {
+  margin: 0 0 10px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-guarantee__title {
+  margin: 0 0 16px;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 0.95;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-guarantee__title-blue {
+  color: var(--blue);
+}
+
+.listings-page .lst-guarantee__lead {
+  margin: 0 0 12px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: #1f1f1f;
+}
+
+.listings-page .lst-guarantee__body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.listings-page .lst-guarantee__em {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.listings-page .lst-guarantee__reqs {
+  border-left: 2px solid #e0e0e0;
+  padding-left: 28px;
+}
+
+.listings-page .lst-guarantee__reqs-title {
+  margin: 0 0 16px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-guarantee__reqs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.listings-page .lst-guarantee__reqs-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #333;
+}
+
+.listings-page .lst-guarantee__req-icon {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin-top: 1px;
+}
+
+.listings-page .lst-guarantee__features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 28px 16px;
+  background: #eef2ff;
+  border-top: 1px solid #d8e0ff;
+}
+
+.listings-page .lst-guarantee__features li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 0 12px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.25;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-guarantee__features li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 1px;
+  height: 80%;
+  background: #c5cff5;
+}
+
+.listings-page .lst-guarantee__feat-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* =========================================================
+   4. WHY DEALERS CHOOSE
+   ========================================================= */
+.listings-page .lst-why {
+  margin-bottom: 112px;
+}
+
+.listings-page .lst-why__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px 48px;
+  align-items: start;
+}
+
+.listings-page .lst-why__title {
+  margin: 0;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 0.95;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-why__underline {
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 12px 0 24px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.listings-page .lst-why__text {
+  margin: 0 0 16px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #1f1f1f;
+}
+
+.listings-page .lst-why__benefits {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 28px;
+}
+
+.listings-page .lst-why__benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.listings-page .lst-why__benefit-icon {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.listings-page .lst-why__benefit-title {
+  margin: 0 0 4px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-why__benefit-text {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.listings-page .lst-why__promise {
+  border: var(--lst-border);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--lst-shadow);
+}
+
+.listings-page .lst-why__promise-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 24px 16px;
+}
+
+.listings-page .lst-why__promise-check {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.listings-page .lst-why__promise-title {
+  margin: 0 0 8px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-why__promise-text {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #333;
+}
+
+.listings-page .lst-why__promise-visual {
+  position: relative;
+}
+
+.listings-page .lst-why__truck {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.listings-page .lst-why__promise-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.listings-page .lst-why__promise-bar p {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.listings-page .lst-why__promise-thumb {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* =========================================================
+   5. GUARANTEE CTA STRIP
+   ========================================================= */
+.listings-page .lst-gstrip {
+  margin-bottom: 112px;
+}
+
+.listings-page .lst-gstrip__panel {
+  border: 6px solid var(--white);
+  border-radius: 28px;
+  padding: 40px 36px 36px;
+  background: var(--blue);
+  box-shadow: 0 10px 28px rgba(2, 51, 227, 0.22), inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+.listings-page .lst-gstrip__values {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.listings-page .lst-gstrip__values li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 0 20px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.listings-page .lst-gstrip__values li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  right: 0;
+  width: 1px;
+  height: 84%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.listings-page .lst-gstrip__icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.listings-page .lst-gstrip__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+}
+
+.listings-page .lst-gstrip__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  min-width: 220px;
+  padding: 0 36px;
+  border-radius: 9px;
+  background: var(--white);
+  color: var(--blue);
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.listings-page .lst-gstrip__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================================
+   6. FEATURED LISTINGS
+   ========================================================= */
+.listings-page .lst-featured {
+  margin-bottom: 112px;
+  scroll-margin-top: 24px;
+}
+
+.listings-page .lst-featured__panel {
+  border: var(--lst-border);
+  border-radius: 28px;
+  padding: 40px 36px 44px;
+  background: var(--white);
+  box-shadow: var(--lst-shadow);
+}
+
+.listings-page .lst-featured__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.listings-page .lst-featured__title {
+  margin: 0;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-featured__view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+.listings-page .lst-featured__view-all svg {
+  width: 18px;
+  height: 18px;
+}
+
+.listings-page .lst-featured__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.listings-page .lst-vehicle-card {
+  display: flex;
+  flex-direction: column;
+  border: var(--lst-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.listings-page .lst-vehicle-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.listings-page .lst-vehicle-card__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.listings-page .lst-vehicle-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.listings-page .lst-vehicle-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--blue);
+  color: var(--white);
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.listings-page .lst-vehicle-card__heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.listings-page .lst-vehicle-card__heart svg {
+  width: 18px;
+  height: 18px;
+}
+
+.listings-page .lst-vehicle-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 16px 16px 18px;
+}
+
+.listings-page .lst-vehicle-card__name {
+  margin: 0 0 10px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: var(--black);
+}
+
+.listings-page .lst-vehicle-card__specs {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.listings-page .lst-vehicle-card__specs li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 13px;
+  color: #555;
+}
+
+.listings-page .lst-vehicle-card__specs svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  color: var(--blue);
+}
+
+.listings-page .lst-vehicle-card__price {
+  margin: auto 0 14px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--black);
+}
+
+.listings-page .lst-vehicle-card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--blue);
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.listings-page .lst-vehicle-card__btn:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* =========================================================
+   7. DEALER SUCCESS STORIES
+   ========================================================= */
+.listings-page .lst-stories {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.listings-page .lst-stories__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-stories__star {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.listings-page .lst-stories__title {
+  margin: 0 0 16px;
+  line-height: 1;
+}
+
+.listings-page .lst-stories__title-black {
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-stories__title-blue {
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.listings-page .lst-stories__subtitle {
+  max-width: 820px;
+  margin: 0 auto 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.listings-page .lst-stories__em {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.listings-page .lst-stories__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+
+.listings-page .lst-testimonial {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--blue);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--white);
+  min-height: 100%;
+}
+
+.listings-page .lst-testimonial__photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.listings-page .lst-testimonial__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 28px 22px 22px;
+}
+
+.listings-page .lst-testimonial__quote-icon {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  transform: translateX(-50%);
+  object-fit: contain;
+}
+
+.listings-page .lst-testimonial__text {
+  margin: 12px 0 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #1f1f1f;
+}
+
+.listings-page .lst-testimonial__em {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.listings-page .lst-testimonial__rule {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 16px 0 10px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.listings-page .lst-testimonial__name {
+  margin: 0;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.listings-page .lst-testimonial__company {
+  margin: 0 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.listings-page .lst-testimonial__result {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.listings-page .lst-testimonial__result img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.listings-page .lst-testimonial__result-label {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.listings-page .lst-testimonial__result-value {
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+/* =========================================================
+   8. THREE-ACTION CTA STRIP
+   ========================================================= */
+.listings-page .lst-actions {
+  margin-bottom: 112px;
+}
+
+.listings-page .lst-actions__panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  background: var(--blue);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(2, 51, 227, 0.22);
+}
+
+.listings-page .lst-actions__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 120px;
+  padding: 28px 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s ease;
+}
+
+.listings-page .lst-actions__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 1px;
+  height: 76%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.listings-page .lst-actions__item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.listings-page .lst-actions__icon {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.listings-page .lst-actions__copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.listings-page .lst-actions__heading {
+  margin: 0 0 6px;
+  font-family: "Oswald", "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.listings-page .lst-actions__text {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.listings-page .lst-actions__arrow {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.listings-page #why-dealers {
+  scroll-margin-top: 24px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 1440px) {
+  .listings-page .lst-hero__headline {
+    font-size: 64px;
+  }
+
+  .listings-page .lst-featured__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1280px) {
+  .listings-page .lst-hero__stage {
+    min-height: 820px;
+  }
+
+  .listings-page .lst-hero__headline {
+    font-size: 58px;
+  }
+
+  .listings-page .lst-guarantee__main {
+    grid-template-columns: 140px minmax(0, 1fr);
+  }
+
+  .listings-page .lst-guarantee__reqs {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 2px solid #e0e0e0;
+    padding-left: 0;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .listings-page .lst-hiw__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 36px;
+  }
+
+  .listings-page .lst-hiw__step:nth-child(2)::after,
+  .listings-page .lst-hiw__step:nth-child(4)::after {
+    display: none;
+  }
+
+  .listings-page .lst-why__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-page .lst-stories__grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .listings-page .lst-actions__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-page .lst-actions__item:not(:last-child)::after {
+    top: auto;
+    bottom: 0;
+    right: 8%;
+    width: 84%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 900px) {
+  .listings-page .lst-hero__stage {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    border-radius: 22px;
+  }
+
+  .listings-page .lst-hero__stage::before {
+    display: none;
+  }
+
+  .listings-page .lst-hero__image {
+    position: relative;
+    inset: auto;
+    height: min(42vw, 320px);
+    min-height: 220px;
+    object-position: 65% center;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .listings-page .lst-hero__content {
+    width: 100%;
+    max-width: none;
+    padding: 32px 24px;
+  }
+
+  .listings-page .lst-hero__br {
+    display: none;
+  }
+
+  .listings-page .lst-guarantee__features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+
+  .listings-page .lst-guarantee__features li:nth-child(2)::after,
+  .listings-page .lst-guarantee__features li:nth-child(4)::after {
+    display: none;
+  }
+
+  .listings-page .lst-guarantee__features li:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 220px;
+    margin-inline: auto;
+  }
+
+  .listings-page .lst-gstrip__values {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .listings-page .lst-gstrip__values li:not(:last-child)::after {
+    top: auto;
+    bottom: -12px;
+    right: 10%;
+    width: 80%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .listings-page .lst-hero,
+  .listings-page .lst-hiw,
+  .listings-page .lst-guarantee,
+  .listings-page .lst-why,
+  .listings-page .lst-gstrip,
+  .listings-page .lst-featured,
+  .listings-page .lst-stories,
+  .listings-page .lst-actions {
+    margin-bottom: 56px;
+  }
+
+  .listings-page .lst-hero {
+    margin-top: 8px;
+  }
+
+  .listings-page .lst-hero__eyebrow {
+    font-size: 14px;
+  }
+
+  .listings-page .lst-hero__headline {
+    font-size: 42px;
+  }
+
+  .listings-page .lst-hero__text {
+    font-size: 16px;
+  }
+
+  .listings-page .lst-hero__bullets li {
+    font-size: 16px;
+  }
+
+  .listings-page .lst-hero__buttons {
+    width: 100%;
+  }
+
+  .listings-page .lst-hero__buttons .btn {
+    width: 100%;
+    justify-content: center;
+    height: 56px;
+    font-size: 17px;
+  }
+
+  .listings-page .lst-hiw__panel {
+    padding: 32px 22px 28px;
+    border-radius: 22px;
+  }
+
+  .listings-page .lst-hiw__title {
+    font-size: 34px;
+    gap: 16px;
+  }
+
+  .listings-page .lst-hiw__title-line {
+    max-width: 60px;
+  }
+
+  .listings-page .lst-hiw__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-page .lst-hiw__step::after {
+    display: none !important;
+  }
+
+  .listings-page .lst-hiw__step {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .listings-page .lst-hiw__step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .listings-page .lst-hiw__ctas {
+    flex-direction: column;
+  }
+
+  .listings-page .lst-hiw__btn {
+    width: 100%;
+    min-height: 56px;
+    font-size: 17px;
+  }
+
+  .listings-page .lst-guarantee__panel {
+    padding: 28px 20px 0;
+    border-radius: 22px;
+  }
+
+  .listings-page .lst-guarantee__main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .listings-page .lst-guarantee__badge {
+    max-width: 140px;
+  }
+
+  .listings-page .lst-guarantee__features {
+    grid-template-columns: 1fr;
+    padding: 24px 12px;
+  }
+
+  .listings-page .lst-guarantee__features li::after {
+    display: none;
+  }
+
+  .listings-page .lst-guarantee__features li:nth-child(5) {
+    max-width: none;
+  }
+
+  .listings-page .lst-why__benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-page .lst-why__title {
+    font-size: 34px;
+  }
+
+  .listings-page .lst-featured__panel {
+    padding: 28px 20px 32px;
+    border-radius: 22px;
+  }
+
+  .listings-page .lst-featured__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listings-page .lst-featured__title {
+    font-size: 34px;
+  }
+
+  .listings-page .lst-featured__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-page .lst-stories__title-black,
+  .listings-page .lst-stories__title-blue {
+    font-size: 36px;
+    display: block;
+  }
+
+  .listings-page .lst-stories__subtitle {
+    font-size: 16px;
+  }
+
+  .listings-page .lst-gstrip__panel {
+    padding: 28px 20px 24px;
+    border-radius: 22px;
+  }
+
+  .listings-page .lst-gstrip__btn {
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .listings-page .lst-actions__item {
+    flex-wrap: wrap;
+    padding: 24px 20px;
+  }
+
+  .listings-page .lst-actions__arrow {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .listings-page .lst-hero__headline {
+    font-size: 36px;
+  }
+
+  .listings-page .lst-hiw__title {
+    font-size: 28px;
+  }
+
+  .listings-page .lst-guarantee__title {
+    font-size: 32px;
+  }
+}
