@@ -51,10 +51,11 @@
   background: linear-gradient(
     90deg,
     #ffffff 0%,
-    #ffffff 38%,
-    rgba(255, 255, 255, 0.92) 44%,
-    rgba(255, 255, 255, 0.55) 52%,
-    rgba(255, 255, 255, 0) 62%
+    #ffffff 42%,
+    rgba(255, 255, 255, 0.95) 48%,
+    rgba(255, 255, 255, 0.62) 54%,
+    rgba(255, 255, 255, 0.18) 60%,
+    rgba(255, 255, 255, 0) 68%
   );
   pointer-events: none;
 }
@@ -66,7 +67,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 72% center;
+  object-position: 78% 42%;
   pointer-events: none;
   user-select: none;
 }
@@ -80,8 +81,8 @@
   justify-content: center;
   align-self: stretch;
   min-height: 100%;
-  width: min(560px, calc(52% - 20px));
-  padding: 0 12px 0 clamp(36px, 4.5vw, 56px);
+  width: min(600px, calc(50% - 12px));
+  padding: 0 16px 0 clamp(36px, 4.5vw, 56px);
 }
 
 .listings-page .lst-hero__eyebrow {
@@ -98,11 +99,16 @@
   margin: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 0.92;
+  font-size: clamp(42px, 5.2vw, 76px);
+  line-height: 0.94;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--black);
+}
+
+.listings-page .lst-hero__headline-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .listings-page .lst-hero__headline-blue {
@@ -110,19 +116,20 @@
 }
 
 .listings-page .lst-hero__text {
-  margin: 20px 0 24px;
+  margin: 18px 0 22px;
+  max-width: 100%;
   font-family: "Inter", Arial, sans-serif;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 1.55;
   color: #1f1f1f;
 }
 
 .listings-page .lst-hero__bullets {
   list-style: none;
-  margin: 0 0 32px;
+  margin: 0 0 28px;
   padding: 0;
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .listings-page .lst-hero__bullets li {
@@ -1198,10 +1205,6 @@
    RESPONSIVE
    ========================================================= */
 @media (max-width: 1440px) {
-  .listings-page .lst-hero__headline {
-    font-size: 64px;
-  }
-
   .listings-page .lst-featured__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1212,8 +1215,8 @@
     min-height: 820px;
   }
 
-  .listings-page .lst-hero__headline {
-    font-size: 58px;
+  .listings-page .lst-hero__content {
+    width: min(540px, calc(50% - 16px));
   }
 
   .listings-page .lst-guarantee__main {
@@ -1230,6 +1233,10 @@
 }
 
 @media (max-width: 1100px) {
+  .listings-page .lst-hero__content {
+    width: min(500px, calc(52% - 12px));
+  }
+
   .listings-page .lst-hiw__steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 36px;
@@ -1290,6 +1297,10 @@
     padding: 32px 24px;
   }
 
+  .listings-page .lst-hero__headline-line {
+    white-space: normal;
+  }
+
   .listings-page .lst-hero__br {
     display: none;
   }
@@ -1342,10 +1353,15 @@
 
   .listings-page .lst-hero__eyebrow {
     font-size: 14px;
+    margin-bottom: 14px;
   }
 
   .listings-page .lst-hero__headline {
     font-size: 42px;
+  }
+
+  .listings-page .lst-hero__headline-line {
+    white-space: normal;
   }
 
   .listings-page .lst-hero__text {
@@ -1496,6 +1512,7 @@
 @media (max-width: 560px) {
   .listings-page .lst-hero__headline {
     font-size: 36px;
+    line-height: 0.96;
   }
 
   .listings-page .lst-hiw__title {
