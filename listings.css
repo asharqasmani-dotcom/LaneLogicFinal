@@ -26,6 +26,25 @@
   }
 }
 
+/* Transparent PNG icons — no matte box */
+.listings-page .lst-hiw__icon,
+.listings-page .lst-hiw__btn-icon,
+.listings-page .lst-hiw__btn-arrow,
+.listings-page .lst-guarantee__badge,
+.listings-page .lst-guarantee__req-icon,
+.listings-page .lst-guarantee__feat-icon,
+.listings-page .lst-why__benefit-icon,
+.listings-page .lst-why__promise-check,
+.listings-page .lst-why__promise-thumb,
+.listings-page .lst-gstrip__icon,
+.listings-page .lst-stories__star,
+.listings-page .lst-testimonial__quote-icon,
+.listings-page .lst-testimonial__result img,
+.listings-page .lst-actions__icon,
+.listings-page .lst-actions__arrow {
+  background: transparent;
+}
+
 /* =========================================================
    1. HERO
    ========================================================= */
@@ -238,6 +257,7 @@
   border: 3px solid var(--white);
   border-radius: 50%;
   background: transparent;
+  overflow: hidden;
 }
 
 .listings-page .lst-hiw__num {
@@ -652,6 +672,7 @@
   width: 36px;
   height: 36px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 /* =========================================================
