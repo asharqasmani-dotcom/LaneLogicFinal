@@ -894,7 +894,7 @@
   margin: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 44px;
+  font-size: 48px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: var(--black);
@@ -906,7 +906,7 @@
   gap: 8px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   text-decoration: none;
@@ -915,8 +915,8 @@
 }
 
 .listings-page .lst-featured__view-all svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .listings-page .lst-featured__grid {
@@ -960,13 +960,13 @@
   top: 12px;
   left: 12px;
   z-index: 2;
-  padding: 4px 10px;
+  padding: 5px 11px;
   border-radius: 4px;
   background: #e8192c;
   color: var(--white);
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.5px;
 }
 
@@ -1776,6 +1776,21 @@
   .listings-page .lst-gstrip__panel {
     padding: 28px 20px 24px;
     border-radius: 22px;
+  }
+
+  .listings-page .lst-gstrip__icon-slot,
+  .listings-page .lst-gstrip__icon {
+    width: 96px;
+    height: 96px;
+    min-width: 96px;
+    min-height: 96px;
+    max-width: 96px;
+    max-height: 96px;
+  }
+
+  .listings-page .lst-gstrip__values li {
+    font-size: 18px;
+    gap: 16px;
   }
 
   .listings-page .lst-gstrip__btn {
