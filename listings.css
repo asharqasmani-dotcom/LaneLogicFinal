@@ -1844,9 +1844,24 @@
   .listings-page .lst-actions__item {
     flex-wrap: wrap;
     padding: 24px 20px;
+    min-height: 0;
+  }
+
+  .listings-page .lst-actions__icon-slot,
+  .listings-page .lst-actions__icon {
+    width: 96px;
+    height: 96px;
+    min-width: 96px;
+    min-height: 96px;
+    max-width: 96px;
+    max-height: 96px;
   }
 
   .listings-page .lst-actions__arrow {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
     margin-left: auto;
   }
 }
