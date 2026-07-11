@@ -1562,10 +1562,10 @@ img {
 .buy__strip {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  gap: 28px;
   min-height: 104px;
-  padding: 16px 40px 16px 68px;
+  padding: 16px 40px;
   background: var(--brand-blue);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -1578,7 +1578,7 @@ img {
   text-transform: uppercase;
   line-height: 1.05;
   color: var(--white);
-  text-align: left;
+  text-align: center;
 }
 
 .buy__strip-btn {
@@ -1920,7 +1920,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  gap: 28px;
   min-height: 132px;
   padding: 34px 44px;
   background: var(--brand-blue);
@@ -1929,7 +1929,8 @@ img {
 }
 
 .cta-strip__text {
-  max-width: calc(100% - 260px);
+  flex: none;
+  max-width: none;
   text-align: center;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
@@ -1941,11 +1942,6 @@ img {
 }
 
 .cta-strip__btn {
-  position: absolute;
-  top: 50%;
-  right: 44px;
-  transform: translateY(-50%);
-  z-index: 1;
   flex: none;
   display: inline-flex;
   align-items: center;
@@ -1968,7 +1964,7 @@ img {
 }
 
 .cta-strip__btn:hover {
-  transform: translateY(calc(-50% - 1px));
+  transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -2415,6 +2411,7 @@ img {
   }
   .buy__strip {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 14px;
     min-height: 0;
     padding: 18px 32px;
@@ -2471,13 +2468,10 @@ img {
   .cta-strip__inner {
     padding: 24px 28px;
     min-height: 100px;
+    gap: 20px;
   }
   .cta-strip__text {
-    max-width: calc(100% - 220px);
     font-size: 28px;
-  }
-  .cta-strip__btn {
-    right: 28px;
   }
   .site-footer__main {
     grid-template-columns: 1fr 1fr;
@@ -2614,26 +2608,18 @@ img {
   }
   .cta-strip__inner {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 18px;
     padding: 24px 24px 22px;
     min-height: 0;
   }
   .cta-strip__text {
-    max-width: none;
-    text-align: left;
+    text-align: center;
     font-size: 24px;
   }
   .cta-strip__btn {
-    position: static;
-    top: auto;
-    right: auto;
-    transform: none;
     width: 100%;
     justify-content: center;
-  }
-  .cta-strip__btn:hover {
-    transform: translateY(-1px);
   }
   .site-footer__main {
     grid-template-columns: 1fr;
