@@ -718,10 +718,10 @@
 
 .listings-page .lst-why__truck {
   width: 100%;
-  height: 240px;
+  height: 340px;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: center 42%;
 }
 
 .listings-page .lst-why__promise-bar {
@@ -1432,7 +1432,7 @@
   }
 
   .listings-page .lst-why__truck {
-    height: 280px;
+    height: 320px;
   }
 
   .listings-page .lst-stories__grid {
