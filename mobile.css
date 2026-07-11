@@ -421,9 +421,11 @@
   }
 
   .hero__truck {
-    width: 108%;
-    margin-left: -4%;
+    width: 115%;
+    margin-left: -6%;
     margin-top: 0;
+    object-fit: contain;
+    object-position: center right;
   }
 
   .hero__buttons {

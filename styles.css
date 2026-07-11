@@ -225,10 +225,12 @@ img {
 .hero__truck {
   position: relative;
   z-index: 2;
-  width: 132%;
+  width: 148%;
   max-width: none;
-  margin-left: -18%;
+  margin-left: -22%;
   margin-top: 4px;
+  object-fit: contain;
+  object-position: center right;
 }
 
 /* ============ STATS STRIP ============ */
