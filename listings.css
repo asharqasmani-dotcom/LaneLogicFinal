@@ -410,8 +410,8 @@
 
 .listings-page .lst-guarantee__main {
   display: grid;
-  grid-template-columns: minmax(220px, 280px) minmax(0, 1.15fr) minmax(260px, 340px);
-  gap: 36px 48px;
+  grid-template-columns: minmax(220px, 270px) minmax(0, 1fr) minmax(360px, 1.15fr);
+  gap: 32px 32px;
   align-items: center;
   padding-bottom: 44px;
 }
@@ -472,8 +472,11 @@
 }
 
 .listings-page .lst-guarantee__reqs {
+  justify-self: start;
+  width: 100%;
+  max-width: 440px;
   border-left: 2px solid #e0e0e0;
-  padding-left: 28px;
+  padding-left: 22px;
 }
 
 .listings-page .lst-guarantee__reqs-title {
@@ -496,20 +499,20 @@
 
 .listings-page .lst-guarantee__reqs-list li {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.35;
   color: #333;
+  white-space: nowrap;
 }
 
 .listings-page .lst-guarantee__req-icon {
   flex: none;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
-  margin-top: 1px;
 }
 
 .listings-page .lst-guarantee__features {
