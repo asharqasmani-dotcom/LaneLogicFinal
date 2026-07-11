@@ -1303,9 +1303,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 20px;
-  min-height: 140px;
-  padding: 32px 28px;
+  gap: 24px;
+  min-height: 168px;
+  padding: 36px 32px;
   text-decoration: none;
   color: inherit;
   transition: background 0.12s ease;
@@ -1325,11 +1325,25 @@
   background: rgba(255, 255, 255, 0.06);
 }
 
-.listings-page .lst-actions__icon {
+.listings-page .lst-actions__icon-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: none;
-  width: 80px;
-  height: 80px;
+  width: 112px;
+  height: 112px;
+}
+
+.listings-page .lst-actions__icon {
+  display: block;
+  width: 112px;
+  height: 112px;
+  min-width: 112px;
+  min-height: 112px;
+  max-width: 112px;
+  max-height: 112px;
   object-fit: contain;
+  object-position: center center;
 }
 
 .listings-page .lst-actions__copy {
@@ -1357,9 +1371,12 @@
 
 .listings-page .lst-actions__arrow {
   flex: none;
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
   object-fit: contain;
+  object-position: center center;
 }
 
 .listings-page #why-dealers {
