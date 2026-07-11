@@ -555,8 +555,23 @@
     width: min(560px, calc(58% - 12px));
   }
 
+  .contact-page .contact-hero__headline-row {
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  .contact-page .contact-hero__phone-icon,
+  .contact-page .contact-hero__phone-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+
   .contact-page .contact-hero__headline {
-    font-size: 68px;
+    font-size: 84px;
+  }
+
+  .contact-page .contact-hero__text {
+    font-size: 24px;
   }
 }
 
@@ -625,12 +640,23 @@
     margin-bottom: 56px;
   }
 
+  .contact-page .contact-hero__headline-row {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .contact-page .contact-hero__phone-icon,
+  .contact-page .contact-hero__phone-icon svg {
+    width: 64px;
+    height: 64px;
+  }
+
   .contact-page .contact-hero__headline {
-    font-size: 52px;
+    font-size: 60px;
   }
 
   .contact-page .contact-hero__text {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .contact-page .contact-form__panel,
