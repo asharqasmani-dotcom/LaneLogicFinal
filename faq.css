@@ -132,7 +132,7 @@
   margin: 0 0 10px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.15;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -143,7 +143,7 @@
   margin: 0;
   max-width: 760px;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.6;
   color: #333;
 }
@@ -189,7 +189,7 @@
   min-width: 24px;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   color: #333;
 }
 
@@ -197,8 +197,8 @@
   flex: 1 1 auto;
   min-width: 0;
   font-family: "Inter", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 19px;
   line-height: 1.45;
   color: #1f1f1f;
 }
@@ -222,7 +222,8 @@
 .faq-page .faq-item__answer {
   padding: 0 28px 18px 34px;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 19px;
   line-height: 1.65;
   color: #444;
 }
@@ -525,11 +526,16 @@
   }
 
   .faq-page .faq-category__title {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .faq-page .faq-category__desc {
-    font-size: 16px;
+    font-size: 19px;
+  }
+
+  .faq-page .faq-item__q,
+  .faq-page .faq-item__answer {
+    font-size: 17px;
   }
 
   .faq-page .faq-cta__vdiv {

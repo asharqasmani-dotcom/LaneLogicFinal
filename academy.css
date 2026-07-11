@@ -31,6 +31,7 @@
   min-height: 880px;
   overflow: hidden;
   border-radius: 0 28px 28px 0;
+  background: #fff;
 }
 
 .ac-hero__image {
@@ -39,8 +40,10 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: right center;
+  object-fit: contain;
+  object-position: right 32%;
+  transform: scale(0.94);
+  transform-origin: 92% 38%;
   pointer-events: none;
   user-select: none;
 }
@@ -63,7 +66,7 @@
   margin: 0 0 16px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 26px;
   letter-spacing: 1.3px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -74,7 +77,7 @@
   margin: 0;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 82px;
+  font-size: 96px;
   line-height: 0.92;
   letter-spacing: 0.35px;
   text-transform: uppercase;
@@ -94,7 +97,7 @@
   margin: 0;
   font-family: "Caveat", "Comic Sans MS", cursive;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 64px;
   line-height: 0.95;
   letter-spacing: 0.35px;
   color: var(--blue);
@@ -115,7 +118,7 @@
   max-width: 100%;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
   color: #1f1f1f;
 }
@@ -1022,15 +1025,15 @@
   }
 
   .ac-hero__headline {
-    font-size: 76px;
+    font-size: 88px;
   }
 
   .ac-hero__script {
-    font-size: 52px;
+    font-size: 58px;
   }
 
   .ac-hero__text {
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .ac-certs__title-black {
@@ -1177,7 +1180,7 @@
     min-height: 220px;
     width: 100%;
     object-fit: cover;
-    object-position: right center;
+    object-position: center 28%;
     border-radius: 22px 22px 0 0;
   }
 
@@ -1217,20 +1220,20 @@
   }
 
   .ac-hero__eyebrow {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .ac-hero__headline {
-    font-size: 42px;
+    font-size: 48px;
   }
 
   .ac-hero__script {
-    font-size: 34px;
+    font-size: 38px;
     white-space: normal;
   }
 
   .ac-hero__text {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 24px;
   }
 
