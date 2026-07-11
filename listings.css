@@ -640,12 +640,27 @@
   background: #d8d8d8;
 }
 
-.listings-page .lst-why__benefit-icon {
+.listings-page .lst-why__benefit-icon-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: none;
   width: 120px;
   height: 120px;
   margin: 0 0 20px;
+}
+
+.listings-page .lst-why__benefit-icon {
+  display: block;
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  margin: 0;
   object-fit: contain;
+  object-position: center center;
 }
 
 .listings-page .lst-why__benefit-title {
