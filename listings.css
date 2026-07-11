@@ -772,7 +772,7 @@
 .listings-page .lst-gstrip__panel {
   border: 6px solid var(--white);
   border-radius: 28px;
-  padding: 40px 36px 36px;
+  padding: 44px 40px 40px;
   background: var(--blue);
   box-shadow: 0 10px 28px rgba(2, 51, 227, 0.22), inset 0 0 0 2px rgba(255, 255, 255, 0.15);
 }
@@ -782,7 +782,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
-  margin: 0 0 32px;
+  margin: 0 0 36px;
   padding: 0;
 }
 
@@ -793,13 +793,13 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  gap: 18px;
-  padding: 0 16px;
+  gap: 22px;
+  padding: 0 20px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.4px;
+  font-size: 22px;
+  line-height: 1.12;
+  letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -807,41 +807,55 @@
 .listings-page .lst-gstrip__values li:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 8%;
+  top: 6%;
   right: 0;
   width: 1px;
-  height: 84%;
-  background: rgba(255, 255, 255, 0.35);
+  height: 88%;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.listings-page .lst-gstrip__icon-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 128px;
+  height: 128px;
 }
 
 .listings-page .lst-gstrip__icon {
-  flex: none;
-  width: 88px;
-  height: 88px;
+  display: block;
+  width: 128px;
+  height: 128px;
+  min-width: 128px;
+  min-height: 128px;
+  max-width: 128px;
+  max-height: 128px;
   object-fit: contain;
+  object-position: center center;
 }
 
 .listings-page .lst-gstrip__buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px 20px;
+  gap: 18px 24px;
 }
 
 .listings-page .lst-gstrip__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 64px;
-  min-width: 220px;
-  padding: 0 36px;
-  border-radius: 9px;
+  min-height: 68px;
+  min-width: 240px;
+  padding: 0 40px;
+  border-radius: 10px;
   background: var(--white);
   color: var(--blue);
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  font-size: 22px;
+  letter-spacing: 0.45px;
   text-transform: uppercase;
   text-decoration: none;
   transition: transform 0.12s ease, box-shadow 0.12s ease;
@@ -1532,12 +1546,24 @@
 
   .listings-page .lst-gstrip__values {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 28px;
+    margin-bottom: 32px;
   }
 
   .listings-page .lst-gstrip__values li {
     justify-content: flex-start;
-    padding: 0 8px;
+    padding: 0 12px;
+    font-size: 20px;
+  }
+
+  .listings-page .lst-gstrip__icon-slot,
+  .listings-page .lst-gstrip__icon {
+    width: 108px;
+    height: 108px;
+    min-width: 108px;
+    min-height: 108px;
+    max-width: 108px;
+    max-height: 108px;
   }
 
   .listings-page .lst-gstrip__values li:not(:last-child)::after {
