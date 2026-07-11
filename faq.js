@@ -60,7 +60,7 @@
       category.icon +
       '?v=1" alt="' +
       escapeHtml(category.iconAlt) +
-      '" width="88" height="88" loading="lazy" />' +
+      '" width="120" height="120" loading="lazy" />' +
       '<div class="faq-category__intro">' +
       '<h2 class="faq-category__title" id="faq-' +
       category.id +
