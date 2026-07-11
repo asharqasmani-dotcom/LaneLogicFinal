@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Lane Logic</title>
+  <meta name="description" content="Contact Lane Logic for inventory sourcing, listings, and Academy training. Schedule a strategy call and put a winning plan in motion for your dealership." />
+  <title>Contact | Lane Logic</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="mobile.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css?v=30" />
+  <link rel="stylesheet" href="mobile.css?v=8" />
+  <link rel="stylesheet" href="contact.css?v=1" />
 </head>
-<body>
+<body class="contact-page">
   <div class="page">
+    <!-- ============ HEADER ============ -->
     <header class="header">
       <div class="header__logos">
         <img class="header__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
@@ -33,109 +39,247 @@
       </button>
     </header>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
-        <a class="mobile-nav__link" href="index.html">HOME</a>
-        <a class="mobile-nav__link" href="academy.html">ACADEMY</a>
-        <a class="mobile-nav__link" href="listings.html">LISTINGS</a>
-        <a class="mobile-nav__link" href="sourcing.html">SOURCING</a>
-        <a class="mobile-nav__link" href="faq.html">FAQ</a>
-        <a class="mobile-nav__link mobile-nav__link--active" href="contact.html">CONTACT</a>
+      <a class="mobile-nav__link" href="index.html">HOME</a>
+      <a class="mobile-nav__link" href="academy.html">ACADEMY</a>
+      <a class="mobile-nav__link" href="listings.html">LISTINGS</a>
+      <a class="mobile-nav__link" href="sourcing.html">SOURCING</a>
+      <a class="mobile-nav__link" href="faq.html">FAQ</a>
+      <a class="mobile-nav__link mobile-nav__link--active" href="contact.html">CONTACT</a>
     </nav>
 
-    <main class="m-page">
-      <section class="contact-mobile__hero">
-        <h1 class="m-hero__headline">LET&rsquo;S TALK.</h1>
-        <p class="contact-mobile__text">
-          Whether you need inventory now or want to build a stronger buying team, we&rsquo;re here to help.
-        </p>
-        <p class="contact-mobile__text">
-          Reach out today and let&rsquo;s put a winning strategy in motion for your dealership.
-        </p>
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="contact-hero" aria-label="Contact Lane Logic">
+        <div class="contact-hero__stage">
+          <img
+            class="contact-hero__image"
+            src="assets/contact/team-call.png?v=1"
+            alt="Lane Logic team member on a call with a dealer"
+            fetchpriority="high"
+            width="1600"
+            height="900"
+          />
+          <div class="contact-hero__content">
+            <h1 class="contact-hero__headline">LET&rsquo;S TALK.</h1>
+            <p class="contact-hero__text">
+              Whether you need inventory now or want to build a stronger buying team, we&rsquo;re here to help.
+            </p>
+            <p class="contact-hero__text">
+              Reach out today and let&rsquo;s put a winning strategy in motion for your dealership.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <div class="contact-mobile__visual">
-          <div class="contact-mobile__benefits">
-            <div class="contact-mobile__benefit">
-              <img class="contact-mobile__benefit-icon" src="assets/buy/processed/search.png" alt="" aria-hidden="true" />
-              <p class="contact-mobile__benefit-text">More Inventory.<br />Better Quality.</p>
-            </div>
-            <div class="contact-mobile__benefit">
-              <img class="contact-mobile__benefit-icon" src="assets/impact/normalized/dollar.png" alt="" aria-hidden="true" />
-              <p class="contact-mobile__benefit-text">Better Buying.<br />Higher Profits.</p>
-            </div>
-            <div class="contact-mobile__benefit">
-              <img class="contact-mobile__benefit-icon" src="assets/impact/normalized/people.png" alt="" aria-hidden="true" />
-              <p class="contact-mobile__benefit-text">Real Partners.<br />Real Results.</p>
-            </div>
+      <!-- ============ BENEFITS ============ -->
+      <section class="contact-benefits" aria-label="Why dealers reach out">
+        <ul class="contact-benefits__grid">
+          <li class="contact-benefits__item">
+            <img class="contact-benefits__icon" src="assets/buy/processed/search.png" alt="" width="72" height="72" />
+            <p class="contact-benefits__text">More Inventory.<br />Better Quality.</p>
+          </li>
+          <li class="contact-benefits__item">
+            <img class="contact-benefits__icon" src="assets/impact/normalized/dollar.png" alt="" width="72" height="72" />
+            <p class="contact-benefits__text">Better Buying.<br />Higher Profits.</p>
+          </li>
+          <li class="contact-benefits__item">
+            <img class="contact-benefits__icon" src="assets/impact/normalized/people.png" alt="" width="72" height="72" />
+            <p class="contact-benefits__text">Real Partners.<br />Real Results.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ FORM + SIDEBAR ============ -->
+      <section class="contact-main" aria-labelledby="contact-form-title">
+        <div class="contact-main__grid">
+          <div class="contact-form__panel">
+            <h2 class="contact-form__title" id="contact-form-title">SEND US A MESSAGE</h2>
+            <span class="contact-form__underline" aria-hidden="true"></span>
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-form__grid">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="first-name">First Name</label>
+                  <input class="contact-form__input" id="first-name" name="first_name" type="text" autocomplete="given-name" required />
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="last-name">Last Name</label>
+                  <input class="contact-form__input" id="last-name" name="last_name" type="text" autocomplete="family-name" required />
+                </div>
+                <div class="contact-form__field contact-form__field--full">
+                  <label class="contact-form__label" for="dealership">Dealership Name</label>
+                  <input class="contact-form__input" id="dealership" name="dealership" type="text" required />
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="email">Email Address</label>
+                  <input class="contact-form__input" id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="phone">Phone Number</label>
+                  <input class="contact-form__input" id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+                <div class="contact-form__field contact-form__field--full">
+                  <label class="contact-form__label" for="help">How can we help you?</label>
+                  <select class="contact-form__select" id="help" name="help" required>
+                    <option value="">Select an option</option>
+                    <option value="inventory">I need more inventory</option>
+                    <option value="listings">I want to browse listings</option>
+                    <option value="academy">I want Academy training</option>
+                    <option value="both">Both sourcing and training</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+                <div class="contact-form__field contact-form__field--full">
+                  <label class="contact-form__label" for="message">Message</label>
+                  <textarea class="contact-form__textarea" id="message" name="message" placeholder="Tell us about your dealership and what you're looking to accomplish."></textarea>
+                </div>
+              </div>
+              <button class="contact-form__submit" type="submit">SEND MESSAGE</button>
+              <p class="contact-form__note">We&rsquo;ll get back to you within 1 business day.</p>
+            </form>
           </div>
 
+          <aside class="contact-sidebar" aria-label="Ways to connect">
+            <div class="contact-sidebar__panel">
+              <h2 class="contact-sidebar__title">WAYS TO CONNECT</h2>
+              <p class="contact-sidebar__intro">
+                We make it easy to reach the right people who can help your dealership succeed.
+              </p>
+              <div class="contact-info">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-info__label">Call Us</p>
+                  <p class="contact-info__value"><a href="tel:+18885263544">(888) 526-3544</a></p>
+                  <p class="contact-info__sub">Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM EST</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-info__label">Email Us</p>
+                  <p class="contact-info__value"><a href="mailto:info@lanelogic.com">info@lanelogic.com</a></p>
+                  <p class="contact-info__sub">We respond within 1 business day</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============ WHO YOU'LL HEAR FROM ============ -->
+      <section class="contact-team" aria-labelledby="contact-team-title">
+        <div class="contact-team__panel">
+          <div>
+            <h2 class="contact-team__title" id="contact-team-title">WHO YOU&rsquo;LL HEAR FROM</h2>
+            <span class="contact-team__underline" aria-hidden="true"></span>
+            <p class="contact-team__text">
+              Our team is made up of automotive veterans who have been in your shoes. When you reach out, you&rsquo;ll talk to people who understand your challenges and know exactly how to help.
+            </p>
+          </div>
           <img
-            class="contact-mobile__image"
-            src="assets/contact/team-call.png"
-            alt="Lane Logic team member on a call"
+            class="contact-team__image"
+            src="assets/connect/team.png?v=1"
+            alt="Lane Logic team members ready to help your dealership"
+            loading="lazy"
+            width="800"
+            height="600"
           />
         </div>
       </section>
 
-      <section class="m-form">
-        <h2 class="m-form__title">Send Us a Message</h2>
-        <img class="m-form__brush" src="assets/testimonial/pattern-line.png" alt="" aria-hidden="true" />
-        <form action="#" method="post">
-          <div class="m-form__grid">
-            <div class="m-form__field">
-              <label class="m-form__label" for="first-name">First Name</label>
-              <input class="m-form__input" id="first-name" name="first_name" type="text" autocomplete="given-name" />
-            </div>
-            <div class="m-form__field">
-              <label class="m-form__label" for="last-name">Last Name</label>
-              <input class="m-form__input" id="last-name" name="last_name" type="text" autocomplete="family-name" />
-            </div>
-            <div class="m-form__field m-form__field--full">
-              <label class="m-form__label" for="dealership">Dealership Name</label>
-              <input class="m-form__input" id="dealership" name="dealership" type="text" />
-            </div>
-            <div class="m-form__field">
-              <label class="m-form__label" for="email">Email Address</label>
-              <input class="m-form__input" id="email" name="email" type="email" autocomplete="email" />
-            </div>
-            <div class="m-form__field">
-              <label class="m-form__label" for="phone">Phone Number</label>
-              <input class="m-form__input" id="phone" name="phone" type="tel" autocomplete="tel" />
-            </div>
-            <div class="m-form__field m-form__field--full">
-              <label class="m-form__label" for="help">How can we help you?</label>
-              <select class="m-form__select" id="help" name="help">
-                <option value="">Select an option</option>
-                <option value="inventory">I need more inventory</option>
-                <option value="academy">I want Academy training</option>
-                <option value="both">Both sourcing and training</option>
-                <option value="other">Something else</option>
-              </select>
-            </div>
-            <div class="m-form__field m-form__field--full">
-              <label class="m-form__label" for="message">Message</label>
-              <textarea class="m-form__textarea" id="message" name="message"></textarea>
-            </div>
+      <!-- ============ WHAT HAPPENS NEXT ============ -->
+      <section class="contact-cta" aria-labelledby="contact-cta-title">
+        <div class="contact-cta__panel">
+          <div class="contact-cta__head">
+            <h2 class="contact-cta__title" id="contact-cta-title">WHAT HAPPENS NEXT?</h2>
+            <p class="contact-cta__subtitle">
+              No high-pressure sales pitch&mdash;just an honest conversation about your dealership and how we can help.
+            </p>
           </div>
-          <button class="btn btn--solid m-form__submit" type="submit">SEND MESSAGE</button>
-          <p class="m-form__note">We&rsquo;ll get back to you within 1 business day.</p>
-        </form>
+          <ul class="contact-cta__promises">
+            <li class="contact-cta__promise">
+              <svg class="contact-cta__check" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="12" fill="currentColor" />
+                <path class="contact-cta__check-mark" d="M7 12.2l2.8 2.8 6.5-6.5" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>REAL PEOPLE.<br />REAL ANSWERS.</span>
+            </li>
+            <li class="contact-cta__promise">
+              <svg class="contact-cta__check" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="12" fill="currentColor" />
+                <path class="contact-cta__check-mark" d="M7 12.2l2.8 2.8 6.5-6.5" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>DEALER FOCUSED.<br />RESULTS DRIVEN.</span>
+            </li>
+            <li class="contact-cta__promise">
+              <svg class="contact-cta__check" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="12" fill="currentColor" />
+                <path class="contact-cta__check-mark" d="M7 12.2l2.8 2.8 6.5-6.5" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>HERE TO HELP YOU<br />BUY MORE &amp; DRIVE PROFIT.</span>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <footer class="m-footer">
-      <div class="m-footer__logos">
-        <img class="m-footer__main-logo" src="assets/Png%20File.png" alt="Lane Logic" />
-        <span class="m-footer__divider" aria-hidden="true"></span>
-        <img class="m-footer__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <div class="site-footer__brand">
+          <div class="site-footer__logos">
+            <img class="site-footer__main-logo" src="assets/Png%20File.png" alt="Lane Logic — Buy More / Drive Profit" />
+            <span class="site-footer__divider" aria-hidden="true"></span>
+            <img class="site-footer__academy-logo" src="assets/Png%20File%202.png" alt="Lane Logic Academy" />
+          </div>
+          <p class="site-footer__tagline">Helping dealers buy smarter inventory and build stronger teams.</p>
+        </div>
+        <nav class="site-footer__nav-col" aria-label="Footer navigation">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="site-footer__links">
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__newsletter">
+          <h3 class="site-footer__heading">Stay Ahead of the Market</h3>
+          <p class="site-footer__newsletter-text">Get inventory tips, training updates, and dealer growth strategies delivered to your inbox.</p>
+          <form class="site-footer__form" action="#" method="post">
+            <input class="site-footer__input" type="email" name="email" placeholder="Enter your email" aria-label="Enter your email" />
+            <button class="site-footer__subscribe" type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="site-footer__social" aria-label="Social media">
+            <a class="site-footer__social-link" href="#" aria-label="Facebook">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true"><text x="9" y="25" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">f</text></svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="LinkedIn">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 32" aria-hidden="true"><text x="2" y="24" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">in</text></svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="YouTube">
+              <svg class="site-footer__social-icon" viewBox="0 0 40 28" aria-hidden="true"><rect x="1" y="1" width="38" height="26" rx="7" fill="currentColor" /><path d="M17 8.5L28 14L17 19.5V8.5Z" fill="#FFFFFF" /></svg>
+            </a>
+            <a class="site-footer__social-link" href="#" aria-label="Instagram">
+              <svg class="site-footer__social-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2.6" /><circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="2.6" /><circle cx="23.2" cy="8.8" r="1.8" fill="currentColor" /></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <p class="m-footer__tagline">Helping dealers buy smarter inventory and build stronger teams.</p>
-      <nav class="m-footer__links" aria-label="Footer navigation">
-        <a href="sourcing.html">Sourcing</a>
-        <a href="academy.html">Academy</a>
-        <a href="success-stories.html">Success Stories</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p class="m-footer__copy">&copy; 2024 Lane Logic. All rights reserved.</p>
+      <div class="site-footer__legal">
+        <p class="site-footer__copyright">&copy; 2024 Lane Logic. All rights reserved.</p>
+        <p class="site-footer__credit">Designed by Ashar | <a href="https://www.owlisticstudio.com" target="_blank" rel="noopener noreferrer">www.owlisticstudio.com</a></p>
+        <p class="site-footer__policies"><a href="#">Privacy Policy</a><span aria-hidden="true">|</span><a href="#">Terms of Use</a></p>
+      </div>
     </footer>
   </div>
   <script src="mobile.js"></script>
