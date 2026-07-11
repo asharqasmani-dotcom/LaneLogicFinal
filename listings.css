@@ -220,18 +220,18 @@
   gap: 0;
   margin: 0 0 40px;
   padding: 0;
-  align-items: stretch;
+  align-items: start;
 }
 
 .listings-page .lst-hiw__step {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 14px;
   text-align: left;
-  padding: 8px 18px 8px 14px;
-  min-height: 160px;
+  padding: 8px 16px 8px 12px;
+  min-height: 0;
 }
 
 .listings-page .lst-hiw__step:not(:last-child)::after {
@@ -290,13 +290,15 @@
 .listings-page .lst-hiw__copy {
   flex: 1 1 auto;
   min-width: 0;
-  padding-top: 2px;
+  padding-top: 18px;
 }
 
 .listings-page .lst-hiw__step-head {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 10px;
+  min-height: 36px;
   margin-bottom: 8px;
 }
 
@@ -318,6 +320,8 @@
 
 .listings-page .lst-hiw__step-title {
   margin: 0;
+  flex: 0 1 auto;
+  min-width: 0;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
   font-size: 19px;
@@ -325,6 +329,7 @@
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--white);
+  white-space: nowrap;
 }
 
 .listings-page .lst-hiw__step-text {
@@ -1350,6 +1355,26 @@
     height: 132px;
   }
 
+  .listings-page .lst-hiw__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
+  .listings-page .lst-hiw__step:nth-child(2)::after,
+  .listings-page .lst-hiw__step:nth-child(4)::after {
+    display: none;
+  }
+
+  .listings-page .lst-hiw__step:nth-child(1),
+  .listings-page .lst-hiw__step:nth-child(2) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .listings-page .lst-hiw__copy {
+    padding-top: 16px;
+  }
+
   .listings-page .lst-hiw__step:nth-child(1) .lst-hiw__icon {
     transform: scale(1.12);
   }
@@ -1378,22 +1403,6 @@
 @media (max-width: 1100px) {
   .listings-page .lst-hero__content {
     width: min(500px, calc(52% - 12px));
-  }
-
-  .listings-page .lst-hiw__steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 28px;
-  }
-
-  .listings-page .lst-hiw__step:nth-child(2)::after,
-  .listings-page .lst-hiw__step:nth-child(4)::after {
-    display: none;
-  }
-
-  .listings-page .lst-hiw__step:nth-child(1),
-  .listings-page .lst-hiw__step:nth-child(2) {
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .listings-page .lst-why__grid {
