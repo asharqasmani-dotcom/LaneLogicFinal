@@ -484,6 +484,101 @@
     object-fit: contain;
   }
 
+  /* ----- Home listings feature ----- */
+  .hl-listings {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .hl-listings__panel {
+    border-radius: 18px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+  }
+
+  .hl-listings__grid {
+    padding: 22px 18px 14px;
+    gap: 18px;
+  }
+
+  .hl-listings__eyebrow-row {
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .hl-listings__pill {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .hl-listings__brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hl-listings__brand-name {
+    font-size: 17px;
+  }
+
+  .hl-listings__title {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+
+  .hl-listings__body {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .hl-listings__features {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .hl-listings__features span {
+    font-size: 14px;
+  }
+
+  .hl-listings__roi {
+    padding: 14px;
+    margin-bottom: 18px;
+  }
+
+  .hl-listings__roi-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hl-listings__roi-text {
+    font-size: 14px;
+  }
+
+  .hl-listings__media {
+    max-width: 100%;
+  }
+
+  .hl-listings__badge {
+    width: 30%;
+    top: -2%;
+    right: 0;
+  }
+
+  .hl-listings__strip-item {
+    padding: 18px 16px;
+  }
+
+  .hl-listings__strip-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hl-listings__strip-title {
+    font-size: 14px;
+  }
+
+  .hl-listings__strip-sub {
+    font-size: 12px;
+  }
+
   .stat__number {
     text-align: left;
   }
