@@ -423,7 +423,7 @@
   margin: 0 0 14px;
   font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
   font-weight: 400;
-  font-size: 44px;
+  font-size: 56px;
   line-height: 0.95;
   letter-spacing: 0.35px;
   text-transform: uppercase;
@@ -442,7 +442,7 @@
 .contact-page .contact-team__text {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.65;
   color: #333;
 }
@@ -675,7 +675,11 @@
 
   .contact-page .contact-form__title,
   .contact-page .contact-team__title {
-    font-size: 34px;
+    font-size: 42px;
+  }
+
+  .contact-page .contact-team__text {
+    font-size: 19px;
   }
 
   .contact-page .contact-form__grid {
