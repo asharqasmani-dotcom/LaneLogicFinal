@@ -44,6 +44,7 @@
   object-position: right 32%;
   transform: scale(0.94);
   transform-origin: 92% 38%;
+  border-radius: 0 28px 28px 0;
   pointer-events: none;
   user-select: none;
 }

@@ -49,13 +49,38 @@
   background: linear-gradient(
     90deg,
     #ffffff 0%,
-    #ffffff 40%,
-    rgba(255, 255, 255, 0.94) 48%,
-    rgba(255, 255, 255, 0.55) 56%,
+    #ffffff 36%,
+    rgba(255, 255, 255, 0.92) 46%,
+    rgba(255, 255, 255, 0.5) 56%,
     rgba(255, 255, 255, 0.08) 66%,
-    rgba(255, 255, 255, 0) 74%
+    rgba(255, 255, 255, 0) 76%
   );
   pointer-events: none;
+}
+
+/* Soft blur on the left so hero copy stays readable over the photo */
+.contact-page .contact-hero__stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  mask-image: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 38%,
+    rgba(0, 0, 0, 0.45) 50%,
+    transparent 62%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 38%,
+    rgba(0, 0, 0, 0.45) 50%,
+    transparent 62%
+  );
 }
 
 .contact-page .contact-hero__image {
@@ -68,6 +93,7 @@
   object-position: 88% 38%;
   transform: scale(0.92);
   transform-origin: 92% 42%;
+  border-radius: 0 28px 28px 0;
   pointer-events: none;
   user-select: none;
 }
@@ -595,6 +621,10 @@
       rgba(255, 255, 255, 0.35) 72%,
       rgba(255, 255, 255, 0) 100%
     );
+  }
+
+  .contact-page .contact-hero__stage::after {
+    display: none;
   }
 
   .contact-page .contact-hero__image {
