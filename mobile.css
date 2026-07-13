@@ -558,12 +558,19 @@
 
   .hl-listings__media {
     max-width: 100%;
+    padding-top: 24px;
   }
 
   .hl-listings__badge {
-    width: 30%;
-    top: -2%;
-    right: 0;
+    width: 32%;
+    top: 2%;
+    right: 4%;
+  }
+
+  .hl-listings__badge-glow {
+    width: 36%;
+    right: 2%;
+    top: 0;
   }
 
   .hl-listings__strip-item {
