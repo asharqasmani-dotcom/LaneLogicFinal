@@ -1064,25 +1064,25 @@ img {
 .hl-listings__brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .hl-listings__brand-mark {
-  width: 42px;
-  height: 42px;
+  width: 54px;
+  height: 54px;
   object-fit: contain;
 }
 
 .hl-listings__brand-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
 }
 
 .hl-listings__brand-name {
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: 0.4px;
   line-height: 1;
   color: var(--black);
@@ -1091,7 +1091,7 @@ img {
 .hl-listings__brand-tag {
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.6px;
   line-height: 1.1;
   color: #555;

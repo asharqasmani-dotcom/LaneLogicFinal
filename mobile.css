@@ -511,12 +511,16 @@
   }
 
   .hl-listings__brand-mark {
-    width: 36px;
-    height: 36px;
+    width: 46px;
+    height: 46px;
   }
 
   .hl-listings__brand-name {
-    font-size: 17px;
+    font-size: 20px;
+  }
+
+  .hl-listings__brand-tag {
+    font-size: 12px;
   }
 
   .hl-listings__title {
