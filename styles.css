@@ -1280,8 +1280,8 @@ img {
 .hl-listings__strip-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 22px 20px;
+  gap: 16px;
+  padding: 28px 22px;
   min-width: 0;
 }
 
@@ -1291,17 +1291,17 @@ img {
 
 .hl-listings__strip-item img {
   flex: none;
-  width: 46px;
-  height: 46px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
 
 .hl-listings__strip-title {
-  margin: 0 0 4px;
+  margin: 0 0 6px;
   font-family: "Oswald", "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 19px;
   letter-spacing: 0.4px;
   line-height: 1.15;
   text-transform: uppercase;
@@ -1310,7 +1310,7 @@ img {
 .hl-listings__strip-sub {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.88);
 }
@@ -1326,11 +1326,20 @@ img {
   }
 
   .hl-listings__strip-item {
-    padding: 20px 16px;
+    padding: 24px 16px;
+  }
+
+  .hl-listings__strip-item img {
+    width: 56px;
+    height: 56px;
   }
 
   .hl-listings__strip-title {
-    font-size: 14px;
+    font-size: 17px;
+  }
+
+  .hl-listings__strip-sub {
+    font-size: 15px;
   }
 }
 
