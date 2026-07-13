@@ -10,6 +10,7 @@
 .contact-page .contact-hero,
 .contact-page .contact-benefits,
 .contact-page .contact-main,
+.contact-page .contact-connect,
 .contact-page .contact-team,
 .contact-page .contact-cta {
   --ct-radius: 24px;
@@ -205,17 +206,10 @@
 }
 
 /* =========================================================
-   FORM + SIDEBAR
+   FORM
    ========================================================= */
 .contact-page .contact-main {
-  margin-bottom: 72px;
-}
-
-.contact-page .contact-main__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 32px;
-  align-items: start;
+  margin-bottom: 32px;
 }
 
 .contact-page .contact-form__panel {
@@ -330,48 +324,61 @@
   color: #666;
 }
 
-.contact-page .contact-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+/* =========================================================
+   WAYS TO CONNECT
+   ========================================================= */
+.contact-page .contact-connect {
+  margin-bottom: 72px;
 }
 
-.contact-page .contact-sidebar__panel {
+.contact-page .contact-connect__panel {
   border: var(--ct-border);
-  border-radius: 20px;
-  padding: 32px 28px;
+  border-radius: 28px;
+  padding: 40px 36px 44px;
   background: var(--white);
   box-shadow: var(--ct-shadow);
 }
 
-.contact-page .contact-sidebar__title {
-  margin: 0 0 22px;
-  font-family: "Oswald", "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 0.4px;
+.contact-page .contact-connect__title {
+  margin: 0 0 8px;
+  font-family: "Anton", "Bebas Neue", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 0.95;
+  letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--black);
 }
 
-.contact-page .contact-sidebar__intro {
-  margin: -10px 0 22px;
+.contact-page .contact-connect__underline {
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 0 0 20px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.contact-page .contact-connect__intro {
+  margin: 0 0 32px;
+  max-width: 720px;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.55;
   color: #444;
+}
+
+.contact-page .contact-connect__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 48px;
+  align-items: start;
 }
 
 .contact-page .contact-info {
   display: flex;
   align-items: flex-start;
   gap: 18px;
-}
-
-.contact-page .contact-info + .contact-info {
-  margin-top: 22px;
-  padding-top: 22px;
-  border-top: 1px solid #ececec;
 }
 
 .contact-page .contact-info__icon {
@@ -407,10 +414,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3;
+  color: var(--black);
 }
 
 .contact-page .contact-info__value a {
-  color: var(--black);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -572,7 +580,6 @@
    RESPONSIVE
    ========================================================= */
 @media (max-width: 1100px) {
-  .contact-page .contact-main__grid,
   .contact-page .contact-team__panel {
     grid-template-columns: 1fr;
   }
@@ -672,9 +679,14 @@
   .contact-page .contact-hero,
   .contact-page .contact-benefits,
   .contact-page .contact-main,
+  .contact-page .contact-connect,
   .contact-page .contact-team,
   .contact-page .contact-cta {
     margin-bottom: 56px;
+  }
+
+  .contact-page .contact-main {
+    margin-bottom: 24px;
   }
 
   .contact-page .contact-hero__headline-row {
@@ -697,6 +709,7 @@
   }
 
   .contact-page .contact-form__panel,
+  .contact-page .contact-connect__panel,
   .contact-page .contact-team__panel,
   .contact-page .contact-cta__panel {
     padding: 28px 20px 32px;
@@ -704,12 +717,18 @@
   }
 
   .contact-page .contact-form__title,
+  .contact-page .contact-connect__title,
   .contact-page .contact-team__title {
     font-size: 42px;
   }
 
   .contact-page .contact-team__text {
     font-size: 19px;
+  }
+
+  .contact-page .contact-connect__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .contact-page .contact-form__grid {
